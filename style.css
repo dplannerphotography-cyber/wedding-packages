@@ -1397,92 +1397,101 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
 }
 
 /* Floating WhatsApp Button */
-.floating-whatsapp-btn {
+/* Floating Booking & WhatsApp Widget (Always visible on the side) */
+.floating-booking-container {
   position: fixed;
-  bottom: 80px;
-  right: 24px;
-  width: 60px;
-  height: 60px;
+  bottom: 26px;
+  right: 22px;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+}
+
+.floating-book-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: #ffffff;
+  padding: 6px 6px 6px 18px;
+  border-radius: 50px;
+  text-decoration: none;
+  border: 1.5px solid rgba(37, 211, 102, 0.45);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12), 0 0 25px rgba(37, 211, 102, 0.25);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  animation: float-side-glow 3s ease-in-out infinite alternate;
+}
+
+@keyframes float-side-glow {
+  0% {
+    transform: translateY(0px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12), 0 0 20px rgba(37, 211, 102, 0.25);
+  }
+  100% {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.16), 0 0 35px rgba(37, 211, 102, 0.45);
+  }
+}
+
+.floating-book-pill:hover {
+  transform: translateY(-5px) scale(1.03);
+  border-color: #25d366;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18), 0 0 38px rgba(37, 211, 102, 0.55);
+}
+
+.floating-pill-content {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.floating-pill-tag {
+  font-family: 'Cinzel', serif;
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: #1b1918;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.floating-live-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #25d366;
   border-radius: 50%;
-  background: var(--whatsapp-green);
-  color: #fff;
+  display: inline-block;
+  box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  animation: pulse-ring 1.8s infinite;
+}
+
+.floating-pill-sub {
+  font-size: 0.7rem;
+  color: #6e1628;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+/* The exact round green button from user screenshot with soft green glow halo */
+.floating-whatsapp-circle {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #25d366;
+  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
-  box-shadow: 0 8px 25px rgba(31, 170, 84, 0.45);
-  z-index: 998;
-  text-decoration: none;
-  transition: var(--transition);
+  font-size: 1.85rem;
+  box-shadow: 0 0 24px rgba(37, 211, 102, 0.8), 0 4px 14px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+  flex-shrink: 0;
 }
 
-.floating-whatsapp-btn:hover {
-  transform: scale(1.1);
-  background: var(--whatsapp-hover);
-}
-
-.floating-tooltip {
-  position: absolute;
-  right: 72px;
-  background: rgba(20, 19, 21, 0.92);
-  color: #fff;
-  font-size: 0.82rem;
-  padding: 6px 14px;
-  border-radius: 20px;
-  white-space: nowrap;
-  pointer-events: none;
-  opacity: 0;
-  transform: translateX(10px);
-  transition: var(--transition);
-}
-
-.floating-whatsapp-btn:hover .floating-tooltip {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-/* Mobile Sticky Bottom Booking Bar */
-.mobile-sticky-booking-bar {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #ffffff;
-  border-top: 1px solid var(--border-subtle);
-  padding: 12px 20px;
-  z-index: 999;
-  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.08);
-  justify-content: space-between;
-  align-items: center;
-}
-
-.mobile-sticky-info {
-  display: flex;
-  flex-direction: column;
-}
-
-.mobile-sticky-title {
-  font-family: 'Cinzel', serif;
-  font-size: 0.72rem;
-  font-weight: 800;
-  color: var(--wine-primary);
-  letter-spacing: 1px;
-}
-
-.mobile-sticky-price {
-  font-size: 0.95rem;
-  font-weight: 800;
-  color: var(--text-dark);
-}
-
-.btn-mobile-book {
-  background: var(--whatsapp-green);
-  color: #fff;
-  font-size: 0.9rem;
-  padding: 10px 20px;
-  font-weight: 700;
-  box-shadow: 0 4px 12px rgba(31, 170, 84, 0.35);
+.floating-book-pill:hover .floating-whatsapp-circle {
+  transform: scale(1.08) rotate(6deg);
+  background: #1eb956;
+  box-shadow: 0 0 35px rgba(37, 211, 102, 1), 0 6px 18px rgba(0, 0, 0, 0.18);
 }
 
 /* Responsive Media Queries */
@@ -1545,12 +1554,30 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
     grid-template-columns: 1fr;
   }
 
-  .mobile-sticky-booking-bar {
-    display: flex;
+  .floating-booking-container {
+    bottom: 20px;
+    right: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .floating-book-pill {
+    padding: 5px 5px 5px 14px;
+    gap: 10px;
   }
 
-  body {
-    padding-bottom: 65px; /* space for sticky bar */
+  .floating-pill-tag {
+    font-size: 0.8rem;
+  }
+
+  .floating-pill-sub {
+    font-size: 0.65rem;
+  }
+
+  .floating-whatsapp-circle {
+    width: 46px;
+    height: 46px;
+    font-size: 1.6rem;
   }
 }
 
