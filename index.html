@@ -8,14 +8,14 @@
   <!-- Open Graph Meta Tags for WhatsApp, Instagram & Social Sharing -->
   <meta property="og:title" content="DPlanner Photography | Wedding Promo 2026">
   <meta property="og:description" content="Photography + film for the moments you will want to live again. Save up to ₦100,000 on Essential, Classic & Signature Album packages. Book your date now!">
-  <meta property="og:image" content="assets/flyer.png">
+  <meta property="og:image" content="https://dplannerphotography-cyber.github.io/wedding-packages/assets/flyer.png">
   <meta property="og:type" content="website">
   <meta name="description" content="Professional Photography & Videography based in Ibadan, Oyo State. Limited seasonal wedding offers for September – December 2026. Follow @dplannerphotography.">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,400&display=swap" rel="stylesheet">
   
   <!-- FontAwesome 6 Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -33,7 +33,7 @@
       </div>
       <div class="announcement-social">
         <a href="https://instagram.com/dplannerphotography" target="_blank" rel="noopener noreferrer" title="Instagram">
-          <i class="fa-brands fa-instagram"></i> @dplannerphotography
+          <i class="fa-brands fa-instagram" aria-hidden="true"></i> @dplannerphotography
         </a>
       </div>
     </div>
@@ -49,7 +49,7 @@
         </div>
       </a>
 
-      <div class="nav-links">
+      <div class="nav-links" id="nav-links">
         <a href="#packages">Packages</a>
         <a href="#comparison">Compare Experience</a>
         <a href="#addon">Album Add-on</a>
@@ -57,13 +57,17 @@
         <a href="#terms">Terms</a>
       </div>
 
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-controls="nav-links" aria-expanded="false">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+
       <div class="nav-cta">
         <a href="assets/dplanner-wedding-promo.pdf" download="DPlanner-Wedding-Promo-2026.pdf" class="btn btn-sm btn-outline-nav" title="Download Official Brochure">
-          <i class="fa-solid fa-file-pdf"></i> Brochure (PDF)
+          <i class="fa-solid fa-file-pdf" aria-hidden="true"></i> Brochure (PDF)
         </a>
         <!-- High-visibility instant booking button right in the navbar -->
-        <a href="https://wa.me/2348000000000?text=Hello%20DPlanner%20Photography!%20I'm%20visiting%20your%20website%20and%20I'd%20like%20to%20check%20availability%20and%20book%20our%20wedding%20date." target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-nav-book whatsapp-contact-link">
-          <i class="fa-brands fa-whatsapp"></i> Book Date
+        <a href="https://wa.me/2348168204080?text=Hello%20DPlanner%20Photography!%20I'm%20visiting%20your%20website%20and%20I'd%20like%20to%20check%20availability%20and%20book%20our%20wedding%20date." target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-nav-book whatsapp-contact-link">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Book Date
         </a>
       </div>
     </div>
@@ -75,7 +79,7 @@
     <div class="container hero-container">
       <div class="hero-content">
         <div class="season-badge">
-          <i class="fa-solid fa-calendar-star"></i> SEPTEMBER – DECEMBER 2026 PROMO
+          <i class="fa-solid fa-calendar-star" aria-hidden="true"></i> SEPTEMBER – DECEMBER 2026 PROMO
         </div>
         
         <h1 class="hero-title">
@@ -95,28 +99,28 @@
             <strong>Reserve Your Date with 50% Deposit</strong>
           </div>
           <div class="hero-actions">
-            <a href="https://wa.me/2348000000000?text=Hello%20DPlanner%20Photography!%20I%20want%20to%20check%20if%20my%20wedding%20date%20is%20available%20for%20the%202026%20Promo." target="_blank" rel="noopener noreferrer" class="btn btn-hero-book btn-lg whatsapp-contact-link">
-              <i class="fa-brands fa-whatsapp"></i> <span>BOOK YOUR DATE NOW</span>
+            <a href="https://wa.me/2348168204080?text=Hello%20DPlanner%20Photography!%20I%20want%20to%20check%20if%20my%20wedding%20date%20is%20available%20for%20the%202026%20Promo." target="_blank" rel="noopener noreferrer" class="btn btn-hero-book btn-lg whatsapp-contact-link">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> <span>BOOK YOUR DATE NOW</span>
             </a>
             <a href="#packages" class="btn btn-hero-packages btn-lg">
-              <i class="fa-solid fa-tags"></i> View Packages
+              <i class="fa-solid fa-tags" aria-hidden="true"></i> View Packages
             </a>
           </div>
           <div class="quick-packages-strip">
             <span>Quick pick:</span>
-            <a href="https://wa.me/2348000000000?text=Hello%20DPlanner%20Photography!%20I'd%20like%20to%20book%20the%20ESSENTIAL%20Package%20(₦180,000)." target="_blank" class="quick-pill whatsapp-link" data-package="Essential (₦180,000)">Essential ₦180k</a>
-            <a href="https://wa.me/2348000000000?text=Hello%20DPlanner%20Photography!%20I'd%20like%20to%20book%20the%20CLASSIC%20Package%20(₦250,000)." target="_blank" class="quick-pill popular-pill whatsapp-link" data-package="Classic (₦250,000)">Classic ₦250k ★</a>
-            <a href="https://wa.me/2348000000000?text=Hello%20DPlanner%20Photography!%20I'd%20like%20to%20book%20the%20SIGNATURE%20ALBUM%20Package%20(₦450,000)." target="_blank" class="quick-pill whatsapp-link" data-package="Signature Album (₦450,000)">Signature ₦450k</a>
+            <a href="https://wa.me/2348168204080?text=Hello%20DPlanner%20Photography!%20I'd%20like%20to%20book%20the%20ESSENTIAL%20Package%20(₦180,000)." target="_blank" class="quick-pill whatsapp-link" data-package="Essential (₦180,000)">Essential ₦180k</a>
+            <a href="https://wa.me/2348168204080?text=Hello%20DPlanner%20Photography!%20I'd%20like%20to%20book%20the%20CLASSIC%20Package%20(₦250,000)." target="_blank" class="quick-pill popular-pill whatsapp-link" data-package="Classic (₦250,000)">Classic ₦250k ★</a>
+            <a href="https://wa.me/2348168204080?text=Hello%20DPlanner%20Photography!%20I'd%20like%20to%20book%20the%20SIGNATURE%20ALBUM%20Package%20(₦450,000)." target="_blank" class="quick-pill whatsapp-link" data-package="Signature Album (₦450,000)">Signature ₦450k</a>
           </div>
         </div>
 
         <div class="hero-meta-strip">
           <div class="meta-item">
-            <i class="fa-solid fa-location-dot"></i>
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
             <span>Based in <strong>Ibadan, Oyo State</strong> (Travel Available Nationwide)</span>
           </div>
           <div class="meta-item">
-            <i class="fa-solid fa-hourglass-half"></i>
+            <i class="fa-solid fa-hourglass-half" aria-hidden="true"></i>
             <span>Bookings Close: <strong>31 December 2026</strong></span>
           </div>
         </div>
@@ -125,10 +129,10 @@
         <div class="social-proof-bar">
           <span>Connect with us:</span>
           <div class="social-proof-links">
-            <a href="https://instagram.com/dplannerphotography" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://tiktok.com/@dplannerphotography" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-            <a href="https://facebook.com/dplannerphotography" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://x.com/dplannerphotography" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://instagram.com/dplannerphotography" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://tiktok.com/@dplannerphotography" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
+            <a href="https://facebook.com/dplannerphotography" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://x.com/dplannerphotography" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
             <span class="handle-tag">@dplannerphotography</span>
           </div>
         </div>
@@ -150,7 +154,7 @@
     <div class="container">
       <div class="urgency-box">
         <div class="urgency-message">
-          <i class="fa-solid fa-fire urgency-fire"></i>
+          <i class="fa-solid fa-fire urgency-fire" aria-hidden="true"></i>
           <div>
             <strong>Limited Seasonal Offer: September – December 2026</strong>
             <p>Dates are secured on a first-come, first-served basis upon deposit confirmation.</p>
@@ -189,23 +193,23 @@
           <div class="pricing-block">
             <div class="old-price">₦200,000</div>
             <div class="new-price"><span>₦</span>180,000</div>
-            <div class="savings-pill"><i class="fa-solid fa-tag"></i> SAVE ₦20K</div>
+            <div class="savings-pill"><i class="fa-solid fa-tag" aria-hidden="true"></i> SAVE ₦20K</div>
           </div>
 
           <p class="package-tagline">Thoughtful, complete wedding coverage.</p>
           <hr class="card-divider">
 
           <ul class="features-list">
-            <li><i class="fa-solid fa-check"></i> <strong>One-day photo + film</strong></li>
-            <li><i class="fa-solid fa-check"></i> Ceremony + reception coverage</li>
-            <li><i class="fa-solid fa-check"></i> Couple + family portraits</li>
-            <li><i class="fa-solid fa-check"></i> Edited high-res images</li>
-            <li><i class="fa-solid fa-check"></i> Digital delivery (Google Drive)</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> <strong>One-day photo + film</strong></li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Ceremony + reception coverage</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Couple + family portraits</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Edited high-res images</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Digital delivery (Google Drive)</li>
           </ul>
 
           <div class="card-cta">
-            <a href="https://wa.me/2348000000000?text=Hello%20DPlanner%20Photography!%20I'd%20like%20to%20reserve%20the%20ESSENTIAL%20Wedding%20Package%20(₦180,000)%20for%20our%20wedding." target="_blank" rel="noopener noreferrer" class="btn btn-card-primary whatsapp-link" data-package="Essential (₦180,000)">
-              <i class="fa-brands fa-whatsapp"></i> Book Essential (₦180k)
+            <a href="https://wa.me/2348168204080?text=Hello%20DPlanner%20Photography!%20I'd%20like%20to%20reserve%20the%20ESSENTIAL%20Wedding%20Package%20(₦180,000)%20for%20our%20wedding." target="_blank" rel="noopener noreferrer" class="btn btn-card-primary whatsapp-link" data-package="Essential (₦180,000)">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Book Essential (₦180k)
             </a>
           </div>
         </div>
@@ -213,7 +217,7 @@
         <!-- Package 2: CLASSIC (MOST POPULAR) -->
         <div class="pricing-card package-card-classic featured">
           <div class="popular-ribbon">
-            <i class="fa-solid fa-star"></i> MOST POPULAR
+            <i class="fa-solid fa-star" aria-hidden="true"></i> MOST POPULAR
           </div>
 
           <div class="package-top-tag">
@@ -223,23 +227,23 @@
           <div class="pricing-block">
             <div class="old-price">₦300,000</div>
             <div class="new-price gold-highlight"><span>₦</span>250,000</div>
-            <div class="savings-pill highlight-pill"><i class="fa-solid fa-tag"></i> SAVE ₦50K</div>
+            <div class="savings-pill highlight-pill"><i class="fa-solid fa-tag" aria-hidden="true"></i> SAVE ₦50K</div>
           </div>
 
           <p class="package-tagline">The complete signature DPlanner wedding experience.</p>
           <hr class="card-divider">
 
           <ul class="features-list">
-            <li class="lead-feature"><i class="fa-solid fa-plus gold-icon"></i> <strong>Everything in Essential</strong></li>
-            <li><i class="fa-solid fa-circle-check gold-icon"></i> Bride + groom preparation</li>
-            <li><i class="fa-solid fa-circle-check gold-icon"></i> <strong>Cinematic highlight film</strong></li>
-            <li><i class="fa-solid fa-circle-check gold-icon"></i> <strong>12 x 16 framed portrait</strong></li>
-            <li><i class="fa-solid fa-circle-check gold-icon"></i> <strong>Social wedding reel</strong> (Instagram/TikTok)</li>
+            <li class="lead-feature"><i class="fa-solid fa-plus gold-icon" aria-hidden="true"></i> <strong>Everything in Essential</strong></li>
+            <li><i class="fa-solid fa-circle-check gold-icon" aria-hidden="true"></i> Bride + groom preparation</li>
+            <li><i class="fa-solid fa-circle-check gold-icon" aria-hidden="true"></i> <strong>Cinematic highlight film</strong></li>
+            <li><i class="fa-solid fa-circle-check gold-icon" aria-hidden="true"></i> <strong>12 x 16 framed portrait</strong></li>
+            <li><i class="fa-solid fa-circle-check gold-icon" aria-hidden="true"></i> <strong>Social wedding reel</strong> (Instagram/TikTok)</li>
           </ul>
 
           <div class="card-cta">
-            <a href="https://wa.me/2348000000000?text=Hello%20DPlanner%20Photography!%20I'd%20like%20to%20reserve%20the%20CLASSIC%20Wedding%20Package%20(₦250,000)%20for%20our%20wedding." target="_blank" rel="noopener noreferrer" class="btn btn-card-featured whatsapp-link" data-package="Classic (₦250,000)">
-              <i class="fa-brands fa-whatsapp"></i> Book Classic Package (₦250k)
+            <a href="https://wa.me/2348168204080?text=Hello%20DPlanner%20Photography!%20I'd%20like%20to%20reserve%20the%20CLASSIC%20Wedding%20Package%20(₦250,000)%20for%20our%20wedding." target="_blank" rel="noopener noreferrer" class="btn btn-card-featured whatsapp-link" data-package="Classic (₦250,000)">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Book Classic Package (₦250k)
             </a>
           </div>
         </div>
@@ -253,23 +257,23 @@
           <div class="pricing-block">
             <div class="old-price">₦550,000</div>
             <div class="new-price"><span>₦</span>450,000</div>
-            <div class="savings-pill max-savings"><i class="fa-solid fa-tag"></i> SAVE ₦100K</div>
+            <div class="savings-pill max-savings"><i class="fa-solid fa-tag" aria-hidden="true"></i> SAVE ₦100K</div>
           </div>
 
           <p class="package-tagline">Luxury heirloom keepsake & VIP production.</p>
           <hr class="card-divider">
 
           <ul class="features-list">
-            <li class="lead-feature"><i class="fa-solid fa-plus gold-icon"></i> <strong>Everything in Classic</strong></li>
-            <li><i class="fa-solid fa-check"></i> <strong>Pre-wedding studio session</strong></li>
-            <li><i class="fa-solid fa-check"></i> <strong>16 x 20 framed portrait</strong></li>
-            <li><i class="fa-solid fa-check"></i> <strong>Full album collection</strong> (12x24 photobook, briefcase, mini book & calendar)</li>
-            <li><i class="fa-solid fa-check"></i> <strong>Priority delivery</strong></li>
+            <li class="lead-feature"><i class="fa-solid fa-plus gold-icon" aria-hidden="true"></i> <strong>Everything in Classic</strong></li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> <strong>Pre-wedding studio session</strong></li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> <strong>16 x 20 framed portrait</strong></li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> <strong>Full album collection</strong> (12x24 photobook, briefcase, mini book & calendar)</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> <strong>Priority delivery</strong></li>
           </ul>
 
           <div class="card-cta">
-            <a href="https://wa.me/2348000000000?text=Hello%20DPlanner%20Photography!%20I'd%20like%20to%20reserve%20the%20SIGNATURE%20ALBUM%20Package%20(₦450,000)%20for%20our%20wedding." target="_blank" rel="noopener noreferrer" class="btn btn-card-primary whatsapp-link" data-package="Signature Album (₦450,000)">
-              <i class="fa-brands fa-whatsapp"></i> Book Signature (₦450k)
+            <a href="https://wa.me/2348168204080?text=Hello%20DPlanner%20Photography!%20I'd%20like%20to%20reserve%20the%20SIGNATURE%20ALBUM%20Package%20(₦450,000)%20for%20our%20wedding." target="_blank" rel="noopener noreferrer" class="btn btn-card-primary whatsapp-link" data-package="Signature Album (₦450,000)">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Book Signature (₦450k)
             </a>
           </div>
         </div>
@@ -291,10 +295,10 @@
               Elevate your wedding package with our handcrafted luxury presentation suite. Designed to preserve your family legacy for generations to come.
             </p>
             <ul class="addon-specs">
-              <li><i class="fa-solid fa-book"></i> <strong>12 x 24 synthetic photobook</strong> (25 designed pages)</li>
-              <li><i class="fa-solid fa-briefcase"></i> <strong>Premium presentation briefcase</strong></li>
-              <li><i class="fa-solid fa-book-open"></i> <strong>Mini keepsake photobook</strong></li>
-              <li><i class="fa-solid fa-calendar-days"></i> <strong>Custom anniversary calendar</strong></li>
+              <li><i class="fa-solid fa-book" aria-hidden="true"></i> <strong>12 x 24 synthetic photobook</strong> (25 designed pages)</li>
+              <li><i class="fa-solid fa-briefcase" aria-hidden="true"></i> <strong>Premium presentation briefcase</strong></li>
+              <li><i class="fa-solid fa-book-open" aria-hidden="true"></i> <strong>Mini keepsake photobook</strong></li>
+              <li><i class="fa-solid fa-calendar-days" aria-hidden="true"></i> <strong>Custom anniversary calendar</strong></li>
             </ul>
           </div>
           
@@ -302,9 +306,9 @@
             <span class="addon-action-note">ADD TO ANY PACKAGE</span>
             <div class="addon-old-price">₦200,000</div>
             <div class="addon-new-price"><span>₦</span>180,000</div>
-            <div class="addon-save-tag"><i class="fa-solid fa-tag"></i> SAVE ₦20K</div>
-            <a href="https://wa.me/2348000000000?text=Hello%20DPlanner%20Photography!%20I'd%20like%20to%20add%20the%20Album%20Collection%20Add-On%20(₦180,000)%20to%20my%20wedding%20package." target="_blank" rel="noopener noreferrer" class="btn btn-hero-book btn-block whatsapp-link" data-package="Album Collection Add-On (₦180,000)">
-              <i class="fa-brands fa-whatsapp"></i> Add To My Package
+            <div class="addon-save-tag"><i class="fa-solid fa-tag" aria-hidden="true"></i> SAVE ₦20K</div>
+            <a href="https://wa.me/2348168204080?text=Hello%20DPlanner%20Photography!%20I'd%20like%20to%20add%20the%20Album%20Collection%20Add-On%20(₦180,000)%20to%20my%20wedding%20package." target="_blank" rel="noopener noreferrer" class="btn btn-hero-book btn-block whatsapp-link" data-package="Album Collection Add-On (₦180,000)">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Add To My Package
             </a>
           </div>
         </div>
@@ -334,39 +338,39 @@
           <tbody>
             <tr>
               <td>One-day photography + film</td>
-              <td><i class="fa-solid fa-check check-icon"></i></td>
-              <td class="col-featured"><i class="fa-solid fa-check check-icon gold"></i></td>
-              <td><i class="fa-solid fa-check check-icon"></i></td>
+              <td><i class="fa-solid fa-check check-icon" aria-hidden="true"></i></td>
+              <td class="col-featured"><i class="fa-solid fa-check check-icon gold" aria-hidden="true"></i></td>
+              <td><i class="fa-solid fa-check check-icon" aria-hidden="true"></i></td>
             </tr>
             <tr>
               <td>Ceremony + reception coverage</td>
-              <td><i class="fa-solid fa-check check-icon"></i></td>
-              <td class="col-featured"><i class="fa-solid fa-check check-icon gold"></i></td>
-              <td><i class="fa-solid fa-check check-icon"></i></td>
+              <td><i class="fa-solid fa-check check-icon" aria-hidden="true"></i></td>
+              <td class="col-featured"><i class="fa-solid fa-check check-icon gold" aria-hidden="true"></i></td>
+              <td><i class="fa-solid fa-check check-icon" aria-hidden="true"></i></td>
             </tr>
             <tr>
               <td>Couple, family + guest portraits</td>
-              <td><i class="fa-solid fa-check check-icon"></i></td>
-              <td class="col-featured"><i class="fa-solid fa-check check-icon gold"></i></td>
-              <td><i class="fa-solid fa-check check-icon"></i></td>
+              <td><i class="fa-solid fa-check check-icon" aria-hidden="true"></i></td>
+              <td class="col-featured"><i class="fa-solid fa-check check-icon gold" aria-hidden="true"></i></td>
+              <td><i class="fa-solid fa-check check-icon" aria-hidden="true"></i></td>
             </tr>
             <tr>
               <td>Edited high-resolution images</td>
-              <td><i class="fa-solid fa-check check-icon"></i></td>
-              <td class="col-featured"><i class="fa-solid fa-check check-icon gold"></i></td>
-              <td><i class="fa-solid fa-check check-icon"></i></td>
+              <td><i class="fa-solid fa-check check-icon" aria-hidden="true"></i></td>
+              <td class="col-featured"><i class="fa-solid fa-check check-icon gold" aria-hidden="true"></i></td>
+              <td><i class="fa-solid fa-check check-icon" aria-hidden="true"></i></td>
             </tr>
             <tr>
               <td>Bride + groom preparation</td>
               <td class="dash-cell">&mdash;</td>
-              <td class="col-featured"><i class="fa-solid fa-check check-icon gold"></i></td>
-              <td><i class="fa-solid fa-check check-icon"></i></td>
+              <td class="col-featured"><i class="fa-solid fa-check check-icon gold" aria-hidden="true"></i></td>
+              <td><i class="fa-solid fa-check check-icon" aria-hidden="true"></i></td>
             </tr>
             <tr>
               <td>Cinematic highlight film</td>
               <td class="dash-cell">&mdash;</td>
-              <td class="col-featured"><i class="fa-solid fa-check check-icon gold"></i></td>
-              <td><i class="fa-solid fa-check check-icon"></i></td>
+              <td class="col-featured"><i class="fa-solid fa-check check-icon gold" aria-hidden="true"></i></td>
+              <td><i class="fa-solid fa-check check-icon" aria-hidden="true"></i></td>
             </tr>
             <tr>
               <td>Framed portrait</td>
@@ -377,20 +381,20 @@
             <tr>
               <td>Social wedding reel</td>
               <td class="dash-cell">&mdash;</td>
-              <td class="col-featured"><i class="fa-solid fa-check check-icon gold"></i></td>
-              <td><i class="fa-solid fa-check check-icon"></i></td>
+              <td class="col-featured"><i class="fa-solid fa-check check-icon gold" aria-hidden="true"></i></td>
+              <td><i class="fa-solid fa-check check-icon" aria-hidden="true"></i></td>
             </tr>
             <tr>
               <td>Pre-wedding studio session</td>
               <td class="dash-cell">&mdash;</td>
               <td class="col-featured dash-cell">&mdash;</td>
-              <td><i class="fa-solid fa-check check-icon"></i></td>
+              <td><i class="fa-solid fa-check check-icon" aria-hidden="true"></i></td>
             </tr>
             <tr>
               <td>Signature album collection</td>
               <td class="dash-cell">&mdash;</td>
               <td class="col-featured dash-cell">&mdash;</td>
-              <td><i class="fa-solid fa-check check-icon"></i></td>
+              <td><i class="fa-solid fa-check check-icon" aria-hidden="true"></i></td>
             </tr>
           </tbody>
         </table>
@@ -445,12 +449,12 @@
         <div class="terms-content">
           <h3>Booking Policies & Information</h3>
           <ul class="terms-list">
-            <li><i class="fa-solid fa-circle-check"></i> Deposit is non-refundable and secures the agreed date.</li>
-            <li><i class="fa-solid fa-circle-check"></i> Full balance is due before final delivery.</li>
-            <li><i class="fa-solid fa-circle-check"></i> Promo applies to bookings secured from 1 September to 31 December 2026, subject to availability.</li>
-            <li><i class="fa-solid fa-circle-check"></i> Packages cover one wedding day at the agreed location.</li>
-            <li><i class="fa-solid fa-circle-check"></i> Travel outside the agreed location, extra event days, extra frames and other add-ons are quoted separately.</li>
-            <li><i class="fa-solid fa-circle-check"></i> Digital delivery is through Google Drive or another agreed platform.</li>
+            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Deposit is non-refundable and secures the agreed date.</li>
+            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Full balance is due before final delivery.</li>
+            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Promo applies to bookings secured from 1 September to 31 December 2026, subject to availability.</li>
+            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Packages cover one wedding day at the agreed location.</li>
+            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Travel outside the agreed location, extra event days, extra frames and other add-ons are quoted separately.</li>
+            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Digital delivery is through Google Drive or another agreed platform.</li>
           </ul>
         </div>
       </div>
@@ -464,11 +468,11 @@
         <h2>Ready To Reserve Your Wedding Date?</h2>
         <p>Send your date and package choice directly to DPlanner Photography.</p>
         <div class="cta-banner-buttons">
-          <a href="https://wa.me/2348000000000?text=Hello%20DPlanner%20Photography!%20I'd%20like%20to%20reserve%20our%20wedding%20date.%20Our%20wedding%20date%20is%20[Date]%20in%20[City/Venue]." target="_blank" rel="noopener noreferrer" class="btn btn-hero-book btn-lg whatsapp-contact-link">
-            <i class="fa-brands fa-whatsapp"></i> BOOK YOUR DATE NOW
+          <a href="https://wa.me/2348168204080?text=Hello%20DPlanner%20Photography!%20I'd%20like%20to%20reserve%20our%20wedding%20date.%20Our%20wedding%20date%20is%20[Date]%20in%20[City/Venue]." target="_blank" rel="noopener noreferrer" class="btn btn-hero-book btn-lg whatsapp-contact-link">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> BOOK YOUR DATE NOW
           </a>
           <a href="https://instagram.com/dplannerphotography" target="_blank" rel="noopener noreferrer" class="btn btn-outline-cta btn-lg">
-            <i class="fa-brands fa-instagram"></i> Follow @dplannerphotography
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i> Follow @dplannerphotography
           </a>
         </div>
       </div>
@@ -488,10 +492,10 @@
           <em>Photography + film for the moments you will want to live again.</em>
         </p>
         <div class="footer-social-strip">
-          <a href="https://instagram.com/dplannerphotography" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://tiktok.com/@dplannerphotography" target="_blank" rel="noopener noreferrer" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-          <a href="https://facebook.com/dplannerphotography" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
-          <a href="https://x.com/dplannerphotography" target="_blank" rel="noopener noreferrer" title="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://instagram.com/dplannerphotography" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://tiktok.com/@dplannerphotography" target="_blank" rel="noopener noreferrer" title="TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
+          <a href="https://facebook.com/dplannerphotography" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+          <a href="https://x.com/dplannerphotography" target="_blank" rel="noopener noreferrer" title="X (Twitter)"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
         </div>
       </div>
 
@@ -507,30 +511,30 @@
 
       <div class="footer-col">
         <h4>Official Details</h4>
-        <p><i class="fa-solid fa-location-dot"></i> Ibadan, Oyo State, Nigeria</p>
-        <p><i class="fa-regular fa-envelope"></i> dplannerphotography@gmail.com</p>
-        <p><i class="fa-brands fa-instagram"></i> @dplannerphotography</p>
-        <p><a href="assets/dplanner-wedding-promo.pdf" download class="footer-pdf-link"><i class="fa-solid fa-file-pdf"></i> Download Brochure (PDF)</a></p>
+        <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Ibadan, Oyo State, Nigeria</p>
+        <p><i class="fa-regular fa-envelope" aria-hidden="true"></i> dplannerphotography@gmail.com</p>
+        <p><i class="fa-brands fa-instagram" aria-hidden="true"></i> @dplannerphotography</p>
+        <p><a href="assets/dplanner-wedding-promo.pdf" download class="footer-pdf-link"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i> Download Brochure (PDF)</a></p>
       </div>
     </div>
 
     <div class="footer-bottom">
       <div class="container footer-bottom-inner">
         <p>&copy; 2026 DPlanner Photography. All rights reserved.</p>
-        <p class="hosted-tag"><i class="fa-solid fa-globe"></i> @dplannerphotography on all social media</p>
+        <p class="hosted-tag"><i class="fa-solid fa-globe" aria-hidden="true"></i> @dplannerphotography on all social media</p>
       </div>
     </div>
   </footer>
 
   <!-- Floating Booking & WhatsApp Widget (Floats along the side of the screen) -->
   <div class="floating-booking-container" id="floating-booking-container">
-    <a href="https://wa.me/2348000000000?text=Hello%20DPlanner%20Photography!%20I'm%20visiting%20your%20website%20and%20I'd%20like%20to%20book%20our%20wedding%20date%20now." target="_blank" rel="noopener noreferrer" class="floating-book-pill whatsapp-contact-link" aria-label="Book Now on WhatsApp">
+    <a href="https://wa.me/2348168204080?text=Hello%20DPlanner%20Photography!%20I'm%20visiting%20your%20website%20and%20I'd%20like%20to%20book%20our%20wedding%20date%20now." target="_blank" rel="noopener noreferrer" class="floating-book-pill whatsapp-contact-link" aria-label="Book Now on WhatsApp">
       <div class="floating-pill-content">
         <span class="floating-pill-tag"><span class="floating-live-dot"></span> BOOK NOW</span>
         <span class="floating-pill-sub">Check Date Availability</span>
       </div>
       <div class="floating-whatsapp-circle" title="Chat on WhatsApp">
-        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
       </div>
     </a>
   </div>

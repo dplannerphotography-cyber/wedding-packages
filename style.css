@@ -190,6 +190,25 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
   gap: 10px;
 }
 
+/* Mobile hamburger toggle (hidden on desktop) */
+.nav-toggle {
+  display: none;
+  background: transparent;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  color: var(--wine-primary);
+  font-size: 1.2rem;
+  padding: 8px 12px;
+  cursor: pointer;
+  line-height: 1;
+  transition: var(--transition);
+}
+
+.nav-toggle:hover {
+  background: var(--bg-champagne);
+  border-color: var(--gold-warm);
+}
+
 /* Buttons */
 .btn {
   display: inline-flex;
@@ -1560,34 +1579,45 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
   }
 }
 
-@media (max-width: 576px) {
-  .floating-book-pill {
-    padding: 5px 5px 5px 14px;
-    gap: 10px;
-  }
-
-  .floating-pill-tag {
-    font-size: 0.8rem;
-  }
-
-  .floating-pill-sub {
-    font-size: 0.65rem;
-  }
-
-  .floating-whatsapp-circle {
-    width: 46px;
-    height: 46px;
-    font-size: 1.6rem;
-  }
-}
-
 @media (max-width: 768px) {
   .hero-title {
     font-size: 2.7rem;
   }
 
+  .nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    order: 3;
+  }
+
+  .nav-container {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  /* Collapsed nav links become a full-width dropdown */
   .nav-links {
     display: none;
+    order: 4;
+    flex-basis: 100%;
+    flex-direction: column;
+    gap: 4px;
+    padding-top: 8px;
+    border-top: 1px solid var(--border-subtle);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 10px 4px;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .nav-links a:last-child {
+    border-bottom: none;
   }
 
   .urgency-box {
@@ -1610,12 +1640,33 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
   .hero-booking-card {
     padding: 18px;
   }
-  
+
   .btn-hero-book {
     width: 100%;
   }
 
   .quick-packages-strip {
     justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .floating-book-pill {
+    padding: 5px 5px 5px 14px;
+    gap: 10px;
+  }
+
+  .floating-pill-tag {
+    font-size: 0.8rem;
+  }
+
+  .floating-pill-sub {
+    font-size: 0.65rem;
+  }
+
+  .floating-whatsapp-circle {
+    width: 46px;
+    height: 46px;
+    font-size: 1.6rem;
   }
 }

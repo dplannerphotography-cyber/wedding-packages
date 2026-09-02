@@ -4,16 +4,43 @@
 // Change this phone number to your active WhatsApp phone number (with country code, no + or spaces)
 // e.g. "2348012345678" for Nigeria (+234)
 const CONFIG = {
-  whatsappNumber: "2348000000000", // <-- UPDATE YOUR WHATSAPP NUMBER HERE
+  whatsappNumber: "2348168204080", // <-- UPDATE YOUR WHATSAPP NUMBER HERE
   photographerName: "DPlanner Photography",
-  promoEndDate: "December 31, 2026 23:59:59"
+  promoEndDate: "December 31, 2026 23:59:59 GMT+0100" // Nigeria (WAT)
 };
 
 // Initialize dynamic WhatsApp links
 document.addEventListener("DOMContentLoaded", () => {
   setupWhatsAppLinks();
   startCountdownTimer();
+  setupMobileNav();
 });
+
+/**
+ * Mobile hamburger menu toggle
+ */
+function setupMobileNav() {
+  const toggle = document.getElementById("nav-toggle");
+  const navLinks = document.getElementById("nav-links");
+  if (!toggle || !navLinks) return;
+
+  const closeMenu = () => {
+    navLinks.classList.remove("open");
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.setAttribute("aria-label", "Open menu");
+  };
+
+  toggle.addEventListener("click", () => {
+    const isOpen = navLinks.classList.toggle("open");
+    toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    toggle.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+  });
+
+  // Close the menu after tapping any in-page link
+  navLinks.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", closeMenu);
+  });
+}
 
 /**
  * Configure all WhatsApp buttons with the configured phone number
