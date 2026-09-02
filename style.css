@@ -1,35 +1,49 @@
 :root {
-  --bg-dark: #0d0e12;
-  --bg-card: #151720;
-  --bg-card-hover: #1b1e2a;
-  --bg-burgundy: #40121b;
-  --bg-burgundy-light: #521824;
-  --text-main: #f5f6f8;
-  --text-muted: #a0a6b5;
-  --text-dim: #6e7587;
+  /* Bright Luxury Bridal Palette */
+  --bg-page: #fdfbf7;
+  --bg-white: #ffffff;
+  --bg-champagne: #f7f1e6;
+  --bg-champagne-light: #faf5ee;
+  --bg-ivory: #f4ede2;
   
-  --gold-primary: #e5b95a;
-  --gold-light: #fbe29d;
-  --gold-dark: #b88628;
-  --gold-gradient: linear-gradient(135deg, #fbe29d 0%, #e5b95a 50%, #b88628 100%);
+  /* Text Colors */
+  --text-dark: #1b1918;
+  --text-body: #423d38;
+  --text-muted: #6b645d;
+  --text-light: #948b82;
   
-  --wine-badge: #721f33;
-  --wine-badge-gradient: linear-gradient(135deg, #8a243d 0%, #5e1627 100%);
+  /* Brand Accents */
+  --wine-primary: #6e1628;
+  --wine-dark: #4d0e1b;
+  --wine-light: #8a2136;
+  --wine-gradient: linear-gradient(135deg, #8a2136 0%, #6e1628 50%, #4d0e1b 100%);
   
-  --whatsapp-green: #25d366;
-  --whatsapp-hover: #1eb956;
+  --gold-primary: #b88628;
+  --gold-warm: #cba043;
+  --gold-light: #f7df99;
+  --gold-pale: #fdf3d6;
+  --gold-gradient: linear-gradient(135deg, #f7df99 0%, #cba043 50%, #b88628 100%);
   
-  --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-gold: rgba(229, 185, 90, 0.35);
+  --whatsapp-green: #1faa54;
+  --whatsapp-bright: #25d366;
+  --whatsapp-hover: #178a43;
+  
+  /* Borders & Shadows */
+  --border-subtle: #e8e2d8;
+  --border-gold: rgba(184, 134, 40, 0.35);
+  --border-wine: rgba(110, 22, 40, 0.3);
   
   --radius-sm: 8px;
   --radius-md: 14px;
-  --radius-lg: 20px;
-  --radius-xl: 28px;
+  --radius-lg: 22px;
+  --radius-xl: 30px;
   
-  --shadow-sm: 0 4px 14px rgba(0, 0, 0, 0.25);
-  --shadow-md: 0 12px 35px rgba(0, 0, 0, 0.45);
-  --shadow-gold: 0 14px 40px rgba(229, 185, 90, 0.15);
+  --shadow-subtle: 0 4px 20px rgba(74, 52, 28, 0.06);
+  --shadow-card: 0 10px 30px rgba(60, 42, 20, 0.08);
+  --shadow-hover: 0 18px 40px rgba(60, 42, 20, 0.14);
+  --shadow-wine: 0 14px 40px rgba(110, 22, 40, 0.25);
+  --shadow-pulse: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  
   --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -42,8 +56,8 @@
 html {
   scroll-behavior: smooth;
   font-family: 'Plus Jakarta Sans', sans-serif;
-  background-color: var(--bg-dark);
-  color: var(--text-main);
+  background-color: var(--bg-page);
+  color: var(--text-body);
   line-height: 1.6;
 }
 
@@ -61,16 +75,17 @@ body {
 /* Headings */
 h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
   font-family: 'Cinzel', serif;
+  color: var(--text-dark);
   letter-spacing: 0.5px;
 }
 
 /* Top Announcement Bar */
 .announcement-bar {
-  background: var(--wine-badge-gradient);
+  background: var(--wine-gradient);
   color: #fff;
-  font-size: 0.85rem;
+  font-size: 0.84rem;
   padding: 10px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   position: relative;
   z-index: 100;
 }
@@ -84,7 +99,7 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
 }
 
 .pill-badge {
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(0, 0, 0, 0.3);
   padding: 3px 10px;
   border-radius: 20px;
   font-size: 0.72rem;
@@ -113,12 +128,13 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
 .navbar {
   position: sticky;
   top: 0;
-  background: rgba(13, 14, 18, 0.92);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border-subtle);
   z-index: 99;
-  padding: 16px 0;
+  padding: 15px 0;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.03);
 }
 
 .nav-container {
@@ -137,7 +153,7 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
 .brand-name {
   font-size: 1.55rem;
   font-weight: 800;
-  color: #fff;
+  color: var(--text-dark);
   letter-spacing: 1.5px;
   line-height: 1;
 }
@@ -146,32 +162,32 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
   display: block;
   font-size: 0.65rem;
   letter-spacing: 3px;
-  color: var(--gold-primary);
-  font-weight: 600;
+  color: var(--wine-primary);
+  font-weight: 700;
   margin-top: 3px;
 }
 
 .nav-links {
   display: flex;
-  gap: 26px;
+  gap: 24px;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: var(--text-muted);
-  font-weight: 500;
+  color: var(--text-body);
+  font-weight: 600;
   font-size: 0.92rem;
   transition: var(--transition);
 }
 
 .nav-links a:hover {
-  color: var(--gold-light);
+  color: var(--wine-primary);
 }
 
 .nav-cta {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
 
 /* Buttons */
@@ -180,7 +196,7 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  font-weight: 600;
+  font-weight: 700;
   border-radius: 50px;
   padding: 12px 26px;
   font-size: 0.95rem;
@@ -192,78 +208,55 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
 }
 
 .btn-sm {
-  padding: 8px 18px;
+  padding: 9px 18px;
   font-size: 0.85rem;
 }
 
 .btn-lg {
-  padding: 15px 32px;
+  padding: 16px 32px;
   font-size: 1.05rem;
 }
 
-.btn-primary {
-  background: var(--gold-gradient);
-  color: #121316;
-  box-shadow: 0 4px 15px rgba(229, 185, 90, 0.25);
-}
-
-.btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(229, 185, 90, 0.4);
-}
-
-.btn-outline {
+.btn-outline-nav {
   background: transparent;
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--text-body);
+  border: 1px solid var(--border-subtle);
 }
 
-.btn-outline:hover {
-  border-color: var(--gold-light);
-  color: var(--gold-light);
-  transform: translateY(-2px);
+.btn-outline-nav:hover {
+  background: var(--bg-champagne);
+  color: var(--wine-primary);
+  border-color: var(--gold-warm);
 }
 
-.btn-outline-gold {
-  background: transparent;
-  color: var(--gold-light);
-  border: 1px solid var(--border-gold);
-}
-
-.btn-outline-gold:hover {
-  background: rgba(229, 185, 90, 0.15);
-  border-color: var(--gold-light);
-}
-
-.btn-whatsapp-nav {
-  background: rgba(37, 211, 102, 0.15);
-  color: var(--whatsapp-green);
-  border: 1px solid rgba(37, 211, 102, 0.35);
-}
-
-.btn-whatsapp-nav:hover {
+/* Instant Navbar Booking Button */
+.btn-nav-book {
   background: var(--whatsapp-green);
   color: #fff;
+  box-shadow: 0 4px 14px rgba(31, 170, 84, 0.35);
 }
 
-.btn-block {
-  width: 100%;
+.btn-nav-book:hover {
+  background: var(--whatsapp-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(31, 170, 84, 0.45);
 }
 
 /* Hero Section */
 .hero-section {
   position: relative;
-  padding: 70px 0 60px;
-  overflow: hidden;
+  padding: 60px 0 50px;
+  background: linear-gradient(180deg, #fdfbf7 0%, #f7f1e6 100%);
+  border-bottom: 1px solid var(--border-subtle);
 }
 
 .hero-glow-overlay {
   position: absolute;
-  top: -15%;
-  right: -10%;
-  width: 650px;
-  height: 650px;
-  background: radial-gradient(circle, rgba(229, 185, 90, 0.1) 0%, rgba(13, 14, 18, 0) 70%);
+  top: -10%;
+  right: -5%;
+  width: 550px;
+  height: 550px;
+  background: radial-gradient(circle, rgba(203, 160, 67, 0.12) 0%, rgba(253, 251, 247, 0) 70%);
   pointer-events: none;
   z-index: 1;
 }
@@ -273,7 +266,7 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
   z-index: 2;
   display: grid;
   grid-template-columns: 1.25fr 0.85fr;
-  gap: 50px;
+  gap: 45px;
   align-items: center;
 }
 
@@ -281,71 +274,184 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: var(--wine-badge-gradient);
+  background: var(--wine-gradient);
   color: #fff;
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   font-weight: 700;
   padding: 6px 16px;
   border-radius: 20px;
   letter-spacing: 1.5px;
-  margin-bottom: 22px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  margin-bottom: 18px;
+  box-shadow: 0 4px 12px rgba(110, 22, 40, 0.2);
 }
 
 .hero-title {
-  font-size: 3.8rem;
+  font-size: 3.7rem;
   font-weight: 800;
-  line-height: 1.12;
-  margin-bottom: 20px;
-  color: #fff;
+  line-height: 1.1;
+  margin-bottom: 16px;
+  color: var(--text-dark);
 }
 
-.highlight-gold {
-  background: var(--gold-gradient);
+.highlight-wine {
+  color: var(--wine-primary);
+  display: inline-block;
+  background: linear-gradient(135deg, #8a2136 0%, #6e1628 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  display: inline-block;
 }
 
 .hero-description {
-  font-size: 1.15rem;
+  font-size: 1.12rem;
   color: var(--text-muted);
   max-width: 580px;
-  margin-bottom: 26px;
-  line-height: 1.7;
+  margin-bottom: 24px;
+  line-height: 1.65;
+}
+
+/* HERO BOOKING CARD (Unmissable above the fold!) */
+.hero-booking-card {
+  background: #ffffff;
+  border: 2px solid var(--gold-warm);
+  border-radius: var(--radius-lg);
+  padding: 22px 26px;
+  box-shadow: 0 10px 30px rgba(110, 22, 40, 0.09);
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.booking-card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.92rem;
+  color: var(--wine-primary);
+  margin-bottom: 14px;
+}
+
+.pulse-dot {
+  width: 10px;
+  height: 10px;
+  background-color: var(--whatsapp-bright);
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  animation: pulse-ring 1.8s infinite;
+}
+
+@keyframes pulse-ring {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+/* Big Vibrant Booking Button */
+.btn-hero-book {
+  background: linear-gradient(135deg, #1faa54 0%, #15803d 100%);
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  box-shadow: 0 6px 22px rgba(31, 170, 84, 0.38);
+  flex: 1;
+  min-width: 250px;
+}
+
+.btn-hero-book:hover {
+  background: linear-gradient(135deg, #25d366 0%, #1faa54 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(31, 170, 84, 0.5);
+  color: #fff;
+}
+
+.btn-hero-packages {
+  background: var(--bg-champagne);
+  color: var(--wine-primary);
+  border: 1px solid var(--border-gold);
+}
+
+.btn-hero-packages:hover {
+  background: var(--gold-pale);
+  color: var(--wine-dark);
+  transform: translateY(-2px);
+}
+
+/* Quick Packages Strip */
+.quick-packages-strip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  padding-top: 10px;
+  border-top: 1px dashed var(--border-subtle);
+}
+
+.quick-pill {
+  background: var(--bg-champagne-light);
+  border: 1px solid var(--border-subtle);
+  padding: 5px 12px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.quick-pill:hover {
+  background: var(--wine-primary);
+  color: #fff;
+  border-color: var(--wine-primary);
+}
+
+.quick-pill.popular-pill {
+  background: var(--wine-primary);
+  color: #fff;
+  border-color: var(--wine-primary);
+}
+
+.quick-pill.popular-pill:hover {
+  background: var(--wine-dark);
 }
 
 .hero-meta-strip {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin-bottom: 32px;
+  gap: 8px;
+  margin-bottom: 22px;
 }
 
 .meta-item {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #d8dbe2;
+  color: var(--text-body);
   font-size: 0.95rem;
 }
 
 .meta-item i {
-  color: var(--gold-primary);
+  color: var(--wine-primary);
   font-size: 1.05rem;
-}
-
-.hero-actions {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-  margin-bottom: 35px;
 }
 
 .social-proof-bar {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
   font-size: 0.88rem;
   color: var(--text-muted);
   padding-top: 15px;
@@ -355,24 +461,23 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
 .social-proof-links {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
 
 .social-proof-links a {
-  color: var(--gold-light);
+  color: var(--wine-primary);
   font-size: 1.1rem;
   transition: var(--transition);
 }
 
 .social-proof-links a:hover {
-  color: #fff;
+  color: var(--gold-primary);
   transform: translateY(-2px);
 }
 
 .handle-tag {
-  font-weight: 600;
-  color: #fff;
-  letter-spacing: 0.5px;
+  font-weight: 700;
+  color: var(--text-dark);
 }
 
 /* Hero Visual */
@@ -384,9 +489,9 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
   position: relative;
   border-radius: var(--radius-xl);
   overflow: hidden;
-  box-shadow: var(--shadow-md);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: var(--bg-card);
+  box-shadow: var(--shadow-card);
+  border: 4px solid #ffffff;
+  background: #ffffff;
 }
 
 .hero-flyer-img {
@@ -405,33 +510,34 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
   bottom: 16px;
   left: 16px;
   right: 16px;
-  background: rgba(13, 14, 18, 0.75);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(10px);
   padding: 8px 16px;
   border-radius: 20px;
-  font-size: 0.8rem;
-  color: var(--gold-light);
+  font-size: 0.82rem;
+  color: var(--wine-primary);
   text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  font-weight: 700;
   letter-spacing: 1px;
 }
 
 /* Urgency Bar Section */
 .urgency-bar-section {
-  padding: 10px 0 50px;
+  padding: 30px 0 50px;
+  background: var(--bg-page);
 }
 
 .urgency-box {
-  background: linear-gradient(135deg, #240c13 0%, #151720 100%);
-  border: 1px solid rgba(138, 36, 61, 0.5);
+  background: #ffffff;
+  border: 1.5px solid var(--border-wine);
   border-radius: var(--radius-lg);
-  padding: 24px 34px;
+  padding: 24px 32px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--shadow-subtle);
 }
 
 .urgency-message {
@@ -441,16 +547,16 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
 }
 
 .urgency-fire {
-  font-size: 2rem;
-  color: #ff5a5f;
-  background: rgba(255, 90, 95, 0.15);
+  font-size: 1.8rem;
+  color: var(--wine-primary);
+  background: rgba(110, 22, 40, 0.08);
   padding: 14px;
   border-radius: 50%;
 }
 
 .urgency-message strong {
-  font-size: 1.1rem;
-  color: #fff;
+  font-size: 1.05rem;
+  color: var(--text-dark);
   display: block;
   margin-bottom: 2px;
 }
@@ -469,7 +575,8 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
   display: block;
   font-size: 0.72rem;
   letter-spacing: 1.5px;
-  color: var(--text-muted);
+  color: var(--wine-primary);
+  font-weight: 700;
   margin-bottom: 6px;
 }
 
@@ -479,8 +586,8 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
 }
 
 .countdown-item {
-  background: rgba(0, 0, 0, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--bg-champagne);
+  border: 1px solid var(--border-gold);
   border-radius: var(--radius-sm);
   padding: 8px 12px;
   min-width: 56px;
@@ -490,8 +597,8 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
 .countdown-item span {
   display: block;
   font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--gold-light);
+  font-weight: 800;
+  color: var(--wine-primary);
   line-height: 1;
 }
 
@@ -504,6 +611,9 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
 /* Packages Section */
 .packages-section {
   padding: 50px 0 80px;
+  background: #ffffff;
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
 }
 
 .section-header {
@@ -515,15 +625,15 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
   text-transform: uppercase;
   font-size: 0.82rem;
   letter-spacing: 3px;
-  color: var(--gold-primary);
-  font-weight: 700;
+  color: var(--wine-primary);
+  font-weight: 800;
   margin-bottom: 8px;
   display: inline-block;
 }
 
 .section-title {
   font-size: 2.6rem;
-  color: #fff;
+  color: var(--text-dark);
   margin-bottom: 12px;
 }
 
@@ -542,34 +652,53 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
   align-items: stretch;
 }
 
+/* Essential & Signature Cards (Clean Pure White) */
 .pricing-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
+  background: #ffffff;
+  border: 1.5px solid var(--border-subtle);
   border-radius: var(--radius-lg);
   padding: 36px 28px 30px;
   display: flex;
   flex-direction: column;
   position: relative;
   transition: var(--transition);
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--shadow-subtle);
 }
 
 .pricing-card:hover {
   transform: translateY(-6px);
-  border-color: rgba(255, 255, 255, 0.18);
-  box-shadow: var(--shadow-md);
+  border-color: var(--gold-warm);
+  box-shadow: var(--shadow-hover);
 }
 
-/* Classic Featured Card (Wine/Burgundy from Brochure) */
+/* CLASSIC CARD: SHOWSTOPPER ROYAL WINE CARD (From Brochure Page 1) */
 .pricing-card.featured {
-  background: linear-gradient(180deg, var(--bg-burgundy) 0%, #200d14 100%);
-  border: 2px solid var(--gold-primary);
-  box-shadow: 0 16px 45px rgba(88, 26, 39, 0.45);
+  background: var(--wine-gradient);
+  border: 2px solid var(--gold-warm);
+  box-shadow: var(--shadow-wine);
+  color: #ffffff;
   transform: scale(1.03);
+}
+
+.pricing-card.featured .tag-title,
+.pricing-card.featured .new-price,
+.pricing-card.featured .package-tagline,
+.pricing-card.featured .features-list li {
+  color: #ffffff;
+}
+
+.pricing-card.featured .old-price {
+  color: #f7df99;
+  text-decoration-color: #ffffff;
+}
+
+.pricing-card.featured .card-divider {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .pricing-card.featured:hover {
   transform: scale(1.03) translateY(-6px);
+  box-shadow: 0 20px 48px rgba(110, 22, 40, 0.35);
 }
 
 .popular-ribbon {
@@ -578,7 +707,7 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
   left: 50%;
   transform: translateX(-50%);
   background: var(--gold-gradient);
-  color: #121316;
+  color: #1a1505;
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 1.5px;
@@ -587,19 +716,18 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
   display: flex;
   align-items: center;
   gap: 6px;
-  box-shadow: 0 4px 12px rgba(229, 185, 90, 0.3);
+  box-shadow: 0 4px 12px rgba(184, 134, 40, 0.3);
   white-space: nowrap;
 }
 
 .package-top-tag {
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .tag-title {
   font-family: 'Cinzel', serif;
   font-size: 1.6rem;
   font-weight: 800;
-  color: #fff;
   letter-spacing: 1px;
 }
 
@@ -609,9 +737,9 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
 
 .old-price {
   font-size: 1.2rem;
-  color: #838a9c;
+  color: #8c857b;
   text-decoration: line-through;
-  text-decoration-color: #e63946;
+  text-decoration-color: var(--wine-primary);
   text-decoration-thickness: 2.5px;
   font-weight: 600;
   margin-bottom: 2px;
@@ -620,7 +748,6 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
 .new-price {
   font-size: 2.75rem;
   font-weight: 800;
-  color: #fff;
   line-height: 1.1;
   margin-bottom: 10px;
 }
@@ -631,32 +758,38 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
   margin-right: 2px;
 }
 
+.pricing-card:not(.featured) .new-price {
+  color: var(--text-dark);
+}
+
 .gold-highlight {
-  color: var(--gold-light);
+  color: var(--gold-light) !important;
 }
 
 .savings-pill {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: rgba(255, 255, 255, 0.08);
-  color: var(--gold-light);
+  background: var(--bg-champagne);
+  color: var(--wine-primary);
   font-size: 0.8rem;
   font-weight: 800;
   padding: 5px 12px;
   border-radius: 6px;
   letter-spacing: 0.5px;
+  border: 1px solid var(--border-gold);
 }
 
 .savings-pill.highlight-pill {
-  background: var(--wine-badge-gradient);
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: var(--gold-gradient);
+  color: #1a1505;
+  border: none;
 }
 
 .savings-pill.max-savings {
-  background: var(--gold-gradient);
-  color: #121316;
+  background: var(--wine-gradient);
+  color: #fff;
+  border: none;
 }
 
 .package-tagline {
@@ -681,7 +814,7 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
 
 .features-list li {
   font-size: 0.93rem;
-  color: #d1d5db;
+  color: var(--text-body);
   margin-bottom: 12px;
   display: flex;
   align-items: flex-start;
@@ -690,17 +823,20 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
 }
 
 .features-list li i {
-  color: var(--gold-primary);
+  color: var(--wine-primary);
   margin-top: 3px;
   font-size: 0.95rem;
 }
 
 .lead-feature {
-  color: #fff !important;
-  font-weight: 600;
+  font-weight: 700 !important;
   padding-bottom: 6px;
-  border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
   margin-bottom: 14px !important;
+}
+
+.pricing-card.featured .lead-feature {
+  border-bottom-color: rgba(255, 255, 255, 0.25);
 }
 
 .gold-icon {
@@ -713,60 +849,62 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
 
 .btn-card-primary {
   width: 100%;
-  background: rgba(255, 255, 255, 0.07);
-  color: #fff;
-  border: 1px solid var(--border-subtle);
+  background: var(--bg-champagne);
+  color: var(--wine-primary);
+  border: 1.5px solid var(--gold-warm);
   padding: 13px;
+  font-weight: 700;
 }
 
 .btn-card-primary:hover {
   background: var(--whatsapp-green);
   border-color: var(--whatsapp-green);
   color: #fff;
-  box-shadow: 0 4px 18px rgba(37, 211, 102, 0.3);
+  box-shadow: 0 4px 18px rgba(31, 170, 84, 0.35);
 }
 
 .btn-card-featured {
   width: 100%;
   background: var(--gold-gradient);
-  color: #121316;
-  padding: 13px;
-  font-weight: 700;
-  box-shadow: 0 4px 16px rgba(229, 185, 90, 0.35);
+  color: #1a1505;
+  padding: 14px;
+  font-weight: 800;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 .btn-card-featured:hover {
-  background: var(--whatsapp-green);
-  color: #fff;
-  box-shadow: 0 4px 18px rgba(37, 211, 102, 0.4);
+  background: #ffffff;
+  color: var(--wine-dark);
+  box-shadow: 0 6px 22px rgba(255, 255, 255, 0.4);
 }
 
-/* Promo Add-On Section (From Page 1 & 2 of PDF) */
+/* Promo Add-On Section */
 .addon-section {
-  padding: 20px 0 70px;
+  padding: 40px 0 70px;
+  background: var(--bg-page);
 }
 
 .addon-card {
-  background: linear-gradient(135deg, #181a24 0%, #11131b 100%);
-  border: 1px solid var(--border-gold);
+  background: #ffffff;
+  border: 2px solid var(--border-gold);
   border-radius: var(--radius-xl);
   padding: 40px;
   position: relative;
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--shadow-card);
 }
 
 .addon-badge-pill {
   position: absolute;
   top: -14px;
   left: 36px;
-  background: var(--wine-badge-gradient);
+  background: var(--wine-gradient);
   color: #fff;
   font-size: 0.76rem;
   font-weight: 800;
   letter-spacing: 1.5px;
   padding: 5px 16px;
   border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 10px rgba(110, 22, 40, 0.2);
 }
 
 .addon-grid {
@@ -779,7 +917,7 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
 .addon-kicker {
   font-family: 'Playfair Display', serif;
   font-style: italic;
-  color: var(--gold-light);
+  color: var(--wine-primary);
   font-size: 1.15rem;
   margin-bottom: 6px;
   display: block;
@@ -787,7 +925,7 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
 
 .addon-title {
   font-size: 2.2rem;
-  color: #fff;
+  color: var(--text-dark);
   margin-bottom: 14px;
 }
 
@@ -806,7 +944,7 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
 }
 
 .addon-specs li {
-  color: #e0e4ec;
+  color: var(--text-body);
   font-size: 0.92rem;
   display: flex;
   align-items: center;
@@ -814,13 +952,13 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
 }
 
 .addon-specs li i {
-  color: var(--gold-primary);
+  color: var(--wine-primary);
   font-size: 1.1rem;
 }
 
 .addon-pricing-box {
-  background: rgba(0, 0, 0, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--bg-champagne);
+  border: 1px solid var(--border-gold);
   border-radius: var(--radius-lg);
   padding: 30px 24px;
   text-align: center;
@@ -829,17 +967,17 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
 .addon-action-note {
   font-size: 0.78rem;
   letter-spacing: 2px;
-  color: var(--gold-primary);
-  font-weight: 700;
+  color: var(--wine-primary);
+  font-weight: 800;
   display: block;
   margin-bottom: 6px;
 }
 
 .addon-old-price {
   font-size: 1.25rem;
-  color: #8c909e;
+  color: #8c857b;
   text-decoration: line-through;
-  text-decoration-color: #e63946;
+  text-decoration-color: var(--wine-primary);
   text-decoration-thickness: 2px;
   font-weight: 600;
 }
@@ -847,7 +985,7 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
 .addon-new-price {
   font-size: 2.6rem;
   font-weight: 800;
-  color: #fff;
+  color: var(--text-dark);
   line-height: 1.1;
   margin-bottom: 8px;
 }
@@ -861,8 +999,8 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: var(--gold-gradient);
-  color: #121316;
+  background: var(--wine-gradient);
+  color: #fff;
   font-size: 0.8rem;
   font-weight: 800;
   padding: 4px 12px;
@@ -870,18 +1008,20 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
   margin-bottom: 20px;
 }
 
-/* Comparison Table (From Page 2 of PDF) */
+/* Comparison Table */
 .comparison-section {
   padding: 70px 0;
-  background: #090a0d;
+  background: #ffffff;
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
 }
 
 .table-responsive {
   overflow-x: auto;
   border-radius: var(--radius-lg);
   border: 1px solid var(--border-subtle);
-  background: var(--bg-card);
-  box-shadow: var(--shadow-sm);
+  background: #ffffff;
+  box-shadow: var(--shadow-subtle);
 }
 
 .comparison-table {
@@ -893,27 +1033,26 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
 .comparison-table th, 
 .comparison-table td {
   padding: 16px 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid #f0e9df;
 }
 
 .comparison-table th {
-  background: #11131a;
+  background: var(--bg-champagne);
   font-family: 'Cinzel', serif;
   letter-spacing: 1px;
   font-size: 0.95rem;
-  color: #fff;
+  color: var(--text-dark);
 }
 
 .th-inclusions {
   text-align: left;
   width: 40%;
-  color: var(--gold-primary) !important;
+  color: var(--wine-primary) !important;
 }
 
 .th-featured {
-  background: var(--bg-burgundy) !important;
-  color: var(--gold-light) !important;
-  position: relative;
+  background: var(--wine-primary) !important;
+  color: #ffffff !important;
 }
 
 .badge-mini {
@@ -929,33 +1068,38 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
 
 .comparison-table td:first-child {
   text-align: left;
-  font-weight: 500;
-  color: #e0e4ec;
+  font-weight: 600;
+  color: var(--text-dark);
 }
 
 .col-featured {
-  background: rgba(64, 18, 27, 0.25);
+  background: rgba(110, 22, 40, 0.05);
 }
 
 .check-icon {
-  color: var(--gold-primary);
+  color: var(--wine-primary);
   font-size: 1.1rem;
 }
 
+.check-icon.gold {
+  color: var(--gold-primary);
+}
+
 .dash-cell {
-  color: var(--text-dim);
+  color: var(--text-light);
   font-size: 1.2rem;
 }
 
 .highlight-spec {
-  color: var(--gold-light);
+  color: var(--wine-primary);
   font-family: 'Cinzel', serif;
   font-size: 1.05rem;
 }
 
-/* How to Book Path (From Page 3 of PDF) */
+/* How to Book */
 .how-to-book-section {
   padding: 80px 0;
+  background: var(--bg-page);
 }
 
 .path-grid {
@@ -965,37 +1109,39 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
 }
 
 .path-card {
-  background: var(--bg-card);
+  background: #ffffff;
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
   padding: 32px 24px;
   position: relative;
   transition: var(--transition);
+  box-shadow: var(--shadow-subtle);
 }
 
 .path-card:hover {
-  border-color: var(--border-gold);
+  border-color: var(--gold-warm);
   transform: translateY(-4px);
+  box-shadow: var(--shadow-card);
 }
 
 .path-number {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: rgba(229, 185, 90, 0.15);
-  color: var(--gold-light);
+  background: var(--bg-champagne);
+  color: var(--wine-primary);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.4rem;
   font-weight: 700;
   margin-bottom: 18px;
-  border: 1px solid rgba(229, 185, 90, 0.3);
+  border: 1.5px solid var(--gold-warm);
 }
 
 .path-card h3 {
   font-size: 1.18rem;
-  color: #fff;
+  color: var(--text-dark);
   margin-bottom: 10px;
 }
 
@@ -1005,13 +1151,14 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
   line-height: 1.55;
 }
 
-/* Terms & Deposit (From Page 3 of PDF) */
+/* Terms & Deposit */
 .terms-section {
   padding: 10px 0 70px;
+  background: var(--bg-page);
 }
 
 .terms-box {
-  background: var(--bg-card);
+  background: #ffffff;
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-xl);
   padding: 40px;
@@ -1019,14 +1166,16 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
   grid-template-columns: 0.7fr 1.3fr;
   gap: 40px;
   align-items: center;
+  box-shadow: var(--shadow-card);
 }
 
 .deposit-callout {
-  background: linear-gradient(135deg, var(--bg-burgundy) 0%, #161720 100%);
-  border: 1px solid rgba(138, 36, 61, 0.5);
+  background: var(--wine-gradient);
   border-radius: var(--radius-lg);
   padding: 35px 24px;
   text-align: center;
+  color: #fff;
+  box-shadow: var(--shadow-wine);
 }
 
 .deposit-tag {
@@ -1049,14 +1198,14 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
   font-family: 'Cinzel', serif;
   font-size: 1.05rem;
   letter-spacing: 1.5px;
-  color: var(--gold-primary);
+  color: var(--gold-light);
   font-weight: 700;
   margin-top: 6px;
 }
 
 .terms-content h3 {
   font-size: 1.5rem;
-  color: #fff;
+  color: var(--text-dark);
   margin-bottom: 18px;
 }
 
@@ -1069,7 +1218,7 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
 
 .terms-list li {
   font-size: 0.92rem;
-  color: #cfd4e0;
+  color: var(--text-body);
   display: flex;
   align-items: flex-start;
   gap: 10px;
@@ -1077,23 +1226,24 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
 }
 
 .terms-list li i {
-  color: var(--gold-primary);
+  color: var(--wine-primary);
   margin-top: 5px;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
 }
 
 /* Call to Action Banner */
 .cta-banner-section {
   padding: 30px 0 80px;
+  background: #ffffff;
 }
 
 .cta-banner {
-  background: linear-gradient(135deg, var(--bg-burgundy) 0%, #1a1724 50%, #13141a 100%);
-  border: 1px solid var(--border-gold);
+  background: var(--wine-gradient);
   border-radius: var(--radius-xl);
   padding: 60px 40px;
   text-align: center;
-  box-shadow: var(--shadow-gold);
+  color: #fff;
+  box-shadow: var(--shadow-wine);
 }
 
 .cta-banner h2 {
@@ -1103,7 +1253,7 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
 }
 
 .cta-banner p {
-  color: var(--text-muted);
+  color: #f7e6e9;
   font-size: 1.15rem;
   max-width: 600px;
   margin: 0 auto 35px;
@@ -1116,11 +1266,23 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
   flex-wrap: wrap;
 }
 
-/* Footer */
+.btn-outline-cta {
+  background: transparent;
+  color: #fff;
+  border: 1.5px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn-outline-cta:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #fff;
+}
+
+/* Footer (Dark Anchor) */
 .footer {
-  background: #07080a;
+  background: #141315;
   border-top: 1px solid var(--border-subtle);
-  padding: 60px 0 25px;
+  padding: 60px 0 35px;
+  color: #e2ddd8;
 }
 
 .footer-content {
@@ -1130,8 +1292,16 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
   margin-bottom: 40px;
 }
 
+.footer .brand-name {
+  color: #ffffff;
+}
+
+.footer .brand-sub {
+  color: var(--gold-warm);
+}
+
 .brand-bio {
-  color: var(--text-muted);
+  color: #a8a096;
   margin: 14px 0 20px;
   font-size: 0.9rem;
   line-height: 1.6;
@@ -1144,14 +1314,14 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
 
 .footer-social-strip {
   display: flex;
-  gap: 14px;
+  gap: 12px;
 }
 
 .footer-social-strip a {
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.08);
   color: var(--gold-light);
   display: flex;
   align-items: center;
@@ -1162,13 +1332,13 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
 
 .footer-social-strip a:hover {
   background: var(--gold-gradient);
-  color: #121316;
+  color: #141315;
   transform: translateY(-2px);
 }
 
 .footer-col h4 {
   font-size: 1rem;
-  color: #fff;
+  color: #ffffff;
   margin-bottom: 16px;
   letter-spacing: 1px;
 }
@@ -1181,7 +1351,7 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
 }
 
 .footer-col ul a {
-  color: var(--text-muted);
+  color: #a8a096;
   text-decoration: none;
   font-size: 0.9rem;
   transition: var(--transition);
@@ -1192,7 +1362,7 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
 }
 
 .footer-col p {
-  color: var(--text-muted);
+  color: #a8a096;
   font-size: 0.9rem;
   margin-bottom: 10px;
   display: flex;
@@ -1207,7 +1377,7 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
   padding-top: 25px;
 }
 
@@ -1216,7 +1386,7 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
   justify-content: space-between;
   align-items: center;
   font-size: 0.85rem;
-  color: var(--text-dim);
+  color: #7b746c;
   flex-wrap: wrap;
   gap: 12px;
 }
@@ -1229,10 +1399,10 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
 /* Floating WhatsApp Button */
 .floating-whatsapp-btn {
   position: fixed;
-  bottom: 28px;
-  right: 28px;
-  width: 62px;
-  height: 62px;
+  bottom: 80px;
+  right: 24px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background: var(--whatsapp-green);
   color: #fff;
@@ -1240,21 +1410,21 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
   align-items: center;
   justify-content: center;
   font-size: 2rem;
-  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.45);
-  z-index: 1000;
+  box-shadow: 0 8px 25px rgba(31, 170, 84, 0.45);
+  z-index: 998;
   text-decoration: none;
   transition: var(--transition);
 }
 
 .floating-whatsapp-btn:hover {
-  transform: scale(1.1) rotate(5deg);
+  transform: scale(1.1);
   background: var(--whatsapp-hover);
 }
 
 .floating-tooltip {
   position: absolute;
-  right: 74px;
-  background: rgba(0, 0, 0, 0.85);
+  right: 72px;
+  background: rgba(20, 19, 21, 0.92);
   color: #fff;
   font-size: 0.82rem;
   padding: 6px 14px;
@@ -1269,6 +1439,50 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
 .floating-whatsapp-btn:hover .floating-tooltip {
   opacity: 1;
   transform: translateX(0);
+}
+
+/* Mobile Sticky Bottom Booking Bar */
+.mobile-sticky-booking-bar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  border-top: 1px solid var(--border-subtle);
+  padding: 12px 20px;
+  z-index: 999;
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.08);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-sticky-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-sticky-title {
+  font-family: 'Cinzel', serif;
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--wine-primary);
+  letter-spacing: 1px;
+}
+
+.mobile-sticky-price {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--text-dark);
+}
+
+.btn-mobile-book {
+  background: var(--whatsapp-green);
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 10px 20px;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(31, 170, 84, 0.35);
 }
 
 /* Responsive Media Queries */
@@ -1330,6 +1544,14 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
   .footer-content {
     grid-template-columns: 1fr;
   }
+
+  .mobile-sticky-booking-bar {
+    display: flex;
+  }
+
+  body {
+    padding-bottom: 65px; /* space for sticky bar */
+  }
 }
 
 @media (max-width: 768px) {
@@ -1356,5 +1578,17 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
 
   .path-grid {
     grid-template-columns: 1fr;
+  }
+
+  .hero-booking-card {
+    padding: 18px;
+  }
+  
+  .btn-hero-book {
+    width: 100%;
+  }
+
+  .quick-packages-strip {
+    justify-content: center;
   }
 }

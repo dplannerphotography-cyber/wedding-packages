@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
  * Configure all WhatsApp buttons with the configured phone number
  */
 function setupWhatsAppLinks() {
-  const whatsappLinks = document.querySelectorAll(".whatsapp-link, .whatsapp-contact-link");
+  const whatsappLinks = document.querySelectorAll(".whatsapp-link, .whatsapp-contact-link, .btn-hero-book, .btn-nav-book, .btn-mobile-book, .quick-pill");
   
   whatsappLinks.forEach(link => {
     const packageName = link.getAttribute("data-package");
@@ -28,7 +28,7 @@ function setupWhatsAppLinks() {
     if (packageName) {
       message = `Hello ${CONFIG.photographerName}! I am interested in booking the *${packageName}* for our wedding (September - December 2026 Promo). Could you please check date availability and send more details?`;
     } else {
-      message = `Hello ${CONFIG.photographerName}! I'm visiting your website and I'd love to inquire about your wedding photography and cinematic film packages.`;
+      message = `Hello ${CONFIG.photographerName}! I'm visiting your website and I'd love to check date availability and book our wedding photography & film package.`;
     }
 
     const encodedMessage = encodeURIComponent(message);
