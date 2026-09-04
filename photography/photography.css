@@ -1384,7 +1384,66 @@ img {
   font-size: 0.92rem;
   color: var(--text-muted);
   max-width: 400px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
+}
+
+.google-trust-line {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--bg-bone);
+  border: 1px solid var(--border-hairline);
+  padding: 8px 16px;
+  margin-bottom: 22px;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+.google-trust-line .fa-google {
+  color: #ea4335;
+  font-size: 0.95rem;
+}
+
+.google-trust-line .stars-gold {
+  color: #f59e0b;
+  letter-spacing: 2px;
+  font-size: 0.95rem;
+}
+
+.google-trust-line .trust-text {
+  font-weight: 600;
+  font-family: var(--font-sans);
+  letter-spacing: 0.02em;
+}
+
+.google-action-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  width: 100%;
+}
+
+.google-action-buttons .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 20px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  .google-action-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .google-action-buttons .btn {
+    width: 100%;
+  }
 }
 
 /* ==========================================================================
