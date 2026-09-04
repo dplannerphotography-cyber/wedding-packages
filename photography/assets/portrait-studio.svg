@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <defs>
+    <linearGradient id="studioGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5ede0"/>
+      <stop offset="50%" stop-color="#ebd8bf"/>
+      <stop offset="100%" stop-color="#dfc5a6"/>
+    </linearGradient>
+    <radialGradient id="softLight" cx="50%" cy="35%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#ebd8bf" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#studioGrad)"/>
+  <rect width="800" height="1000" fill="url(#softLight)"/>
+  
+  <!-- Subtle Studio Backdrop Line Art -->
+  <circle cx="400" cy="380" r="180" fill="none" stroke="#6e1628" stroke-width="1.5" stroke-dasharray="6 6" opacity="0.25"/>
+  <circle cx="400" cy="380" r="140" fill="none" stroke="#b88628" stroke-width="1" opacity="0.3"/>
+  <path d="M400,240 C460,240 500,280 500,340 C500,420 440,460 400,480 C360,460 300,420 300,340 C300,280 340,240 400,240 Z" fill="#6e1628" opacity="0.12"/>
+  <path d="M260,680 C260,560 320,520 400,520 C480,520 540,560 540,680 L540,780 L260,780 Z" fill="#6e1628" opacity="0.12"/>
+
+  <!-- Camera / Aperture Symbol -->
+  <g transform="translate(400, 380)" stroke="#6e1628" stroke-width="2" fill="none" opacity="0.4">
+    <circle r="36"/>
+    <circle r="16" stroke-width="1.5"/>
+    <line x1="-36" y1="0" x2="-16" y2="0"/>
+    <line x1="16" y1="0" x2="36" y2="0"/>
+    <line x1="0" y1="-36" x2="0" y2="-16"/>
+    <line x1="0" y1="16" x2="0" y2="36"/>
+  </g>
+
+  <!-- Typography overlay -->
+  <rect x="140" y="810" width="520" height="90" rx="6" fill="#ffffff" opacity="0.9"/>
+  <text x="400" y="848" font-family="'Cinzel', Georgia, serif" font-size="24" font-weight="700" fill="#171514" text-anchor="middle" letter-spacing="2">STUDIO PORTRAITURE</text>
+  <text x="400" y="878" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="600" fill="#6e1628" text-anchor="middle" letter-spacing="1">DPLANNER STUDIO • YEMETU, IBADAN</text>
+</svg>

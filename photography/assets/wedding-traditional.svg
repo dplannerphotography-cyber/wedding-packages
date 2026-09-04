@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <defs>
+    <linearGradient id="wedGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d0b13"/>
+      <stop offset="60%" stop-color="#541221"/>
+      <stop offset="100%" stop-color="#1f070d"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#wedGrad)"/>
+  
+  <!-- Interlocking Rings / Love Motif -->
+  <circle cx="360" cy="360" r="110" fill="none" stroke="#cba043" stroke-width="4" opacity="0.6"/>
+  <circle cx="440" cy="400" r="110" fill="none" stroke="#f7df99" stroke-width="4" opacity="0.6"/>
+  
+  <g transform="translate(400, 380)" stroke="#f7df99" stroke-width="2" fill="none" opacity="0.6">
+    <path d="M0,-20 C-30,-60 -70,-20 0,60 C70,-20 30,-60 0,-20 Z" stroke-width="1.5"/>
+  </g>
+
+  <!-- Typography overlay -->
+  <rect x="140" y="810" width="520" height="90" rx="6" fill="#ffffff" opacity="0.95"/>
+  <text x="400" y="848" font-family="'Cinzel', Georgia, serif" font-size="24" font-weight="700" fill="#171514" text-anchor="middle" letter-spacing="2">WEDDINGS &amp; LOVE STORIES</text>
+  <text x="400" y="878" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="600" fill="#6e1628" text-anchor="middle" letter-spacing="1">TRADITIONAL &amp; WHITE WEDDINGS</text>
+</svg>

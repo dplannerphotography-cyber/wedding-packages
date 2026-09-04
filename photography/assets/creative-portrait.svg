@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <defs>
+    <linearGradient id="creativeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8f1ec"/>
+      <stop offset="50%" stop-color="#eeddd4"/>
+      <stop offset="100%" stop-color="#debfb3"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#creativeGrad)"/>
+  
+  <!-- Artistic Geometry Motif -->
+  <polygon points="400,180 580,480 220,480" fill="none" stroke="#6e1628" stroke-width="1.5" opacity="0.25"/>
+  <circle cx="400" cy="380" r="160" fill="none" stroke="#b88628" stroke-width="1.5" opacity="0.3"/>
+  
+  <g transform="translate(400, 370)" stroke="#6e1628" stroke-width="2" fill="none" opacity="0.5">
+    <circle r="32"/>
+    <path d="M-40,20 Q0,-40 40,20"/>
+  </g>
+
+  <!-- Typography overlay -->
+  <rect x="140" y="810" width="520" height="90" rx="6" fill="#ffffff" opacity="0.9"/>
+  <text x="400" y="848" font-family="'Cinzel', Georgia, serif" font-size="24" font-weight="700" fill="#171514" text-anchor="middle" letter-spacing="2">CREATIVE CONCEPTS</text>
+  <text x="400" y="878" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="600" fill="#6e1628" text-anchor="middle" letter-spacing="1">EDITORIAL &amp; STYLED PORTRAITS</text>
+</svg>
