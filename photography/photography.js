@@ -80,8 +80,8 @@
    * Portfolio Category Filter Tabs
    */
   function initPortfolioFiltering() {
-    const filterTabs = document.querySelectorAll('.portfolio-tabs .tab-btn');
-    const portfolioItems = document.querySelectorAll('.portfolio-grid .portfolio-item');
+    const filterTabs = document.querySelectorAll('.portfolio-tabs-bar .portfolio-tab-btn, .portfolio-tabs .tab-btn');
+    const portfolioItems = document.querySelectorAll('.portfolio-editorial-grid .portfolio-folio-item, .portfolio-grid .portfolio-item');
 
     if (!filterTabs.length || !portfolioItems.length) return;
 
