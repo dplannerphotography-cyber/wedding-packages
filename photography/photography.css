@@ -442,6 +442,17 @@ img {
   }
 }
 
+.hero-kicker {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--wine-primary);
+  margin-bottom: 12px;
+}
+
 .hero-title {
   font-size: 2.8rem;
   line-height: 1.1;
@@ -749,9 +760,11 @@ img {
 }
 
 .folio-media-box img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   transition: transform 0.5s ease;
 }
 
@@ -1136,6 +1149,12 @@ img {
 
 .wedding-cta-center {
   text-align: center;
+}
+
+.wedding-cta-center .btn {
+  white-space: normal;
+  max-width: 100%;
+  line-height: 1.4;
 }
 
 /* ==========================================================================
@@ -1558,9 +1577,10 @@ img {
    ========================================================================== */
 .floating-concierge-anchor {
   position: fixed;
-  bottom: 24px;
-  right: 22px;
+  bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+  right: calc(22px + env(safe-area-inset-right, 0px));
   z-index: 1000;
+  max-width: calc(100vw - 32px);
 }
 
 .concierge-capsule {
@@ -1573,6 +1593,8 @@ img {
   border: 1px solid var(--border-hairline);
   box-shadow: var(--shadow-float);
   transition: var(--transition);
+  text-decoration: none;
+  max-width: 100%;
 }
 
 .concierge-capsule:hover {
@@ -1591,7 +1613,7 @@ img {
   font-family: var(--font-sans);
   font-size: 0.78rem;
   font-weight: 800;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--text-primary);
   display: flex;
@@ -1672,22 +1694,28 @@ img {
     font-size: 2.3rem;
   }
 
+  .btn {
+    white-space: normal;
+  }
+
   .hero-actions-row .btn {
     width: 100%;
   }
 
   .floating-concierge-anchor {
-    bottom: 16px;
-    right: 14px;
+    bottom: calc(18px + env(safe-area-inset-bottom, 0px));
+    right: calc(16px + env(safe-area-inset-right, 0px));
+    max-width: calc(100vw - 28px);
   }
 
   .concierge-capsule {
-    padding: 4px 6px 4px 14px;
-    gap: 8px;
+    padding: 5px 6px 5px 14px;
+    gap: 10px;
   }
 
   .concierge-title {
     font-size: 0.74rem;
+    letter-spacing: 0.06em;
   }
 
   .concierge-sub {
@@ -1697,7 +1725,7 @@ img {
   .concierge-icon-circle {
     width: 38px;
     height: 38px;
-    font-size: 1.3rem;
+    font-size: 1.25rem;
   }
 
   .section-editorial-head .section-title {
@@ -1707,6 +1735,26 @@ img {
   .wedding-addon-capsule {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+@media (max-width: 380px) {
+  .floating-concierge-anchor {
+    bottom: calc(14px + env(safe-area-inset-bottom, 0px));
+    right: calc(12px + env(safe-area-inset-right, 0px));
+  }
+
+  .concierge-capsule {
+    padding: 4px 6px 4px 12px;
+    gap: 8px;
+  }
+
+  .concierge-sub {
+    display: none;
+  }
+
+  .concierge-title {
+    font-size: 0.72rem;
   }
 }
 
