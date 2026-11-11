@@ -21,8 +21,12 @@
   ],
   "hours": {
     "weekdays": "Monday to Saturday, from 9:00 AM",
-    "sunday": "2nd and last Sunday of the month, from 3:00 PM",
-    "closingTodo": "TODO (Samuel): closing times"
+    "sunday": "2nd and last Sunday of the month, from 3:00 PM"
+  },
+  "delivery": {
+    "studio": "Within 24 hours",
+    "highlightFilm": "Within 1 week after the wedding",
+    "weddingPhotos": "Within 3–4 weeks after the wedding"
   },
   "rating": {
     "value": "4.9",
