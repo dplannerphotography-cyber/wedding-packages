@@ -7,9 +7,9 @@ date: 2026-11-11
 category: "Cultural Weddings"
 author: "Samuel Damilare"
 ogImage: /assets/og/essential.png
-heroImage: /assets/img/flyer.png
-heroAlt: "Traditional Yoruba wedding couple in wine and gold Aso-Oke, Ibadan, Oyo State"
-heroCaption: "Heirloom traditional wedding documentation by Samuel Damilare of DPlanner Photography, Ibadan."
+heroImage: /assets/portfolio/weddings-traditional-03.webp
+heroAlt: "Nigerian bride in powder-blue lace gown and sculpted Gele against illuminated gold alcoves, DPlanner Photography Ibadan"
+heroCaption: "Yoruba bride in powder-blue lace and sculpted Gele, photographed by Samuel Damilare in Ibadan."
 ctaTitle: "Capture Your Traditional Engagement with DPlanner"
 ctaText: "Full-day photo and cinema coverage preserving authentic Aso-Oke colors, elder blessings, and joyous family celebrations across Ibadan and Lagos."
 ctaBtnText: "Inquire on WhatsApp"

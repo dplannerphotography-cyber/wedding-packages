@@ -7,9 +7,9 @@ date: 2026-11-11
 category: "Pricing & Planning"
 author: "Samuel Damilare"
 ogImage: /assets/og/weddings.png
-heroImage: /assets/img/flyer.png
-heroAlt: "Nigerian Traditional Wedding Couple in rich burgundy and gold Aso-Oke attire, Ibadan"
-heroCaption: "Traditional wedding documentation in Ibadan by Samuel Damilare of DPlanner Photography."
+heroImage: /assets/portfolio/weddings-traditional-01.webp
+heroAlt: "Traditional Yoruba wedding couple embracing in indigo Aso-Oke attire, DPlanner Photography Ibadan"
+heroCaption: "Traditional wedding couple in indigo and royal blue Aso-Oke, photographed by Samuel Damilare in Ibadan."
 ctaTitle: "Explore DPlanner's 2026 Wedding Packages"
 ctaText: "Lock in transparent promotional rates for full photo and highlight film coverage across Ibadan and Lagos from ₦180,000."
 ctaBtnText: "Check My Wedding Date"

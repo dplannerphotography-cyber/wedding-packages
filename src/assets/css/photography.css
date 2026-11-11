@@ -719,6 +719,7 @@ img {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 18px;
+  padding-right: 36px;
 }
 
 .lightbox-tag {
