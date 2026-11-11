@@ -78,58 +78,35 @@ This document tracks all remaining business inputs needed from Samuel Damilare t
 
 ---
 
-## 6. Search Engine Verification & Sitemap Submission Guide
+## 6. Search Engine Verification & Indexing Status (COMPLETED & ACTIVE)
 
-Follow these steps once you are ready to verify ownership in Google Search Console and Bing Webmaster Tools.
+Both Google Search Console and Bing Webmaster Tools are officially verified, and your XML sitemap is active and processing.
 
-### Step 1: Google Search Console Verification
-
-1. Go to [Google Search Console](https://search.google.com/search-console).
-2. Sign in with your Google / Gmail account.
-3. You will be prompted to select a property type:
-   - **Method A: Domain property (Recommended)**
-     1. Enter `dplanner.com.ng` in the **Domain** box.
-     2. Google will provide a **DNS TXT record** (e.g. `google-site-verification=abc123xyz...`).
-     3. Log into your domain registrar / DNS provider where `dplanner.com.ng` is hosted.
-     4. Add a new DNS Record:
-        - **Type**: `TXT`
-        - **Name / Host**: `@` (or leave blank)
-        - **Value**: Paste the exact `google-site-verification=...` string from Google.
-        - **TTL**: 3600 (or Default).
-     5. Wait 5–15 minutes for DNS propagation, then click **Verify** in Search Console.
-   - **Method B: URL-Prefix property (HTML Tag)**
-     1. If you cannot edit DNS records directly, enter `https://dplanner.com.ng` in the **URL prefix** box.
-     2. Choose **HTML tag** as the verification method.
-     3. Copy the `content` code provided (e.g. `dZ_4x8y9...`).
-     4. Open `src/_data/site.json` in this repository and paste the code into:
-        ```json
-        "googleSiteVerification": "YOUR_CODE_HERE"
-        ```
-     5. Commit, push, and let the GitHub Actions deploy finish.
-     6. Return to Search Console and click **Verify**.
-
-4. **Submit your Sitemap to Google**:
-   - In Search Console, click **Sitemaps** in the left sidebar.
-   - Under "Add a new sitemap", enter:
-     ```text
-     https://dplanner.com.ng/sitemap.xml
-     ```
-   - Click **Submit**. Status should show **Success**.
+### Google Search Console (COMPLETED & VERIFIED)
+- **Status**: **Verified & Sitemap Processed Successfully**
+- **Property**: `https://dplanner.com.ng/`
+- **Verification Methods Active**:
+  * HTML Meta Tag: `<meta name="google-site-verification" content="GNhd6TdC0hGKcocZM1d3khWfFkQnAgLLOqgl-1Ayqdw">` (in `src/_data/site.json`)
+  * HTML File: `https://dplanner.com.ng/google2288fffd4948a57b.html` (in `src/google2288fffd4948a57b.html`)
+- **Sitemap**: `/sitemap.xml` (`https://dplanner.com.ng/sitemap.xml`)
+- **Sitemap Status**: **Success** (13 discovered pages indexed)
+- **Dashboard Access**: [Google Search Console](https://search.google.com/search-console?resource_id=https%3A%2F%2Fdplanner.com.ng%2F)
 
 ---
 
-### Step 2: Bing Webmaster Tools Verification (COMPLETED & ACTIVE)
-
-- **Status**: **Verified & Sitemap Submitted.**
-- **Verification Method**: HTML Meta Tag (`msvalidate.01` = `014850FA57EFD70B1FC17D6E6E6C42C7`).
-- **Sitemap**: `https://dplanner.com.ng/sitemap.xml` is submitted and currently processing.
-- You can review your indexing status anytime by visiting [Bing Webmaster Tools](https://www.bing.com/webmasters).
+### Bing Webmaster Tools (COMPLETED & VERIFIED)
+- **Status**: **Verified & Sitemap Submitted**
+- **Property**: `https://dplanner.com.ng/`
+- **Verification Method Active**:
+  * HTML Meta Tag: `<meta name="msvalidate.01" content="014850FA57EFD70B1FC17D6E6E6C42C7">` (in `src/_data/site.json`)
+- **Sitemap**: `https://dplanner.com.ng/sitemap.xml`
+- **Sitemap Status**: **Processing** (1 known sitemap, 0 errors, 0 warnings)
+- **Dashboard Access**: [Bing Webmaster Tools](https://www.bing.com/webmasters/home?siteUrl=https://dplanner.com.ng/)
 
 ---
 
-### Step 3: IndexNow Instant Indexing (Already Active!)
-
-- **Status**: **Fully implemented and automated.**
+### IndexNow Instant Indexing (COMPLETED & AUTOMATED)
+- **Status**: **Active on Every Deploy**
 - **Key**: `c4d372e5192842bb90f75a6104eb6a58`
 - **Key File**: `https://dplanner.com.ng/c4d372e5192842bb90f75a6104eb6a58.txt`
-- **Automation**: Every time code is merged into `main`, GitHub Actions automatically pushes your updated URLs directly to Bing and Yandex search engines via the IndexNow API. You do not need to do anything manually.
+- **Workflow**: Automated in `.github/workflows/deploy.yml` — every merge to `main` instantly pings Bing and Yandex with changed URLs. No manual action required.

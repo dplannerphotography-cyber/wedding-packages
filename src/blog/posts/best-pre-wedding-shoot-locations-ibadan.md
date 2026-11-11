@@ -43,7 +43,7 @@ Nestled between Mokola Hill and the Secretariat, **Agodi Gardens** remains one o
 
 For couples seeking pristine exclusivity, international parkland elegance, and undisturbed quiet, the **IITA campus** in the northern district of Ibadan is in a league of its own.
 
-- **The Visual Aesthetic**: Spanning roughly 1,000 hectares, IITA feels like an expansive nature reserve. It features mirror-like lakes, sprawling tree-lined boulevards, immaculate golf course greens, dense forest trails, and minimalist modern architecture. It provides an upscale, destination-editorial feel without leaving Oyo State.
+- **The Visual Aesthetic**: An expansive parkland setting, IITA features mirror-like lakes, sprawling tree-lined boulevards, manicured greens, dense forest trails, and minimalist modern architecture. It provides an upscale, destination-editorial feel without leaving Oyo State.
 - **Best Time to Shoot**: Mid-afternoon leading into sunset. The lakefront view facing westward provides breathtaking golden hour reflections on open water.
 - **Recommended Wardrobe**: Elegant evening formalwear looks magnificent here. A black tuxedo or tailored bespoke navy suit paired with a flowing satin evening gown creates a commanding, high-fashion aesthetic against the open lake.
 - **Venue Logistics**: IITA maintains strict security and perimeter access control. Access typically requires booking accommodation at the IITA hotel, dining reservations, or advance visitor clearance. Commercial filming and photography require explicit prior permission from IITA management. **Do not arrive unannounced; ensure your access reservations and photography permissions are fully verified in advance.**
@@ -74,7 +74,7 @@ Perched atop Mapo Hill overlooking the legendary "brown roofs" of historic Ibada
 
 ## 5. Bower’s Tower (Oke-Are Hill)
 
-Built in 1936 atop Oke-Are—the highest hill in Ibadan—**Bower’s Tower** offers a historic stone monument paired with an unobstructed 360-degree vista of the entire metropolis.
+Located atop Oke-Are hill, **Bower’s Tower** offers a historic stone monument paired with an unobstructed panoramic vista of the surrounding city.
 
 - **The Visual Aesthetic**: Weathered historic stonework, spiral tower architecture, sweeping open sky, and panoramic hilltop vistas stretching from University College Hospital to the city outskirts.
 - **Best Time to Shoot**: Late afternoon into twilight (**5:00 PM – 6:15 PM**). Hilltop breezes catch flowing fabrics, and dramatic sunset silhouettes against the wide horizon are breathtaking.

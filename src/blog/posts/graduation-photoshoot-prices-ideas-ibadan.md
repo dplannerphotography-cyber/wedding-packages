@@ -134,7 +134,7 @@ A stress-free studio experience starts with proper preparation. We recommend pac
 DPlanner Photography is conveniently situated in the heart of Ibadan, making it easily accessible from major university campuses across the city:
 
 - **Studio Address**: **82 De ACE HALL, besides Turaya Food Canteen, Yemetu, Ibadan, Oyo State**.
-- **Proximity**: Located within 10–15 minutes of UI (via the Agbowo / Bodija / Total Garden corridor) and central commercial hubs.
+- **Proximity**: Located about 20 minutes from UI and central commercial hubs.
 - **Studio Facilities**: Fully air-conditioned, private changing room with mirror, and seamless backdrops in white, grey, and black.
 - **Operating Hours**:
   * **Monday to Saturday**: Studio doors open from **9:00 AM**.
