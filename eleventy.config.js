@@ -148,6 +148,73 @@ module.exports = function (eleventyConfig) {
     }))
   }));
 
+  // Date filters
+  eleventyConfig.addFilter("dateReadable", (dateObj) => {
+    if (!dateObj) return "";
+    const d = new Date(dateObj);
+    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    return `${d.getUTCDate()} ${months[d.getUTCMonth()]} ${d.getUTCFullYear()}`;
+  });
+
+  eleventyConfig.addFilter("dateIso", (dateObj) => {
+    if (!dateObj) return "";
+    return new Date(dateObj).toISOString().slice(0, 10);
+  });
+
+  eleventyConfig.addFilter("dateRfc822", (dateObj) => {
+    if (!dateObj || dateObj === "now") return new Date().toUTCString();
+    return new Date(dateObj).toUTCString();
+  });
+
+  // Reading time estimate
+  eleventyConfig.addFilter("readingTime", (content) => {
+    if (!content) return "1 min read";
+    const words = content.replace(/<[^>]*>/g, "").split(/\s+/).filter(Boolean).length;
+    const minutes = Math.max(1, Math.ceil(words / 200));
+    return `${minutes} min read`;
+  });
+
+  // BlogPosting JSON-LD Schema
+  eleventyConfig.addFilter("blogPostingSchema", (postData, site, pageUrl) => ({
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: postData.title,
+    description: postData.description,
+    image: (postData.ogImage || "/assets/og/home.png").startsWith("http")
+      ? (postData.ogImage || "/assets/og/home.png")
+      : site.url + (postData.ogImage || "/assets/og/home.png"),
+    datePublished: postData.date ? new Date(postData.date).toISOString().slice(0, 10) : undefined,
+    dateModified: postData.dateModified
+      ? new Date(postData.dateModified).toISOString().slice(0, 10)
+      : postData.date ? new Date(postData.date).toISOString().slice(0, 10) : undefined,
+    author: {
+      "@type": "Person",
+      name: postData.author || site.leadPhotographer,
+      jobTitle: "Lead Photographer",
+      url: site.url + "/photography/"
+    },
+    publisher: {
+      "@type": "Organization",
+      name: site.name,
+      url: site.url + "/",
+      logo: {
+        "@type": "ImageObject",
+        url: site.url + "/assets/og/home.png"
+      }
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": site.url + pageUrl
+    }
+  }));
+
+  // Blog posts collection (sorted newest first)
+  eleventyConfig.addCollection("posts", (collectionApi) => {
+    return collectionApi.getFilteredByGlob("src/blog/posts/*.md").sort((a, b) => {
+      return (b.date || 0) - (a.date || 0);
+    });
+  });
+
   return {
     dir: { input: "src", output: "_site", includes: "_includes", data: "_data" },
     templateFormats: ["njk", "md"],

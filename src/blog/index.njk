@@ -1,0 +1,70 @@
+---
+layout: layouts/base.njk
+title: "DPlanner Photography Journal | Wedding & Studio Guides in Ibadan"
+description: "Expert wedding photography pricing guides, planning advice, traditional engagement tips, and studio ideas in Ibadan and Oyo State by Samuel Damilare."
+ogImage: /assets/og/home.png
+permalink: /blog/
+extraCss: /assets/css/blog.css
+---
+
+<header class="blog-index-hero">
+  <div class="container">
+    <span class="label-over">Knowledge &amp; Editorial Guides</span>
+    <h1 class="blog-index-title">The DPlanner Journal</h1>
+    <p class="blog-index-lead">
+      Practical pricing breakdowns, cultural wedding guides, location recommendations, and candid planning advice from lead photographer Samuel Damilare.
+    </p>
+  </div>
+</header>
+
+<section class="blog-posts-section" aria-label="Published Articles">
+  <div class="container">
+    
+    <div class="blog-grid">
+      {%- for post in collections.posts %}
+      <article>
+        <a href="{{ post.url }}" class="blog-card">
+          <div class="blog-card-media">
+            <img src="{{ post.data.heroImage or post.data.ogImage or "/assets/img/flyer.png" }}" alt="{{ post.data.title }}" width="600" height="375" loading="lazy" decoding="async">
+            <span class="blog-card-badge">{{ post.data.category or "Editorial Guide" }}</span>
+          </div>
+          <div class="blog-card-content">
+            <div class="blog-card-meta">
+              <time datetime="{{ post.data.date | dateIso }}">{{ post.data.date | dateReadable }}</time>
+              <span>&bull;</span>
+              <span>{{ post.templateContent | readingTime }}</span>
+            </div>
+            <h2 class="blog-card-title">{{ post.data.title }}</h2>
+            <p class="blog-card-excerpt">{{ post.data.description }}</p>
+            <div class="blog-card-footer">
+              <span>Read Full Article &rarr;</span>
+            </div>
+          </div>
+        </a>
+      </article>
+      {%- endfor %}
+    </div>
+
+    <!-- Direct Booking Banner -->
+    <div class="cta-banner" style="margin-top: 40px;">
+      <h2>Have a Question About Your Upcoming Event?</h2>
+      <p>
+        Whether you are planning a traditional engagement in Oyo State, need full wedding coverage, or want a studio session in Yemetu, message our booking desk directly.
+      </p>
+      <div class="cta-banner-buttons">
+        <a href="{{ "Hello DPlanner Photography! I was reading your journal and would like to ask a question." | wa }}" target="_blank" rel="noopener noreferrer" class="btn btn-hero-book btn-lg">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Message on WhatsApp
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Breadcrumb JSON-LD -->
+<script type="application/ld+json">
+{{ [
+  { name: "Home", url: "/" },
+  { name: "Journal", url: "/blog/" }
+] | breadcrumbSchema(site) | jsonld | safe }}
+</script>
