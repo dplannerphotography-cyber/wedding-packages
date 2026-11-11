@@ -1,4 +1,43 @@
+# DPlanner Photography robots.txt
+# Production: https://dplanner.com.ng
+# Verified Studio: 82 De ACE HALL, besides Turaya Food Canteen, Yemetu, Ibadan, Oyo State, Nigeria
+
 User-agent: *
 Allow: /
+
+# Explicit permission for major AI search crawlers, agents & assistants
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+# Machine-readable context for AI systems and LLM search bots (https://llmstxt.org)
+# llms.txt: https://dplanner.com.ng/llms.txt
+# llms-full.txt: https://dplanner.com.ng/llms-full.txt
 
 Sitemap: https://dplanner.com.ng/sitemap.xml

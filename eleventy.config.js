@@ -4,6 +4,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/photography/assets": "photography/assets" });
   eleventyConfig.addPassthroughCopy({ "src/CNAME": "CNAME" });
   eleventyConfig.addPassthroughCopy({ "src/robots.txt": "robots.txt" });
+  eleventyConfig.addPassthroughCopy({ "src/llms.txt": "llms.txt" });
+  eleventyConfig.addPassthroughCopy({ "src/llms-full.txt": "llms-full.txt" });
 
   // ₦180,000
   eleventyConfig.addFilter("naira", (n) => "₦" + Number(n).toLocaleString("en-NG"));
@@ -23,7 +25,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("businessSchema", (site) => ({
     "@context": "https://schema.org",
-    "@type": ["LocalBusiness", "ProfessionalService"],
+    "@type": ["LocalBusiness", "ProfessionalService", "Photographer"],
     "@id": site.url + "/#business",
     name: site.name,
     url: site.url + "/",
@@ -38,6 +40,11 @@ module.exports = function (eleventyConfig) {
       addressLocality: site.address.city,
       addressRegion: site.address.region,
       addressCountry: site.address.country
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 7.4019,
+      longitude: 3.9056
     },
     areaServed: site.areaServed.map((name) => ({ "@type": "City", name })),
     aggregateRating: {
@@ -59,7 +66,43 @@ module.exports = function (eleventyConfig) {
         opens: "15:00"
       }
     ],
-    sameAs: [site.social.instagram, site.social.tiktok, site.social.facebook, site.social.x]
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Photography Services",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Standard Studio Portraits",
+            description: "Controlled studio strobes, backdrop choice, natural skin retouching and 24-hour delivery in Yemetu, Ibadan."
+          },
+          price: "2000",
+          priceCurrency: "NGN"
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Creative Concept Sessions",
+            description: "Artistic concepts, moodboard styling, bespoke lighting and guided posing."
+          },
+          price: "3000",
+          priceCurrency: "NGN"
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Wedding Photography & Film Coverage",
+            description: "Full-day photography and cinematic film coverage for traditional and white weddings."
+          },
+          price: "180000",
+          priceCurrency: "NGN"
+        }
+      ]
+    },
+    sameAs: [site.social.instagram, site.social.tiktok, site.social.facebook, site.social.x, site.googleUrl]
   }));
 
   eleventyConfig.addFilter("packageSchema", (pkg, site) => ({
