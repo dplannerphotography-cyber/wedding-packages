@@ -1,0 +1,41 @@
+[
+  {
+    "id": "ibadan-heritage-matrimony",
+    "title": "A Royal Celebration of Heritage & Matrimony",
+    "couple": "Folake & Dapo",
+    "coupleNote": "TODO (Samuel): replace with real featured couple name",
+    "date": "Late 2025",
+    "dateNote": "TODO (Samuel): replace with real shoot date",
+    "location": "Yemetu & Bodija, Ibadan",
+    "package": "Signature Album Package",
+    "narrative": "Set against the vibrant cultural backdrop of Ibadan, this celebration united two families in deep tradition and modern elegance. Our team provided dual-camera photo and cinema film coverage from dawn till late evening, capturing the emotion of morning bridal styling, the regal grandeur of royal Aso-Oke attire, the reverence of family prayers, and the uninhibited joy of the evening reception.",
+    "highlights": [
+      "Intimate morning preparations & Gele styling",
+      "Vibrant traditional engagement & family blessings",
+      "Solemn wedding vows & candid exchange of rings",
+      "High-energy reception & luxury heirloom photobook delivery"
+    ],
+    "deliverables": "Full photo coverage, highlight cinema teaser, 12x24 luxury photobook in customized briefcase.",
+    "heroImage": "/assets/img/flyer.png",
+    "heroAlt": "DPlanner Photography - Nigerian Traditional Wedding Couple in Ibadan",
+    "gallery": [
+      {
+        "src": "/photography/assets/wedding-traditional.svg",
+        "alt": "Ceremonial traditional engagement moments"
+      },
+      {
+        "src": "/photography/assets/portrait-studio.svg",
+        "alt": "Editorial couple portraits"
+      },
+      {
+        "src": "/photography/assets/birthday-celebration.svg",
+        "alt": "Reception celebration and joyful guests"
+      }
+    ],
+    "testimonial": {
+      "quote": "DPlanner handled our traditional and church wedding coverage with great care. The team was punctual, and the photobook briefcase was beautifully crafted.",
+      "author": "TODO: client first name",
+      "month": "TODO: month of shoot"
+    }
+  }
+]

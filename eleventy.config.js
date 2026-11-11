@@ -1,7 +1,7 @@
 // Eleventy build for dplanner.com.ng. Source in src/, output in _site/.
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
-  eleventyConfig.addPassthroughCopy({ "src/photography": "photography" });
+  eleventyConfig.addPassthroughCopy({ "src/photography/assets": "photography/assets" });
   eleventyConfig.addPassthroughCopy({ "src/CNAME": "CNAME" });
   eleventyConfig.addPassthroughCopy({ "src/robots.txt": "robots.txt" });
 

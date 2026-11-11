@@ -1,0 +1,660 @@
+---
+layout: layouts/base.njk
+title: "DPlanner Photography | Studio Portraits, Weddings & Events in Ibadan"
+description: "Professional studio portraits, weddings, birthdays and events by DPlanner Photography in Yemetu, Ibadan. Rated 4.9 from 46 Google reviews. 24h studio delivery. Book on WhatsApp."
+ogImage: /assets/og/home.png
+permalink: /photography/
+extraCss: /assets/css/photography.css
+extraJs: /assets/js/photography.js
+pageFaqs:
+  - q: "How do I book a studio session or wedding?"
+    a: "A 50% deposit secures your studio session. For weddings and major events, a 50% non-refundable deposit secures your date on our calendar. The remaining balance is due before final delivery. Bookings are confirmed directly on WhatsApp (+234 816 820 4080)."
+  - q: "How quickly will I receive my edited pictures?"
+    a: "Studio portraits are edited and delivered within 24 hours of your picture selection. Same-day express delivery is available for an additional ₦500 per picture."
+  - q: "Where is your studio located and what are your opening hours?"
+    a: "Our studio is located at 82 De ACE HALL, besides Turaya Food Canteen, Yemetu, Ibadan, Oyo State. We are open Monday to Saturday from 9:00 AM, and on the 2nd and last Sunday of the month from 3:00 PM."
+  - q: "What are your rates for studio portraits?"
+    a: "Standard studio portraits are ₦2,000 per edited picture (+₦500 for express delivery). Creative concept sessions with custom styling and artistic lighting start from ₦3,000 per picture."
+  - q: "Do you travel outside Ibadan for weddings and events?"
+    a: "Yes. While our physical studio base is in Yemetu, Ibadan, we regularly shoot in both Ibadan and Lagos, and are available for travel nationwide (and abroad) upon request."
+  - q: "What wedding packages do you offer?"
+    a: "We offer three full-coverage wedding packages: Essential at ₦180,000, Classic at ₦250,000 (our most popular package with photo and highlight video), and Signature Album at ₦450,000 (with luxury photobook and customized briefcase included). An album collection can also be added to the Essential or Classic package for ₦180,000."
+  - q: "Can I do outfit changes during my studio session?"
+    a: "Yes. Our studio provides private changing facilities and mirror space so you can comfortably switch outfits during your booked session time."
+---
+
+<!-- ==========================================================================
+     1. HERO SECTION — ASYMMETRIC EDITORIAL TRIPTYCH
+     ========================================================================== -->
+<section class="photography-hero-section" id="hero" aria-label="Hero">
+  <div class="container">
+    
+    <!-- Hero Top Metadata Strip -->
+    <div class="hero-over-strip">
+      <div class="archival-chip">
+        <span class="pulse-indicator" aria-hidden="true"></span>
+        <span>{{ site.name }} &bull; Yemetu Studio, Ibadan</span>
+      </div>
+      <div class="label-over label-gold" style="margin-bottom:0">
+        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+        <span>Ibadan Studio &bull; Regularly Shooting in Ibadan &amp; Lagos</span>
+      </div>
+    </div>
+
+    <!-- Headline & Intro -->
+    <div class="hero-headline-grid">
+      <div>
+        <span class="hero-kicker">Studio Portraits &bull; Weddings &bull; Birthdays &bull; Events</span>
+        <h1 class="photography-hero-title">
+          Timeless Portraits.<br>
+          <em>Beautiful Celebrations.</em>
+        </h1>
+      </div>
+      <div>
+        <p class="hero-intro-text">
+          Professional studio portraits, weddings, birthdays and event photography in Ibadan. Creating photographs that feel personal, polished, and made to last.
+        </p>
+        <div class="hero-actions-row">
+          <a href="{{ "Hello DPlanner Photography, I would like to book a photography session." | wa }}" 
+             class="btn btn-primary btn-lg" 
+             target="_blank" 
+             rel="noopener noreferrer">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            <span>Book a Session</span>
+          </a>
+          <a href="#portfolio" class="btn btn-outline btn-lg">
+            <span>View Portfolio</span>
+          </a>
+        </div>
+        <p class="session-deposit-note">
+          <i class="fa-solid fa-lock" aria-hidden="true"></i>
+          <span>50% deposit secures your session</span>
+        </p>
+        <div>
+          <a href="/weddings/" class="hero-wedding-banner" title="Explore Seasonal Wedding Packages">
+            <i class="fa-solid fa-ring" aria-hidden="true"></i>
+            <span>Planning a wedding? <strong>Explore 2026 Wedding Packages (From ₦180,000) &rarr;</strong></span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Editorial Gallery Triptych -->
+    <div class="hero-triptych-grid">
+      
+      <!-- Left: Studio Portraiture -->
+      <article class="triptych-card">
+        <div class="triptych-media">
+          <img src="/photography/assets/portrait-studio.svg" alt="DPlanner Studio Editorial Portraiture in Yemetu, Ibadan" width="600" height="800" fetchpriority="high" decoding="async">
+          <span class="triptych-badge-gold">Studio Portraits</span>
+        </div>
+        <div class="triptych-meta-bar">
+          <div>
+            <strong>Studio Portraiture</strong>
+            <span>Yemetu Studio, Ibadan</span>
+          </div>
+          <span style="font-weight:700; color:var(--wine-primary);">24h Delivery</span>
+        </div>
+      </article>
+
+      <!-- Center: Wedding Coverage -->
+      <article class="triptych-card triptych-card-center">
+        <div class="triptych-media">
+          <img src="/assets/img/flyer.png" alt="DPlanner Photography - Nigerian Traditional Wedding Couple Portrait in Ibadan" width="800" height="1000" fetchpriority="high" decoding="async">
+          <span class="triptych-badge-gold">Weddings</span>
+        </div>
+        <div class="triptych-meta-bar">
+          <div>
+            <strong>Traditional &amp; White Weddings</strong>
+            <span>Ibadan, Lagos &amp; nationwide</span>
+          </div>
+          <span style="color:var(--wine-primary); font-weight:700;">From ₦180,000</span>
+        </div>
+      </article>
+
+      <!-- Right: Birthdays & Events -->
+      <article class="triptych-card">
+        <div class="triptych-media">
+          <img src="/photography/assets/birthday-celebration.svg" alt="DPlanner Birthday and Milestone Celebration Photography" width="600" height="800" fetchpriority="high" decoding="async">
+          <span class="triptych-badge-gold">Birthdays &amp; Events</span>
+        </div>
+        <div class="triptych-meta-bar">
+          <div>
+            <strong>Birthdays &amp; Events</strong>
+            <span>Milestones, AGMs &amp; Corporate</span>
+          </div>
+          <span style="font-weight:700; color:var(--wine-primary);">Documentary</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     2. CREDIBILITY BAR (VERIFIED FACTS)
+     ========================================================================== -->
+<section class="credibility-strip" aria-label="Key Features">
+  <div class="container credibility-grid">
+    <div class="credibility-item">
+      <i class="fa-solid fa-house-chimney" aria-hidden="true"></i>
+      <div>
+        <strong>Dedicated Photography Studio</strong>
+        <p>82 De ACE HALL, Yemetu, Ibadan</p>
+      </div>
+    </div>
+    <div class="credibility-item">
+      <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+      <div>
+        <strong>24-Hour Studio Delivery</strong>
+        <p>Fast delivery for studio portraits</p>
+      </div>
+    </div>
+    <div class="credibility-item">
+      <i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i>
+      <div>
+        <strong>Natural Skin Retouching</strong>
+        <p>Professional retouching while keeping you natural</p>
+      </div>
+    </div>
+    <div class="credibility-item">
+      <i class="fa-solid fa-plane-departure" aria-hidden="true"></i>
+      <div>
+        <strong>Available for Travel</strong>
+        <p>Ibadan, Lagos &amp; nationwide on request</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     3. PORTFOLIO & FILTERABLE GALLERY
+     ========================================================================== -->
+<section class="portfolio-section" id="portfolio" aria-label="Portfolio">
+  <div class="container">
+    <div class="section-editorial-head">
+      <span class="label-over">Curated Archive</span>
+      <h2 class="section-title">Selected Works &amp; Portfolio</h2>
+      <p class="section-sub">
+        Explore studio portraiture, traditional weddings, birthday milestones, and corporate documentary photography.
+      </p>
+    </div>
+
+    <!-- Category Filter Tabs -->
+    <div class="portfolio-tabs-bar" role="tablist" aria-label="Portfolio Categories">
+      <button class="portfolio-tab-btn active" role="tab" aria-selected="true" data-filter="all">All Works</button>
+      <button class="portfolio-tab-btn" role="tab" aria-selected="false" data-filter="studio">Studio &amp; Portraits</button>
+      <button class="portfolio-tab-btn" role="tab" aria-selected="false" data-filter="weddings">Weddings &amp; Traditional</button>
+      <button class="portfolio-tab-btn" role="tab" aria-selected="false" data-filter="birthdays">Birthdays &amp; Milestones</button>
+      <button class="portfolio-tab-btn" role="tab" aria-selected="false" data-filter="corporate">Corporate &amp; Events</button>
+    </div>
+
+    <!-- Portfolio Grid -->
+    <div class="portfolio-editorial-grid">
+      {%- for item in portfolio %}
+      <article class="portfolio-folio-item" data-category="{{ item.category }}" data-caption="{{ item.caption }}" data-cta-link="{{ item.ctaLink }}" data-cta-text="{{ item.ctaText }}">
+        <div class="folio-media-box folio-lightbox-trigger" tabindex="0" role="button" aria-label="View {{ item.title }} full screen">
+          <img src="{{ item.image }}" alt="{{ item.alt }}" width="800" height="1000" loading="lazy" decoding="async">
+          <span class="folio-tag">{{ item.tag }}</span>
+          <div class="folio-overlay-hint" aria-hidden="true">
+            <span class="folio-zoom-badge"><i class="fa-solid fa-expand"></i> View Larger</span>
+          </div>
+        </div>
+        <div class="folio-details">
+          <div>
+            <h4>{{ item.title }}</h4>
+            <p class="folio-desc">{{ item.caption }}</p>
+            <p class="folio-specs"><i class="fa-solid fa-camera"></i> {{ item.specs }}</p>
+          </div>
+          <div>
+            <a href="{{ item.ctaLink }}" class="btn-gold-link"{% if item.ctaLink.startsWith('http') %} target="_blank" rel="noopener noreferrer"{% endif %}>
+              <span>{{ item.ctaText }}</span> &rarr;
+            </a>
+          </div>
+        </div>
+      </article>
+      {%- endfor %}
+    </div>
+
+  </div>
+</section>
+
+<!-- Lightbox Modal -->
+<div class="portfolio-lightbox" id="portfolio-lightbox" role="dialog" aria-modal="true" aria-label="Image Preview" hidden>
+  <div class="lightbox-backdrop"></div>
+  <div class="lightbox-dialog">
+    <button class="lightbox-close-btn" aria-label="Close image preview">&times;</button>
+    <button class="lightbox-nav-btn lightbox-prev-btn" aria-label="Previous image">&#8249;</button>
+    <button class="lightbox-nav-btn lightbox-next-btn" aria-label="Next image">&#8250;</button>
+    <div class="lightbox-media-panel">
+      <img src="" alt="" class="lightbox-image">
+    </div>
+    <div class="lightbox-info-panel">
+      <div>
+        <div class="lightbox-header-row">
+          <span class="lightbox-tag"></span>
+          <span class="lightbox-counter"></span>
+        </div>
+        <h3 class="lightbox-title"></h3>
+        <p class="lightbox-caption"></p>
+      </div>
+      <div class="lightbox-actions">
+        <a href="" class="btn btn-primary btn-lg lightbox-cta-btn">Book on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==========================================================================
+     4. WEDDING STORIES FORMAT
+     ========================================================================== -->
+<section class="wedding-stories-section" id="stories" aria-label="Wedding Stories">
+  <div class="container">
+    <div class="section-editorial-head">
+      <span class="label-over">Editorial Feature</span>
+      <h2 class="section-title">Wedding Stories</h2>
+      <p class="section-sub">
+        Real celebrations documented with emotion, cultural reverence, and heirloom elegance.
+      </p>
+    </div>
+
+    {%- for story in wedding_stories %}
+    <article class="wedding-story-card">
+      <div class="story-header-strip">
+        <div class="story-meta-location">
+          <i class="fa-solid fa-location-dot" aria-hidden="true"></i> {{ story.location }} &bull; {{ story.date }}
+        </div>
+        <span class="story-badge-package">{{ story.package }}</span>
+      </div>
+
+      <div class="story-layout-grid">
+        <div>
+          <h3 class="story-title">{{ story.title }}</h3>
+          <p class="story-narrative-text">{{ story.narrative }}</p>
+
+          <h4 class="story-highlights-heading">Story Highlights</h4>
+          <ul class="story-highlights-list">
+            {%- for hl in story.highlights %}
+            <li>{{ hl }}</li>
+            {%- endfor %}
+          </ul>
+
+          <div class="story-deliverables-box">
+            <strong><i class="fa-solid fa-box-open" aria-hidden="true"></i> Curated Deliverables:</strong>
+            {{ story.deliverables }}
+          </div>
+
+          <div class="story-actions-row">
+            <a href="/weddings/" class="btn btn-primary">
+              <span>View Wedding Packages</span> &rarr;
+            </a>
+            <a href="{{ "Hello DPlanner Photography! I'd like to check availability for our wedding. I'll share our date and venue here." | wa }}" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Check Availability
+            </a>
+          </div>
+        </div>
+
+        <div class="story-collage-grid">
+          <div class="story-collage-featured">
+            <img src="{{ story.heroImage }}" alt="{{ story.heroAlt }}" width="800" height="500" loading="lazy" decoding="async">
+          </div>
+          {%- for pic in story.gallery.slice(0, 2) %}
+          <div class="story-collage-sub">
+            <img src="{{ pic.src }}" alt="{{ pic.alt }}" width="400" height="500" loading="lazy" decoding="async">
+          </div>
+          {%- endfor %}
+        </div>
+      </div>
+    </article>
+    {%- endfor %}
+
+  </div>
+</section>
+
+<!-- ==========================================================================
+     5. STUDIO SERVICES & PRICING
+     ========================================================================== -->
+<section class="studio-pricing-section" id="pricing" aria-label="Pricing">
+  <div class="container">
+    <div class="section-editorial-head">
+      <span class="label-over">Transparent Rates</span>
+      <h2 class="section-title">Studio &amp; Portrait Pricing</h2>
+      <p class="section-sub">
+        Clear, upfront rates for studio portraits and creative sessions at our Yemetu, Ibadan studio.
+      </p>
+    </div>
+
+    <div class="pricing-cards-grid">
+      
+      <!-- Studio Standard -->
+      <div class="pricing-card">
+        <h3>Standard Studio Portraits</h3>
+        <p class="pricing-rate-sub">Headshots, personal branding &amp; solo portraits</p>
+        <div class="pricing-rate-line">₦2,000</div>
+        <p class="pricing-rate-sub">per edited picture (+₦500 express 24h delivery)</p>
+        <ul class="pricing-features-list">
+          <li><i class="fa-solid fa-check"></i> Controlled professional studio strobes</li>
+          <li><i class="fa-solid fa-check"></i> Choice of studio backdrop colors</li>
+          <li><i class="fa-solid fa-check"></i> Natural skin retouching included</li>
+          <li><i class="fa-solid fa-check"></i> Standard delivery within 24 hours</li>
+          <li><i class="fa-solid fa-check"></i> High-resolution digital files</li>
+        </ul>
+        <a href="{{ "Hello DPlanner Photography, I would like to book a standard studio portrait session at your Yemetu, Ibadan studio." | wa }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Book Studio Shoot
+        </a>
+      </div>
+
+      <!-- Creative Concept -->
+      <div class="pricing-card featured-card">
+        <span class="pricing-card-badge">Creative &amp; Editorial</span>
+        <h3>Creative Concept Sessions</h3>
+        <p class="pricing-rate-sub">Artistic concepts, styling &amp; creative projects</p>
+        <div class="pricing-rate-line">From ₦3,000</div>
+        <p class="pricing-rate-sub">per picture (bespoke lighting &amp; art direction)</p>
+        <ul class="pricing-features-list">
+          <li><i class="fa-solid fa-check"></i> Pre-session moodboard &amp; styling consultation</li>
+          <li><i class="fa-solid fa-check"></i> Specialized artistic lighting setups</li>
+          <li><i class="fa-solid fa-check"></i> Guided creative posing direction</li>
+          <li><i class="fa-solid fa-check"></i> Detailed color grading &amp; fine retouching</li>
+          <li><i class="fa-solid fa-check"></i> High-resolution editorial gallery</li>
+        </ul>
+        <a href="{{ "Hello DPlanner Photography, I would like to inquire about a creative portrait concept session." | wa }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Inquire Concept Shoot
+        </a>
+      </div>
+
+      <!-- Wedding Packages Preview -->
+      <div class="pricing-card">
+        <span class="pricing-card-badge" style="background:var(--gold-warm)">Seasonal Promo</span>
+        <h3>Wedding Photography &amp; Film</h3>
+        <p class="pricing-rate-sub">Complete coverage for traditional &amp; church weddings</p>
+        <div class="pricing-rate-line">From ₦180,000</div>
+        <p class="pricing-rate-sub">Promo valid until 31 December 2026</p>
+        <ul class="pricing-features-list">
+          <li><i class="fa-solid fa-check"></i> Essential Package: ₦180,000 (was ₦200,000)</li>
+          <li><i class="fa-solid fa-check"></i> Classic Package (Photo + Video): ₦250,000</li>
+          <li><i class="fa-solid fa-check"></i> Signature Album Package: ₦450,000</li>
+          <li><i class="fa-solid fa-check"></i> Photobook Collection Add-on: ₦180,000</li>
+          <li><i class="fa-solid fa-check"></i> Shoots in Ibadan, Lagos &amp; nationwide</li>
+        </ul>
+        <a href="/weddings/" class="btn btn-outline">
+          <span>Compare All Packages</span> &rarr;
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     6. ABOUT SECTION (SAMUEL DAMILARE & STUDIO STORY)
+     ========================================================================== -->
+<section class="about-section" id="about" aria-label="About Us">
+  <div class="container about-grid">
+    <div class="about-narrative">
+      <span class="label-over">The Story &amp; The Craft</span>
+      <h2>Behind DPlanner Photography</h2>
+      <p>
+        Founded by lead photographer <strong>Samuel Damilare</strong>, DPlanner Photography was established to bring high-end editorial standards, dependable turnaround, and genuine warmth to studio portraits, weddings, and milestone celebrations in Nigeria.
+      </p>
+      <p>
+        Based at <strong>82 De ACE HALL, besides Turaya Food Canteen in Yemetu, Ibadan</strong>, our studio provides a relaxed, air-conditioned environment with controlled strobe lighting, diverse backdrops, and private changing space. We believe that great photographs begin with making people feel comfortable and confident in front of the lens.
+      </p>
+      <p>
+        Beyond Ibadan, Samuel and the DPlanner team regularly travel to Lagos and across Nigeria to document traditional weddings, church ceremonies, corporate summits, and private celebrations.
+      </p>
+
+      <div class="about-pillars-grid">
+        <div class="about-pillar-box">
+          <strong><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i> Natural Skin Retouching</strong>
+          <p>We preserve skin texture, rich cultural fabrics (such as Aso-Oke), and genuine tones without plastic over-smoothing.</p>
+        </div>
+        <div class="about-pillar-box">
+          <strong><i class="fa-solid fa-clock" aria-hidden="true"></i> 24h Studio Turnaround</strong>
+          <p>Standard studio portraits are edited and delivered within 24 hours of your selection.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-card-mount">
+      <div class="about-badge-icon">
+        <i class="fa-solid fa-camera"></i>
+      </div>
+      <h3>Samuel Damilare</h3>
+      <p class="lead-role">Lead Photographer &amp; Director</p>
+      <p class="studio-story">
+        "Every session is an opportunity to preserve your authentic self and your family's most cherished memories. We treat every portrait and wedding with the utmost care."
+      </p>
+      <div class="rating-badge-pill">
+        <i class="fa-brands fa-google" aria-hidden="true"></i>
+        <span class="stars-gold" aria-hidden="true">★★★★★</span>
+        <span>4.9 / 5 &bull; 46 Google Reviews</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     7. CLIENT REVIEWS
+     ========================================================================== -->
+<section class="reviews-editorial-section" id="reviews" aria-label="Reviews">
+  <div class="container">
+    <div class="section-editorial-head">
+      <span class="label-over">Client Reviews</span>
+      <h2 class="section-title">What Our Clients Say</h2>
+      <p class="section-sub">
+        Real feedback from couples, families, and professionals who trusted us with their photographs.
+      </p>
+    </div>
+
+    <div class="reviews-columns-grid">
+      <div class="review-folio-card">
+        <p class="review-quote-text">
+          "The studio session at Yemetu was relaxed and very professional. The lighting was flattering, and the edited pictures were delivered cleanly within 24 hours."
+        </p>
+        <div class="review-client-meta">
+          <strong class="todo-inline">TODO: client first name</strong>
+          <span><span class="todo-inline">TODO: month of shoot</span> &bull; Studio portrait</span>
+        </div>
+      </div>
+
+      <div class="review-folio-card">
+        <p class="review-quote-text">
+          "DPlanner handled our traditional and church wedding coverage with great care. The team was punctual, and the photobook briefcase was beautifully crafted."
+        </p>
+        <div class="review-client-meta">
+          <strong class="todo-inline">TODO: client first name</strong>
+          <span><span class="todo-inline">TODO: month of shoot</span> &bull; Wedding, Classic package</span>
+        </div>
+      </div>
+
+      <div class="review-folio-card">
+        <p class="review-quote-text">
+          "Reliable documentary coverage for our milestone anniversary. Communication on WhatsApp was direct, and the gallery delivery was swift and well organized."
+        </p>
+        <div class="review-client-meta">
+          <strong class="todo-inline">TODO: client first name</strong>
+          <span><span class="todo-inline">TODO: month of shoot</span> &bull; Anniversary event</span>
+        </div>
+      </div>
+    </div>
+
+    <p class="reviews-google-line">
+      <i class="fa-brands fa-google" aria-hidden="true"></i>
+      <span class="stars-gold" aria-hidden="true">★★★★★</span>
+      Rated 4.9 from 46 Google reviews.
+      <a href="{{ site.googleUrl }}" target="_blank" rel="noopener noreferrer">Read them on Google &rarr;</a>
+    </p>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     8. FAQ SECTION (ACCORDION)
+     ========================================================================== -->
+<section class="faq-section" id="faq" aria-label="Frequently Asked Questions">
+  <div class="container">
+    <div class="section-editorial-head">
+      <span class="label-over">Client Queries</span>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-sub">
+        Clear answers regarding session bookings, turnaround times, location, and wedding coverage.
+      </p>
+    </div>
+
+    <div class="faq-accordion-container">
+      {%- for item in faq_photography %}
+      <details class="faq-item"{% if loop.first %} open{% endif %}>
+        <summary class="faq-question">
+          <span>{{ item.q }}</span>
+          <span class="faq-icon-chevron" aria-hidden="true">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </summary>
+        <div class="faq-answer">
+          <p>{{ item.a }}</p>
+        </div>
+      </details>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     9. STUDIO & CONTACT SECTION + PRE-FILLED INQUIRY FORM
+     ========================================================================== -->
+<section class="studio-contact-section" id="contact" aria-label="Contact and Location">
+  <div class="container contact-layout-grid">
+    
+    <!-- Studio Details & Google Verification -->
+    <div class="studio-info-card">
+      <span class="label-over">Studio &amp; Location</span>
+      <h3>Visit or Contact the Studio</h3>
+      <p class="studio-lead-text">
+        We welcome clients for studio portraiture, creative consultations, and wedding package inquiries. Walk-ins and scheduled appointments are welcome.
+      </p>
+
+      <ul class="studio-specs-list">
+        <li>
+          <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+          <div>
+            <strong>Studio Address</strong>
+            <p>{{ site.address.street }}, {{ site.address.landmark }}, {{ site.address.city }}, {{ site.address.region }}</p>
+          </div>
+        </li>
+        <li>
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+          <div>
+            <strong>WhatsApp &amp; Direct Phone</strong>
+            <p><a href="https://wa.me/{{ site.whatsapp }}" target="_blank" rel="noopener noreferrer" style="color:inherit; text-decoration:underline">{{ site.phoneDisplay }}</a> (Booking Desk)</p>
+          </div>
+        </li>
+        <li>
+          <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+          <div>
+            <strong>Email Inquiries</strong>
+            <p><a href="mailto:{{ site.email }}" style="color:inherit; text-decoration:underline">{{ site.email }}</a></p>
+          </div>
+        </li>
+        <li>
+          <i class="fa-regular fa-clock" aria-hidden="true"></i>
+          <div>
+            <strong>Studio Opening Hours</strong>
+            <p>{{ site.hours.weekdays }}</p>
+            <p>{{ site.hours.sunday }}</p>
+            <p><span class="todo-inline">{{ site.hours.closingTodo }}</span></p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="google-actions-box">
+        <div class="google-trust-line">
+          <i class="fa-brands fa-google" aria-hidden="true"></i>
+          <span class="stars-gold" aria-hidden="true">★★★★★</span>
+          <span>4.9 on Google &bull; 46 reviews</span>
+        </div>
+        <div class="google-btn-row">
+          <a href="{{ site.googleUrl }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            <i class="fa-brands fa-google" aria-hidden="true"></i> View on Google
+          </a>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=DPLANNER+PHOTOGRAPHY,+82+De+ACE+HALL,+besides+Turaya+Food+Canteen,+Yemetu,+Ibadan,+Oyo+State" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <i class="fa-solid fa-location-arrow" aria-hidden="true"></i> Get Directions
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Interactive Pre-filled Inquiry Form -->
+    <div class="inquiry-form-card">
+      <span class="label-over">Direct Booking</span>
+      <h3>Send an Inquiry</h3>
+      <p class="inquiry-form-sub">
+        Fill out your session preferences below to generate an instant pre-filled booking request via WhatsApp or Email.
+      </p>
+
+      <form id="inquiry-form" onsubmit="return false;">
+        <div class="form-group">
+          <label for="client_name">Your Name *</label>
+          <input type="text" id="client_name" name="client_name" class="form-control" placeholder="e.g. Bukola Adeleke" required>
+        </div>
+
+        <div class="form-group">
+          <label for="service_type">Session / Service Type *</label>
+          <select id="service_type" name="service_type" class="form-control">
+            <option value="Standard Studio Portrait Session">Standard Studio Portrait Session (₦2,000/pic)</option>
+            <option value="Creative Concept Shoot">Creative Concept Shoot (From ₦3,000/pic)</option>
+            <option value="Wedding Photography Coverage">Wedding Photography Coverage (From ₦180,000)</option>
+            <option value="Birthday & Milestone Shoot">Birthday &amp; Milestone Shoot</option>
+            <option value="Corporate / Event Coverage">Corporate / Event Coverage</option>
+            <option value="General Photography Inquiry">General Photography Inquiry</option>
+          </select>
+        </div>
+
+        <div class="form-row-2col">
+          <div class="form-group">
+            <label for="preferred_date">Preferred Date</label>
+            <input type="text" id="preferred_date" name="preferred_date" class="form-control" placeholder="e.g. 15 December 2026">
+          </div>
+          <div class="form-group">
+            <label for="location">Location / Venue</label>
+            <input type="text" id="location" name="location" class="form-control" placeholder="e.g. Yemetu Studio or Lagos">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="notes">Additional Details / Questions</label>
+          <textarea id="notes" name="notes" rows="3" class="form-control" placeholder="Tell us about your event, number of outfits, or specific requests..."></textarea>
+        </div>
+
+        <div class="form-btn-actions">
+          <button type="button" id="btn-inquiry-whatsapp" class="btn-whatsapp-inquiry">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Send via WhatsApp
+          </button>
+          <button type="button" id="btn-inquiry-email" class="btn-email-inquiry">
+            <i class="fa-regular fa-envelope" aria-hidden="true"></i> Send via Email
+          </button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- ==========================================================================
+     10. FINAL CONVERSION BANNER
+     ========================================================================== -->
+<section class="final-conversion-section">
+  <div class="container final-conversion-inner">
+    <h2>Ready to create something beautiful?</h2>
+    <p>
+      Book your studio session or tell us about your upcoming wedding or celebration. We are ready to help tell your story with timeless elegance.
+    </p>
+    <div class="final-conversion-actions">
+      <a href="{{ "Hello DPlanner Photography, I would like to book a photography session." | wa }}" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Book on WhatsApp
+      </a>
+      <a href="/weddings/" class="btn btn-outline btn-lg" style="color:#ffffff; border-color:#ffffff">
+        <span>Explore Wedding Packages</span> &rarr;
+      </a>
+    </div>
+  </div>
+</section>

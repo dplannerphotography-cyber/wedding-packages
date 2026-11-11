@@ -1,0 +1,80 @@
+[
+  {
+    "id": "studio-portrait-editorial",
+    "category": "studio",
+    "categoryLabel": "Studio & Portraits",
+    "title": "Studio Portraiture & Personal Branding",
+    "tag": "Studio • Ibadan",
+    "image": "/photography/assets/portrait-studio.svg",
+    "alt": "DPlanner Studio Portraiture Session with controlled studio lighting in Yemetu, Ibadan",
+    "caption": "Clean, flattering studio strobe lighting tailored for executive headshots, personal branding, and beauty portraits. Shot in our professional Yemetu studio with natural skin retouching.",
+    "specs": "Yemetu Studio • Controlled Strobes • 24h Delivery",
+    "ctaText": "Book Studio Shoot",
+    "ctaLink": "https://wa.me/2348168204080?text=Hello%20DPlanner%20Photography%2C%20I%20would%20like%20to%20book%20a%20studio%20portrait%20session%20at%20your%20Yemetu%2C%20Ibadan%20studio."
+  },
+  {
+    "id": "wedding-traditional-aso-oke",
+    "category": "weddings",
+    "categoryLabel": "Weddings & Traditional",
+    "title": "Traditional & White Wedding Matrimony",
+    "tag": "Matrimonial",
+    "image": "/assets/img/flyer.png",
+    "alt": "DPlanner Photography - Nigerian Traditional Wedding Couple in vibrant royal attire",
+    "caption": "Comprehensive wedding day coverage celebrating every sacred ritual, vibrant Aso-Oke attire, and family celebration. We capture candid emotions and timeless couple portraits.",
+    "specs": "Ibadan & Lagos • Full Day Coverage • Drone & Video",
+    "ctaText": "View Wedding Packages",
+    "ctaLink": "/weddings/"
+  },
+  {
+    "id": "birthday-milestone-shoot",
+    "category": "birthdays",
+    "categoryLabel": "Birthdays & Milestones",
+    "title": "Birthday & Milestone Celebrations",
+    "tag": "Celebrations",
+    "image": "/photography/assets/birthday-celebration.svg",
+    "alt": "Birthday and Milestone Celebration Photography by DPlanner in Ibadan",
+    "caption": "Vibrant birthday portrait sessions and on-location celebration coverage highlighting individual style, joy, and unforgettable milestone moments.",
+    "specs": "Studio or On-Location • Personalized Direction",
+    "ctaText": "Book Birthday Shoot",
+    "ctaLink": "https://wa.me/2348168204080?text=Hello%20DPlanner%20Photography%2C%20I%20would%20like%20to%20book%20a%20birthday%20photography%20shoot."
+  },
+  {
+    "id": "corporate-conference-agm",
+    "category": "corporate",
+    "categoryLabel": "Corporate & Events",
+    "title": "Conferences, Seminars & Corporate AGMs",
+    "tag": "Corporate",
+    "image": "/photography/assets/corporate-documentary.svg",
+    "alt": "Corporate Conference, Seminar and AGM Photography in Ibadan and Lagos",
+    "caption": "Professional documentary coverage for corporate assemblies, executive retreats, award presentations, and annual general meetings with swift press-ready delivery.",
+    "specs": "Executive Headshots • Documentary Coverage • Fast Delivery",
+    "ctaText": "Inquire Corporate Coverage",
+    "ctaLink": "https://wa.me/2348168204080?text=Hello%20DPlanner%20Photography%2C%20I%20would%20like%20to%20inquire%20about%20corporate%20%2F%20event%20documentary%20coverage."
+  },
+  {
+    "id": "creative-portrait-concept",
+    "category": "studio",
+    "categoryLabel": "Studio & Portraits",
+    "title": "Creative Concept & Fine Art Sessions",
+    "tag": "Creative Concept",
+    "image": "/photography/assets/creative-portrait.svg",
+    "alt": "Creative Portrait Concept Session with artistic lighting by DPlanner",
+    "caption": "Artistic, concept-driven photography featuring custom lighting set-ups, mood boards, and specialized posing direction. Perfect for artists, creatives, and fashion portfolios.",
+    "specs": "Custom Backdrops • Artistic Direction • From ₦3,000/pic",
+    "ctaText": "Inquire Creative Concept",
+    "ctaLink": "https://wa.me/2348168204080?text=Hello%20DPlanner%20Photography%2C%20I%20would%20like%20to%20inquire%20about%20a%20creative%20portrait%20concept%20session."
+  },
+  {
+    "id": "heirloom-wedding-album",
+    "category": "weddings",
+    "categoryLabel": "Weddings & Traditional",
+    "title": "Heirloom Albums & Archival Photobooks",
+    "tag": "Heirloom Albums",
+    "image": "/photography/assets/wedding-traditional.svg",
+    "alt": "Heirloom Wedding Photobook in luxury protective briefcase",
+    "caption": "Luxurious, hand-finished 12x24 wedding photobooks presented in customized briefcases. Archival lay-flat pages designed to preserve your wedding story for generations.",
+    "specs": "12x24 Flush Mount • Leatherette Briefcase • Lifetime Heirloom",
+    "ctaText": "Explore Wedding Packages (From ₦180,000)",
+    "ctaLink": "/weddings/"
+  }
+]
