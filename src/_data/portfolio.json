@@ -255,6 +255,21 @@
     "sourceFile": "untitled-2.jpg"
   },
   {
+    "id": "studio-portrait-10",
+    "category": "studio",
+    "categoryLabel": "Studio & Portraits",
+    "title": "Executive Portrait with National Honors",
+    "tag": "Executive Portrait",
+    "image": "/assets/portfolio/studio-portrait-10.webp",
+    "largeImage": "/assets/portfolio/studio-portrait-10-lg.webp",
+    "alt": "Distinguished Nigerian woman seated in royal blue traditional lace and Gele beside the green-white-green Nigerian flag, DPlanner Photography Ibadan",
+    "caption": "Distinguished executive portrait of a senior matriarch in royal blue hand-woven Aso-Oke and Gele alongside the Nigerian national flag.",
+    "specs": "Yemetu Studio • National Flag Setup • 24h Delivery",
+    "ctaText": "Book Studio Shoot",
+    "ctaLink": "https://wa.me/2348168204080?text=Hello%20DPlanner%20Photography%2C%20I%20would%20like%20to%20book%20a%20studio%20portrait%20session%20at%20your%20Yemetu%2C%20Ibadan%20studio.",
+    "sourceFile": "DSC_7984.jpg"
+  },
+  {
     "id": "family-01",
     "category": "family",
     "categoryLabel": "Family",
@@ -328,21 +343,6 @@
     "ctaText": "Book Birthday Shoot",
     "ctaLink": "https://wa.me/2348168204080?text=Hello%20DPlanner%20Photography%2C%20I%20would%20like%20to%20book%20a%20birthday%20photography%20shoot.",
     "sourceFile": "DSC_7044.jpg"
-  },
-  {
-    "id": "corporate-events-01",
-    "category": "corporate",
-    "categoryLabel": "Corporate & Events",
-    "title": "Executive Matriarch & National Honors",
-    "tag": "Executive & Honors",
-    "image": "/assets/portfolio/corporate-events-01.webp",
-    "largeImage": "/assets/portfolio/corporate-events-01-lg.webp",
-    "alt": "Distinguished Nigerian woman seated in royal blue traditional lace and Gele beside the green-white-green Nigerian flag, DPlanner Photography Ibadan",
-    "caption": "Distinguished portrait of a senior dignitary in royal blue hand-woven Aso-Oke alongside the Nigerian national flag.",
-    "specs": "Studio Set • National Flag Setup • Samuel Damilare",
-    "ctaText": "Inquire Corporate Coverage",
-    "ctaLink": "https://wa.me/2348168204080?text=Hello%20DPlanner%20Photography%2C%20I%20would%20like%20to%20inquire%20about%20corporate%20%2F%20event%20documentary%20coverage.",
-    "sourceFile": "DSC_7984.jpg"
   },
   {
     "id": "children-01",

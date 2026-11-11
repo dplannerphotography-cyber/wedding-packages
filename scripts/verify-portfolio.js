@@ -45,12 +45,15 @@ portfolioData.forEach(item => {
 });
 
 // 3. Check filters
-['all', 'weddings', 'studio', 'couples', 'family', 'children', 'birthdays', 'corporate'].forEach(cat => {
+['all', 'weddings', 'studio', 'couples', 'family', 'children', 'birthdays'].forEach(cat => {
   const searchStr = `data-filter="${cat}"`;
   if (!photoHtml.includes(searchStr)) {
     errors.push('Missing filter button for: ' + cat);
   }
 });
+if (photoHtml.includes('data-filter="corporate"')) {
+  errors.push('Corporate filter should be hidden');
+}
 
 // 4. Check lightbox markup
 if (!photoHtml.includes('id="portfolio-lightbox"')) {
