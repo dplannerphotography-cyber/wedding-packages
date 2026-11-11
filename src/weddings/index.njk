@@ -97,7 +97,12 @@ permalink: /weddings/
             <div class="addon-new-price">{{ addon.price | naira }}</div>
           </div>
           <div class="post-promo">
-            <div class="addon-new-price">{{ addon.was | naira }}</div>
+            {% if addon.price2027 %}
+            <div class="addon-new-price">{{ addon.price2027 | naira }}</div>
+            {% else %}
+            <div class="addon-new-price" style="font-size: 1.35rem; line-height: 1.3;">2027 rates coming soon</div>
+            <p class="deposit-note" style="margin-top: 4px;">Message us on WhatsApp for a quote</p>
+            {% endif %}
           </div>
           <a href="{{ ("Hello DPlanner Photography! I'd like to add the Album Collection Add-on (" + (addon.price | naira) + ") to my wedding package. I'll share my wedding date and venue here.") | wa }}"
              data-wa-post="{{ "Hello DPlanner Photography! I'd like to add the Album Collection Add-on to my wedding package. I'll share my wedding date and venue here." | wa }}"
@@ -146,7 +151,7 @@ permalink: /weddings/
             ["Framed portrait", no, "<strong>12 x 16</strong>", "<strong>16 x 20</strong>"],
             ["Social wedding reel", no, yes, yes],
             ["Pre-wedding studio session", no, no, yes],
-            ["Album Collection", '<a href="/weddings/album-addon/" class="addon-cell">Add for ₦180,000</a>', '<a href="/weddings/album-addon/" class="addon-cell">Add for ₦180,000</a>', "<strong>Included</strong>"]
+            ["Album Collection", '<a href="/weddings/album-addon/" class="addon-cell"><span class="promo-only">Add for ₦180,000</span><span class="post-promo">Add to package</span></a>', '<a href="/weddings/album-addon/" class="addon-cell"><span class="promo-only">Add for ₦180,000</span><span class="post-promo">Add to package</span></a>', "<strong>Included</strong>"]
           ] %}
           {%- for row in rows %}
           <tr>
@@ -161,7 +166,7 @@ permalink: /weddings/
             {%- for pkg in packages %}{% if not pkg.isAddon %}
             <td{% if pkg.popular %} class="col-featured"{% endif %}>
               <strong class="promo-only">{{ pkg.price | naira }}</strong>
-              <strong class="post-promo">{{ pkg.was | naira }}</strong>
+              <strong class="post-promo">{% if pkg.price2027 %}{{ pkg.price2027 | naira }}{% else %}Quote on request{% endif %}</strong>
             </td>
             {%- endif %}{% endfor %}
           </tr>

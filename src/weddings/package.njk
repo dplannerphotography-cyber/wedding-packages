@@ -68,7 +68,7 @@ eleventyComputed:
         {%- if pkg.isAddon %}
         <p class="package-note">Already booking <a href="/weddings/signature/">Signature Album</a>? The Album Collection is included, so you don't need this add-on.</p>
         {%- elif pkg.slug != "signature" %}
-        <p class="package-note">Want an album? The <a href="/weddings/album-addon/">Album Collection</a> is included in Signature. Add it to {{ pkg.name }} for ₦180,000.</p>
+        <p class="package-note">Want an album? The <a href="/weddings/album-addon/">Album Collection</a> is included in Signature. Add it to {{ pkg.name }} for <span class="promo-only">₦180,000</span><span class="post-promo">{% if packages[3].price2027 %}{{ packages[3].price2027 | naira }}{% else %}our add-on rate{% endif %}</span>.</p>
         {%- endif %}
       </section>
 
@@ -104,7 +104,7 @@ eleventyComputed:
             <a href="/weddings/{{ other.slug }}/">
               <strong>{{ other.name }}</strong>
               <span class="promo-only">{{ other.price | naira }}</span>
-              <span class="post-promo">{{ other.was | naira }}</span>
+              <span class="post-promo">{% if other.price2027 %}{{ other.price2027 | naira }}{% else %}2027 rates coming soon{% endif %}</span>
             </a>
           </li>
           {%- endif %}{% endfor %}

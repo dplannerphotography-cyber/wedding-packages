@@ -43,11 +43,13 @@
   "deposit": "50% non-refundable deposit secures your date",
   "depositLong": "A 50% non-refundable deposit secures your date. The balance is due before final delivery.",
   "studioDelivery": "Studio photos delivered within 24 hours",
+  "googleSiteVerification": "",
+  "bingSiteVerification": "",
   "promo": {
     "label": "September – December 2026 promo",
     "ends": "2026-12-31T23:59:59+01:00",
     "endsText": "31 December 2026",
-    "endedMessage": "Promo ended – message us for 2027 rates."
+    "endedMessage": "2027 prices coming soon — message us on WhatsApp for a quote."
   },
   "nav": [
     {
