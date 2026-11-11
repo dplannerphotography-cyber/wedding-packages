@@ -75,7 +75,7 @@ module.exports = function (eleventyConfig) {
           itemOffered: {
             "@type": "Service",
             name: "Standard Studio Portraits",
-            description: "Controlled studio strobes, backdrop choice, natural skin retouching and 24-hour delivery in Yemetu, Ibadan."
+            description: "Controlled studio strobes, backdrop choice, natural skin retouching and 24-hour delivery in Yemetu, Ibadan. Same-day express delivery: +₦500 per picture."
           },
           price: "2000",
           priceCurrency: "NGN"
