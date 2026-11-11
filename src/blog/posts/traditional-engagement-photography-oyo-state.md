@@ -3,7 +3,7 @@ layout: layouts/post.njk
 title: "Traditional Engagement Photography in Oyo State: What to Expect"
 description: "A complete visual and cultural guide to traditional Yoruba engagement photography in Oyo State. Key ceremony moments, lighting Aso-Oke, and timing recommendations."
 lead: "From the spirited banter of the Alagas to the groom's reverent prostration and the bride's grand entrance, here is what couples should expect when documenting a Yoruba traditional engagement in Oyo State."
-date: 2026-10-28
+date: 2026-11-11
 category: "Cultural Weddings"
 author: "Samuel Damilare"
 ogImage: /assets/og/essential.png
@@ -84,14 +84,13 @@ Traditional weddings in Ibadan often contend with traffic, elaborate makeup sess
 
 ---
 
-## 4. DPlanner's Traditional Engagement Deliverables
+## 4. Traditional Engagement Coverage with DPlanner
 
-Couples booking our traditional engagement coverage receive:
-- **Comprehensive Single-Event Coverage**: Minimum **300 to 450 curated, high-resolution edited images**.
-- **Cinematic Highlight Film**: A dynamic 3–5 minute film set to music, featuring audio of the parental prayers and Alaga songs, delivered within **1 week**.
-- **Complete Photo Gallery**: Delivered within **3–4 weeks** via secure online gallery with high-speed download access.
-- **Framed Heirloom Prints**: Included in all standard packages for immediate home display.
-- **Optional 12×24 Handcrafted Photobook**: Available with our **Signature Album Package (₦450,000)** or as the **Album Collection Add-on (₦180,000)** housed in a customized protective briefcase.
+Couples booking traditional engagement coverage receive:
+- **Comprehensive Single-Event Coverage**: 300–450+ curated, high-resolution edited photos delivered within **3–4 weeks** via digital delivery (Google Drive).
+- **Cinematic Highlight Film**: Delivered within **1 week** after the wedding (included with the [Classic Package](/weddings/classic/) and [Signature Album Package](/weddings/signature/)).
+- **Framed Portraits & Heirlooms**: A 12×16 framed portrait with the Classic Package, or a 16×20 framed portrait and the full Album Collection with the Signature Album Package.
+- **The 12×24 Album Collection**: A handcrafted 12×24 flush-mount album in a customized leather briefcase, included with the [Signature Album Package (₦450,000)](/weddings/signature/) or available as the standalone [Album Collection Add-on (₦180,000)](/weddings/album-addon/).
 
 ---
 

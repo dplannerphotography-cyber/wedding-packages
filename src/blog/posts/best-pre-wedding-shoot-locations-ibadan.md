@@ -3,7 +3,7 @@ layout: layouts/post.njk
 title: "Best Pre-Wedding Shoot Locations in Ibadan (Editorial Outline & Location Guide)"
 description: "An editorial location scout and guide to the best pre-wedding shoot locations across Ibadan. From Agodi Gardens to IITA and historical landmarks."
 lead: "Looking for breathtaking pre-wedding shoot locations in Ibadan? Here is our comprehensive editorial outline covering lush gardens, historic architecture, lakefront serenity, and modern studio options."
-date: 2026-11-01
+date: 2026-11-11
 category: "Location Guide"
 author: "Samuel Damilare"
 ogImage: /assets/og/home.png

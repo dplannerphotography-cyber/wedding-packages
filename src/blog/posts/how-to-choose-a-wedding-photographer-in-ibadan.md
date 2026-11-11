@@ -3,7 +3,7 @@ layout: layouts/post.njk
 title: "How to Choose a Wedding Photographer in Ibadan: 10 Questions to Ask"
 description: "Planning your wedding in Ibadan? Ask these 10 essential questions before paying a deposit to protect your memories, avoid hidden fees, and ensure fast delivery."
 lead: "Your wedding day cannot be repeated. Before paying a non-refundable deposit to any photographer in Ibadan or Oyo State, make sure you ask these 10 vital questions."
-date: 2026-10-22
+date: 2026-11-11
 category: "Wedding Guide"
 author: "Samuel Damilare"
 ogImage: /assets/og/classic.png
@@ -101,7 +101,7 @@ A photographer who regularly shoots in Ibadan knows the traffic choke points aro
 
 ## 7. "Do you offer cinematic highlight films in addition to photography?"
 
-Modern wedding video is no longer a monotonous three-hour unedited recording. Today's couples want a **cinematic 3- to 5-minute highlight film** set to music, featuring crisp audio recordings of your vows and speeches, cut dynamically for sharing on Instagram, WhatsApp, and family group chats.
+Modern wedding video is no longer a monotonous unedited recording. Today's couples want a **cinematic highlight film** set to music, featuring crisp audio recordings of your vows and speeches, cut dynamically for sharing on Instagram, WhatsApp, and family group chats.
 
 Always confirm whether the videographer captures dedicated cinema footage or merely recorded raw clips, and check if microphone audio for vows is included.
 
@@ -116,7 +116,7 @@ Not all photo albums are created equal. Many studios supply press-printed books 
 - What are the dimensions? (Our standard is a generous **12×24 inches**).
 - Does it include a protective storage case?
 
-At DPlanner, our **Signature Album Package (₦450,000)** and our standalone **Album Collection Add-on (₦180,000)** include a handcrafted 12×24 flush-mount album housed in a **customized luxury briefcase** designed to protect your prints against moisture and dust.
+At DPlanner, our **Signature Album Package (₦450,000)** and our standalone **Album Collection Add-on (₦180,000)** include a handcrafted 12×24 flush-mount album housed in a **customized leather briefcase** designed to protect your album against moisture and dust.
 
 ---
 
@@ -151,8 +151,8 @@ Before confirming your booking, verify that your photographer has:
 4. A trained crew sized to your package. <!-- Crew size: exact numbers to be added here -->
 5. A verified physical studio base.
 6. Proven experience with Ibadan wedding venues.
-7. High-definition cinema highlight films.
-8. Archival lay-flat albums in protective briefcases.
+7. Cinematic highlight film.
+8. Archival lay-flat albums in protective leather briefcases.
 9. Fair 50/50 payment terms.
 10. Dual-card recording and redundant backup cameras.
 

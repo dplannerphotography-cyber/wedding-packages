@@ -3,7 +3,7 @@ layout: layouts/post.njk
 title: "Wedding Story Template: How We Document & Feature Real Celebrations"
 description: "The official DPlanner Photography editorial framework for featuring real couples, cultural wedding stories, and heirloom photobooks."
 lead: "A modular, ready-to-use editorial template designed for couples and readers to see how real wedding stories, cultural traditions, and heirloom albums are documented and published."
-date: 2026-11-08
+date: 2026-11-11
 category: "Wedding Stories"
 author: "Samuel Damilare"
 ogImage: /assets/og/signature.png

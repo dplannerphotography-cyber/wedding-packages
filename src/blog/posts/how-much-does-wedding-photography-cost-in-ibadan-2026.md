@@ -3,7 +3,7 @@ layout: layouts/post.njk
 title: "How Much Does Wedding Photography Cost in Ibadan in 2026?"
 description: "A transparent guide to wedding photography and film costs in Ibadan for 2026. Compare realistic budget tiers, understand photobook pricing, and avoid hidden venue fees."
 lead: "Planning a wedding in Ibadan? From traditional engagements to church ceremonies, here is a transparent breakdown of what professional wedding photography and cinema coverage realistically costs in 2026."
-date: 2026-10-15
+date: 2026-11-11
 category: "Pricing & Planning"
 author: "Samuel Damilare"
 ogImage: /assets/og/weddings.png
@@ -37,26 +37,67 @@ Based on typical market ranges across Oyo State, wedding photography and film pr
 ### Tier 2: Established Professional Studio (Typical range: ₦180,000 – ₦350,000)
 - **What is typically included**: Professional crew coverage sized to the celebration, dedicated cinema coverage for highlight films, professional lighting for evening receptions, color-graded high-resolution galleries, and framed wall portraits.
 - **Why it is the sweet spot**: This tier represents the best balance of artistic excellence, verified equipment redundancy, and reliable contractual delivery timelines.
-- **DPlanner Packages**: Our **Essential Package** (full-day photo coverage with 300+ edited pictures and framed print) is currently **₦180,000** (promotional rate, was ₦200,000). Our most popular **Classic Package** (full-day photography and cinematic highlight film) is **₦250,000** (was ₦300,000).
+- **DPlanner Packages**: Our **Essential Package** (one-day photo and film coverage, ceremony and reception, couple and family portraits, and digital delivery) is **₦180,000** (promotional rate, was ₦200,000). Our most popular **Classic Package** (everything in Essential plus prep coverage, cinematic highlight film, 12×16 framed portrait, and social reel) is **₦250,000** (was ₦300,000).
 
 ### Tier 3: Luxury Heirloom Collections (Typical range: ₦450,000 – ₦1,200,000+)
-- **What is typically included**: Expanded crew coverage, premium handcrafted flush-mount photobook albums presented in customized briefcases, pre-wedding engagement shoots, parent mini-albums, and expedited priority turnaround.
-- **DPlanner Packages**: Our **Signature Album Package** is **₦450,000** (promotional rate, was ₦550,000) and includes full photo and film coverage, 600+ edited images, 3 large framed portraits, and our bespoke 12×24 handcrafted flush-mount album in a customized luxury briefcase.
+- **What is typically included**: Expanded crew coverage, handcrafted flush-mount photobook albums presented in customized briefcases, pre-wedding studio sessions, and expedited priority turnaround.
+- **DPlanner Packages**: Our **Signature Album Package** is **₦450,000** (promotional rate, was ₦550,000) and includes everything in Classic plus a pre-wedding studio session, a 16×20 framed portrait, priority delivery, and the full Album Collection (12×24 synthetic photobook with 25 designed pages in a presentation leather briefcase, mini book, and calendar).
 
 ---
 
 ## 2. DPlanner Photography 2026 Package Comparison
 
-To give you an exact, transparent benchmark, here is how our seasonal promotional packages compare:
+To give you an exact, transparent benchmark, here is how our promotional packages compare—built directly from our official packages data:
 
-| Package | 2026 Promo Rate | Team & Coverage | Core Deliverables | Turnaround Time |
-| :--- | :--- | :--- | :--- | :--- |
-| **Essential** | **₦180,000** *(was ₦200,000)* | <!-- Crew size: exact numbers to be added here -->A trained crew sized to your package &bull; Full Day | 300+ high-res edited photos &bull; 1 Framed print &bull; Online gallery | **3–4 weeks** |
-| **Classic** *(Most Popular)* | **₦250,000** *(was ₦300,000)* | <!-- Crew size: exact numbers to be added here -->A trained crew sized to your package &bull; Full Day | 450+ high-res edited photos &bull; HD Highlight film (3–5 min) &bull; Full ceremony speeches &bull; 2 Framed prints | Film: **1 week**<br>Photos: **3–4 weeks** |
-| **Signature Album** | **₦450,000** *(was ₦550,000)* | <!-- Crew size: exact numbers to be added here -->A trained crew sized to your package &bull; Full Day | 600+ high-res edited photos &bull; HD Highlight film &bull; 12×24 Handcrafted photobook in customized briefcase &bull; 3 Large framed prints | Film: **1 week**<br>Photos: **3–4 weeks** |
-| **Album Collection Add-on** | **₦180,000** | Add to Essential or Classic | 12×24 Handcrafted flush-mount album in custom luxury briefcase | Delivered with final order |
+<div class="table-responsive">
+  <table class="package-table">
+    <thead>
+      <tr>
+        <th scope="col" style="min-width: 140px;">Package</th>
+        <th scope="col" style="min-width: 130px;">2026 Promo Rate</th>
+        <th scope="col">Inclusions (Official Package Features)</th>
+        <th scope="col" style="min-width: 130px;">Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for pkg in packages %}
+      <tr>
+        <td>
+          <strong>{{ pkg.name }}</strong>
+          {% if pkg.popular %}
+          <br><span style="display:inline-block; font-size:0.75rem; background:#6e1628; color:#fff; padding:2px 8px; border-radius:12px; margin-top:4px;">Most Popular</span>
+          {% endif %}
+        </td>
+        <td>
+          <strong style="color: #6e1628; font-size: 1.05rem;">{{ pkg.price | naira }}</strong>
+          {% if pkg.was %}
+          <br><small style="color: #777;"><s>was {{ pkg.was | naira }}</s></small>
+          {% endif %}
+        </td>
+        <td>
+          {% if pkg.includesFrom %}
+          <div style="font-weight: 600; font-size: 0.88rem; color: #555; margin-bottom: 6px;">
+            Everything in {{ pkg.includesFrom }}, plus:
+          </div>
+          {% endif %}
+          <ul style="margin: 0; padding-left: 18px; font-size: 0.92rem; line-height: 1.5;">
+            {% for feature in pkg.features %}
+            <li>{{ feature }}</li>
+            {% endfor %}
+          </ul>
+        </td>
+        <td>
+          <a href="/weddings/{{ pkg.slug }}/" style="font-weight: 600; color: #6e1628; text-decoration: underline;">
+            View {{ pkg.name }} &rarr;
+          </a>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
 
-*Note: All 2026 promo rates require a 50% non-refundable deposit to secure your date on our calendar. The balance is due before final delivery.*
+*Note: All 2026 promotional rates require a 50% non-refundable deposit to secure your date on our calendar. The balance is due before final delivery.*
 
 ---
 

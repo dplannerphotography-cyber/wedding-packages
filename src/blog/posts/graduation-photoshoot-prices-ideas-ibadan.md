@@ -3,7 +3,7 @@ layout: layouts/post.njk
 title: "Graduation Photoshoot Prices and Ideas in Ibadan (Editorial Outline & Guide)"
 description: "Everything you need to know about graduation portraits in Ibadan. Transparent studio rates, convocation gown concepts, group shots, and 24-hour delivery."
 lead: "Graduating from UI, Poly Ibadan, Lead City, or Koladaisi? Here is our comprehensive planning outline covering graduation photoshoot prices, creative concepts, and 24-hour turnaround in Ibadan."
-date: 2026-11-04
+date: 2026-11-11
 category: "Studio Guide"
 author: "Samuel Damilare"
 ogImage: /assets/og/home.png
