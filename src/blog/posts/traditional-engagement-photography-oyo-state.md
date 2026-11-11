@@ -90,7 +90,7 @@ Couples booking traditional engagement coverage receive:
 - **Comprehensive Single-Event Coverage**: 300–450+ curated, high-resolution edited photos delivered within **3–4 weeks** via digital delivery (Google Drive).
 - **Cinematic Highlight Film**: Delivered within **1 week** after the wedding (included with the [Classic Package](/weddings/classic/) and [Signature Album Package](/weddings/signature/)).
 - **Framed Portraits & Heirlooms**: A 12×16 framed portrait with the Classic Package, or a 16×20 framed portrait and the full Album Collection with the Signature Album Package.
-- **The 12×24 Album Collection**: A handcrafted 12×24 flush-mount album in a customized leather briefcase, included with the [Signature Album Package (₦450,000)](/weddings/signature/) or available as the standalone [Album Collection Add-on (₦180,000)](/weddings/album-addon/).
+- **The 12×24 Album Collection**: A 12×24 flush-mount synthetic photobook (50 designed pages) in a leather presentation briefcase, included with the [Signature Album Package (₦450,000)](/weddings/signature/) or available as the standalone [Album Collection Add-on (₦180,000)](/weddings/album-addon/).
 
 ---
 

@@ -41,7 +41,7 @@ Based on typical market ranges across Oyo State, wedding photography and film pr
 
 ### Tier 3: Luxury Heirloom Collections (Typical range: ₦450,000 – ₦1,200,000+)
 - **What is typically included**: Expanded crew coverage, handcrafted flush-mount photobook albums presented in customized briefcases, pre-wedding studio sessions, and expedited priority turnaround.
-- **DPlanner Packages**: Our **Signature Album Package** is **₦450,000** (promotional rate, was ₦550,000) and includes everything in Classic plus a pre-wedding studio session, a 16×20 framed portrait, priority delivery, and the full Album Collection (12×24 synthetic photobook with 25 designed pages in a presentation leather briefcase, mini book, and calendar).
+- **DPlanner Packages**: Our **Signature Album Package** is **₦450,000** (promotional rate, was ₦550,000) and includes everything in Classic plus a pre-wedding studio session, a 16×20 framed portrait, priority delivery, and the full Album Collection (12×24 flush-mount synthetic photobook, 50 designed pages, in a leather presentation briefcase, mini book, and calendar).
 
 ---
 
@@ -123,7 +123,7 @@ At DPlanner, every delivered image undergoes individual color grading and natura
 ### C. Handcrafted Flush-Mount Albums vs. Cheap Press Books
 A true wedding heirloom is not a flimsy photobook printed on magazine paper that wrinkles when exposed to humidity. 
 
-Our **12×24 Handcrafted Photobook Album** uses thick, lay-flat photographic paper mounted onto solid core boards. It is moisture-resistant, non-yellowing, and housed inside a customized, foam-lined presentation briefcase designed to last for generations. Producing this physical artifact requires meticulous hand-binding and specialized archival printing.
+Our **12×24 flush-mount synthetic photobook (50 designed pages)** uses thick, lay-flat photographic paper mounted onto solid core boards. It is moisture-resistant, non-yellowing, and housed inside a leather presentation briefcase designed to last for generations. Producing this physical artifact requires meticulous hand-binding and specialized archival printing.
 
 > "A wedding photograph should feel as vivid twenty years from now as it did on the afternoon your vows were spoken."
 > <cite>— Samuel Damilare, Lead Photographer</cite>
@@ -159,6 +159,6 @@ For most couples having a traditional and white wedding in Ibadan, budgeting **�
 1. A trained crew sized to your package. <!-- Crew size: exact numbers to be added here -->
 2. High-definition highlight film ready to share with friends and family within 7 days.
 3. Complete high-resolution edited photo gallery within 3–4 weeks.
-4. An heirloom photobook and customized briefcase to pass down to your children.
+4. An heirloom 12×24 flush-mount synthetic photobook (50 designed pages) in a leather presentation briefcase to pass down to your children.
 
 If you are planning your wedding for late 2026, our seasonal promo rates remain valid for bookings secured before **31 December 2026**.

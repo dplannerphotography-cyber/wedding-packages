@@ -116,7 +116,7 @@ Not all photo albums are created equal. Many studios supply press-printed books 
 - What are the dimensions? (Our standard is a generous **12×24 inches**).
 - Does it include a protective storage case?
 
-At DPlanner, our **Signature Album Package (₦450,000)** and our standalone **Album Collection Add-on (₦180,000)** include a handcrafted 12×24 flush-mount album housed in a **customized leather briefcase** designed to protect your album against moisture and dust.
+At DPlanner, our **Signature Album Package (₦450,000)** and our standalone **Album Collection Add-on (₦180,000)** include a **12×24 flush-mount synthetic photobook (50 designed pages)** housed in a **leather presentation briefcase** designed to protect your album against moisture and dust.
 
 ---
 
