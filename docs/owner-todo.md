@@ -100,7 +100,7 @@ Both Google Search Console and Bing Webmaster Tools are officially verified, and
 - **Verification Method Active**:
   * HTML Meta Tag: `<meta name="msvalidate.01" content="014850FA57EFD70B1FC17D6E6E6C42C7">` (in `src/_data/site.json`)
 - **Sitemap**: `https://dplanner.com.ng/sitemap.xml`
-- **Sitemap Status**: **Processing** (1 known sitemap, 0 errors, 0 warnings)
+- **Sitemap Status**: **Success** (11 URLs discovered, 0 errors, 0 warnings)
 - **Dashboard Access**: [Bing Webmaster Tools](https://www.bing.com/webmasters/home?siteUrl=https://dplanner.com.ng/)
 
 ---
