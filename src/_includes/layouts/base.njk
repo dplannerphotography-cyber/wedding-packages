@@ -11,6 +11,12 @@
   <meta name="theme-color" content="#6e1628">
   <meta name="geo.region" content="NG-OY">
   <meta name="geo.placename" content="Yemetu, Ibadan">
+  {%- if site.googleSiteVerification %}
+  <meta name="google-site-verification" content="{{ site.googleSiteVerification }}">
+  {%- endif %}
+  {%- if site.bingSiteVerification %}
+  <meta name="msvalidate.01" content="{{ site.bingSiteVerification }}">
+  {%- endif %}
 
   {%- set shareImage = (ogImage or "/assets/og/home.png") | absUrl %}
   <meta property="og:site_name" content="{{ site.name }}">

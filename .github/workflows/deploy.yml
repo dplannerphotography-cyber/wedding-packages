@@ -41,3 +41,29 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+      - name: Ping IndexNow
+        continue-on-error: true
+        run: |
+          curl -s -X POST "https://api.indexnow.org/IndexNow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d '{
+              "host": "dplanner.com.ng",
+              "key": "c4d372e5192842bb90f75a6104eb6a58",
+              "keyLocation": "https://dplanner.com.ng/c4d372e5192842bb90f75a6104eb6a58.txt",
+              "urlList": [
+                "https://dplanner.com.ng/",
+                "https://dplanner.com.ng/weddings/",
+                "https://dplanner.com.ng/weddings/essential/",
+                "https://dplanner.com.ng/weddings/classic/",
+                "https://dplanner.com.ng/weddings/signature/",
+                "https://dplanner.com.ng/weddings/album-addon/",
+                "https://dplanner.com.ng/photography/",
+                "https://dplanner.com.ng/blog/",
+                "https://dplanner.com.ng/blog/how-much-does-wedding-photography-cost-in-ibadan-2026/",
+                "https://dplanner.com.ng/blog/how-to-choose-a-wedding-photographer-in-ibadan-10-questions/",
+                "https://dplanner.com.ng/blog/traditional-engagement-photography-in-oyo-state-what-to-expect/",
+                "https://dplanner.com.ng/sitemap.xml",
+                "https://dplanner.com.ng/llms.txt",
+                "https://dplanner.com.ng/llms-full.txt"
+              ]
+            }'

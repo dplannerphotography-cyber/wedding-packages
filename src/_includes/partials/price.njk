@@ -6,7 +6,12 @@
     <div class="savings-pill{% if pkg.popular %} highlight-pill{% endif %}"><i class="fa-solid fa-tag" aria-hidden="true"></i> SAVE {{ (pkg.was - pkg.price) | naira }}</div>
   </div>
   <div class="post-promo">
-    <div class="new-price{% if pkg.popular and onCard %} gold-highlight{% endif %}">{{ pkg.was | naira }}</div>
-    <div class="savings-pill">{{ site.promo.endedMessage }}</div>
+    {% if pkg.price2027 %}
+    <div class="new-price{% if pkg.popular and onCard %} gold-highlight{% endif %}">{{ pkg.price2027 | naira }}</div>
+    <div class="savings-pill">2027 Official Rate</div>
+    {% else %}
+    <div class="new-price{% if pkg.popular and onCard %} gold-highlight{% endif %}" style="font-size: 1.35rem; line-height: 1.3;">2027 prices coming soon</div>
+    <div class="savings-pill"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Message us on WhatsApp for a quote</div>
+    {% endif %}
   </div>
 </div>

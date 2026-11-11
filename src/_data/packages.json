@@ -6,6 +6,7 @@
     "fullName": "Essential Wedding Package",
     "price": 180000,
     "was": 200000,
+    "price2027": null,
     "popular": false,
     "isAddon": false,
     "tagline": "Thoughtful, complete wedding coverage.",
@@ -21,7 +22,7 @@
     ],
     "faqs": [
       { "q": "How do I book the Essential package?", "a": "Message us on WhatsApp with your wedding date and venue. A 50% non-refundable deposit secures your date, and the balance is due before final delivery." },
-      { "q": "Can I add an album to Essential?", "a": "Yes. The Album Collection can be added to Essential for ₦180,000 (was ₦200,000) during the promo." },
+      { "q": "Can I add an album to Essential?", "a": "Yes. The Album Collection can be added to Essential. During our 2026 promo it is ₦180,000 (was ₦200,000); message us on WhatsApp for 2027 rates." },
       { "q": "Does Essential include a highlight film?", "a": "Essential includes one-day photo and film coverage. The cinematic highlight film and social wedding reel come with the Classic package." },
       { "q": "Do you cover weddings outside Ibadan?", "a": "Yes. We are based in Ibadan, regularly shoot in Ibadan and Lagos, and are available for travel nationwide on request. Travel outside the agreed location is quoted separately." },
       { "q": "When do we receive our photos?", "a": "Edited wedding photos are delivered within 3–4 weeks after the wedding via Google Drive." }
@@ -34,6 +35,7 @@
     "fullName": "Classic Wedding Package",
     "price": 250000,
     "was": 300000,
+    "price2027": null,
     "popular": true,
     "isAddon": false,
     "tagline": "The complete DPlanner Photography wedding experience.",
@@ -50,7 +52,7 @@
     "faqs": [
       { "q": "How do I book the Classic package?", "a": "Message us on WhatsApp with your wedding date and venue. A 50% non-refundable deposit secures your date, and the balance is due before final delivery." },
       { "q": "What does Classic add to Essential?", "a": "Everything in Essential, plus bride and groom preparation coverage, a cinematic highlight film, a 12 x 16 framed portrait and a social wedding reel for Instagram and TikTok." },
-      { "q": "Is an album included in Classic?", "a": "No. The Album Collection is included in the Signature Album package. You can add it to Classic for ₦180,000 (was ₦200,000) during the promo." },
+      { "q": "Is an album included in Classic?", "a": "No. The Album Collection is included in the Signature Album package. You can add it to Classic for ₦180,000 (was ₦200,000) during our 2026 promo; message us on WhatsApp for 2027 rates." },
       { "q": "Do you cover weddings outside Ibadan?", "a": "Yes. We are based in Ibadan, regularly shoot in Ibadan and Lagos, and are available for travel nationwide on request. Travel outside the agreed location is quoted separately." },
       { "q": "When do we receive our photos and film?", "a": "Your highlight film is delivered within 1 week after the wedding. Edited wedding photos are delivered within 3–4 weeks after the wedding." }
     ]
@@ -62,6 +64,7 @@
     "fullName": "Signature Album Wedding Package",
     "price": 450000,
     "was": 550000,
+    "price2027": null,
     "popular": false,
     "isAddon": false,
     "tagline": "Our fullest coverage, with the Album Collection included.",
@@ -90,6 +93,7 @@
     "fullName": "Album Collection Add-on",
     "price": 180000,
     "was": 200000,
+    "price2027": null,
     "popular": false,
     "isAddon": true,
     "tagline": "Included in Signature. Add it to Essential or Classic for ₦180,000.",
@@ -104,7 +108,7 @@
     ],
     "faqs": [
       { "q": "Which packages can I add the Album Collection to?", "a": "Essential or Classic. It is already included in the Signature Album package." },
-      { "q": "How much is the Album Collection add-on?", "a": "₦180,000 (was ₦200,000) for bookings secured by 31 December 2026." },
+      { "q": "How much is the Album Collection add-on?", "a": "₦180,000 (was ₦200,000) for bookings secured by 31 December 2026. Message us on WhatsApp for 2027 rates." },
       { "q": "How do I add it to my booking?", "a": "Message us on WhatsApp and tell us which package you are booking. A 50% non-refundable deposit secures your date, and the balance is due before final delivery." },
       { "q": "When is the album ready?", "a": "The 12×24 flush-mount photobook and leather presentation briefcase are designed and delivered following your picture selection and layout approval." }
     ]
