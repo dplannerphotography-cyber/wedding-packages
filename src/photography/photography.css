@@ -1799,3 +1799,15 @@ img {
   padding: 1px 6px;
   font-weight: 600;
 }
+
+.session-deposit-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+.session-deposit-note i { color: var(--wine-primary); font-size: 0.72rem; }

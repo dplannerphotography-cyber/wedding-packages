@@ -15,13 +15,19 @@
     "countryName": "Nigeria"
   },
   "locationLine": "Based in Ibadan, regularly shooting in Ibadan and Lagos, and available for travel nationwide on request.",
-  "areaServed": ["Ibadan", "Lagos"],
+  "areaServed": [
+    "Ibadan",
+    "Lagos"
+  ],
   "hours": {
     "weekdays": "Monday to Saturday, from 9:00 AM",
     "sunday": "2nd and last Sunday of the month, from 3:00 PM",
     "closingTodo": "TODO (Samuel): closing times"
   },
-  "rating": { "value": "4.9", "count": "46" },
+  "rating": {
+    "value": "4.9",
+    "count": "46"
+  },
   "googleUrl": "https://www.google.com/maps/place/DPLANNER+PHOTOGRAPHY,+82+De+ACE+HALL,+besides+Turaya+Food+Canteen,+Yemetu,+Ibadan,+Oyo+State/",
   "social": {
     "handle": "@dplannerphotography",
@@ -40,9 +46,22 @@
     "endedMessage": "Promo ended – message us for 2027 rates."
   },
   "nav": [
-    { "label": "Home", "url": "/" },
-    { "label": "Weddings", "url": "/weddings/" },
-    { "label": "Studio & Portraits", "url": "/photography/" },
-    { "label": "Terms", "url": "/weddings/#terms" }
-  ]
+    {
+      "label": "Home",
+      "url": "/"
+    },
+    {
+      "label": "Weddings",
+      "url": "/weddings/"
+    },
+    {
+      "label": "Studio & Portraits",
+      "url": "/photography/"
+    },
+    {
+      "label": "Terms",
+      "url": "/weddings/#terms"
+    }
+  ],
+  "studioDeposit": "50% deposit secures your session"
 }
