@@ -1792,3 +1792,10 @@ img {
   font-weight: 700;
   margin-left: 6px;
 }
+
+.todo-inline {
+  background: var(--gold-soft);
+  border: 1px dashed var(--gold-dark);
+  padding: 1px 6px;
+  font-weight: 600;
+}
