@@ -118,20 +118,12 @@ Follow these steps once you are ready to verify ownership in Google Search Conso
 
 ---
 
-### Step 2: Bing Webmaster Tools Verification
+### Step 2: Bing Webmaster Tools Verification (COMPLETED & ACTIVE)
 
-1. Go to [Bing Webmaster Tools](https://www.bing.com/webmasters).
-2. Sign in with your Microsoft or Google account.
-3. Under "Add a site", click **Import from Google Search Console**.
-   - This automatically verifies your site and imports your sitemap without needing any DNS edits or meta tags!
-4. *(Optional manual method)*: If importing is not used, copy the Bing meta tag code and paste it into `src/_data/site.json`:
-   ```json
-   "bingSiteVerification": "YOUR_BING_CODE_HERE"
-   ```
-5. Confirm your sitemap is submitted in Bing under **Sitemaps**:
-   ```text
-   https://dplanner.com.ng/sitemap.xml
-   ```
+- **Status**: **Verified & Sitemap Submitted.**
+- **Verification Method**: HTML Meta Tag (`msvalidate.01` = `014850FA57EFD70B1FC17D6E6E6C42C7`).
+- **Sitemap**: `https://dplanner.com.ng/sitemap.xml` is submitted and currently processing.
+- You can review your indexing status anytime by visiting [Bing Webmaster Tools](https://www.bing.com/webmasters).
 
 ---
 
