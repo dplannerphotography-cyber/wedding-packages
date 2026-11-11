@@ -1,0 +1,95 @@
+---
+layout: layouts/base.njk
+title: "DPlanner Photography | Wedding Photographer in Ibadan, Studio & Portraits"
+description: "DPlanner Photography is a wedding photographer in Ibadan with a studio in Yemetu. Weddings, studio portraits, birthdays and events. Rated 4.9 from 46 Google reviews. Book on WhatsApp."
+ogImage: /assets/og/home.png
+permalink: /
+legacyHashRedirect: true
+---
+{# Promo banner: stays at the top of the home page until the promo ends #}
+<section class="promo-banner promo-only" aria-label="Wedding promo">
+  <div class="container promo-banner-inner">
+    <div class="promo-banner-text">
+      <span class="pill-badge">WEDDING PROMO &bull; BOOK BY {{ site.promo.endsText | upper }}</span>
+      <h2>Wedding packages from ₦180,000</h2>
+      <ul class="promo-price-list">
+        {%- for pkg in packages %}{% if not pkg.isAddon %}
+        <li><a href="/weddings/{{ pkg.slug }}/"><span>{{ pkg.name }}</span> <strong>{{ pkg.price | naira }}</strong> <s>{{ pkg.was | naira }}</s></a></li>
+        {%- endif %}{% endfor %}
+      </ul>
+    </div>
+    <div class="promo-banner-action">
+      {% include "partials/countdown.njk" %}
+      <a href="/weddings/" class="btn btn-card-featured btn-lg">View Wedding Packages</a>
+    </div>
+  </div>
+</section>
+
+<header class="hero-section">
+  <div class="container hero-container">
+    <div class="hero-content">
+      <h1 class="hero-title">Wedding, studio and event photography in <span class="highlight-wine">Ibadan</span></h1>
+      <p class="hero-description">
+        {{ site.name }} is led by {{ site.leadPhotographer }}, with a studio in Yemetu. {{ site.locationLine }}
+      </p>
+      <div class="hero-actions">
+        <a href="/weddings/" class="btn btn-hero-packages btn-lg">Wedding Packages</a>
+        <a href="/photography/" class="btn btn-hero-packages btn-lg">Studio &amp; Portraits</a>
+      </div>
+      <p class="rating-line">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        Rated {{ site.rating.value }} from {{ site.rating.count }} Google reviews.
+        <a href="{{ site.googleUrl }}" target="_blank" rel="noopener noreferrer">Read them on Google</a>
+      </p>
+    </div>
+
+    <div class="hero-visual">
+      {# TODO (Samuel): replace with a real wedding or studio photograph (portrait, about 900 x 1100) #}
+      <div class="image-card-frame">
+        <img src="/assets/img/flyer.png" alt="DPlanner Photography wedding promo flyer showing a couple in traditional attire" class="hero-flyer-img" width="530" height="672" fetchpriority="high" decoding="async">
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="home-services">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">What We Shoot</h2>
+    </div>
+    <div class="service-grid">
+      <a class="service-card" href="/weddings/">
+        <h3>Weddings</h3>
+        <p>One-day photo and film coverage for traditional and white weddings, in three packages.</p>
+        <span class="service-price promo-only">From ₦180,000 until {{ site.promo.endsText }}</span>
+        <span class="service-price post-promo">{{ site.promo.endedMessage }}</span>
+        <span class="service-link">See wedding packages &rarr;</span>
+      </a>
+      <a class="service-card" href="/photography/#pricing">
+        <h3>Studio &amp; Portraits</h3>
+        <p>Portraits, birthdays and creative concepts at our Yemetu studio. {{ site.studioDelivery }}.</p>
+        <span class="service-price">From ₦2,000 per edited picture</span>
+        <span class="service-link">See studio prices &rarr;</span>
+      </a>
+      <a class="service-card" href="/photography/#services">
+        <h3>Birthdays, Corporate &amp; Events</h3>
+        <p>Coverage for birthdays, conferences, AGMs and family celebrations. Message us for a quote.</p>
+        <span class="service-link">See all services &rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner-section">
+  <div class="container">
+    <div class="cta-banner">
+      <h2>Book or Ask a Question</h2>
+      <p>Message us on WhatsApp and tell us what you are planning. {{ site.hours.weekdays }}; {{ site.hours.sunday }}.</p>
+      <div class="cta-banner-buttons">
+        <a href="{{ "Hello DPlanner Photography! I'd like to make an enquiry." | wa }}" target="_blank" rel="noopener noreferrer" class="btn btn-hero-book btn-lg">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,38 +1,28 @@
-# DPlanner Photography - Wedding Packages & Promo Website
+# DPlanner Photography website (dplanner.com.ng)
 
-A luxury, mobile-responsive landing page for **DPlanner Photography** showcasing promotional wedding packages (September – December 2026).
+Static site built with [Eleventy](https://www.11ty.dev/) and published to GitHub Pages by
+`.github/workflows/deploy.yml` whenever `main` is updated.
 
-Hosted **100% free forever** on **GitHub Pages**.
+## Working on it
 
----
-
-## 🌟 Live Demo
-- **Live URL**: [https://dplannerphotography-cyber.github.io/wedding-packages/](https://dplannerphotography-cyber.github.io/wedding-packages/)
-
----
-
-## 📸 Featured Packages
-1. **Essential**: ₦180,000 *(Regular: ₦200,000 — Save ₦20,000)*
-2. **Classic [Most Popular]**: ₦250,000 *(Regular: ₦300,000 — Save ₦50,000)*
-3. **Signature Album**: ₦450,000 *(Regular: ₦550,000 — Save ₦100,000)*
-
----
-
-## 📱 How to Change Your WhatsApp Number
-Open `script.js` and edit line 7:
-```javascript
-const CONFIG = {
-  whatsappNumber: "2348000000000", // <-- Put your WhatsApp number here (country code without '+')
-...
-};
 ```
-Commit and push, and your live website updates automatically within 30 seconds!
+npm install        # once
+npm start          # local preview at http://localhost:8812
+npm run build      # writes the finished site to _site/
+npm run og         # regenerate share images after changing a package name or price
+```
 
----
+## Where things live
 
-## 🛠 Built With
-- Semantic HTML5 & Responsive CSS3
-- Google Fonts (`Cinzel`, `Playfair Display`, `Plus Jakarta Sans`)
-- FontAwesome 6 Icons
-- Native JavaScript (No heavy frameworks or build steps required)
-- Hosted permanently on **GitHub Pages**
+| What | File |
+|---|---|
+| Business facts (phone, address, hours, promo end date) | `src/_data/site.json` |
+| Wedding packages, prices, features, FAQs | `src/_data/packages.json` |
+| Header and footer (shared by every page) | `src/_includes/partials/` |
+| Home page | `src/index.njk` |
+| Wedding comparison page | `src/weddings/index.njk` |
+| The four package pages (one template) | `src/weddings/package.njk` |
+| Studio page (not yet moved to the shared layout) | `src/photography/` |
+| Styles and script | `src/assets/css/site.css`, `src/assets/js/site.js` |
+
+Search the project for `TODO (Samuel)` to find content that still needs filling in.

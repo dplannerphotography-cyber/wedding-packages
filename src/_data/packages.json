@@ -1,0 +1,112 @@
+[
+  {
+    "slug": "essential",
+    "anchor": "essential",
+    "name": "Essential",
+    "fullName": "Essential Wedding Package",
+    "price": 180000,
+    "was": 200000,
+    "popular": false,
+    "isAddon": false,
+    "tagline": "Thoughtful, complete wedding coverage.",
+    "title": "Essential Wedding Package – ₦180,000 | Wedding Photographer in Ibadan",
+    "description": "Essential wedding package from DPlanner Photography, a wedding photographer in Ibadan: one-day photo and film, ceremony and reception coverage. ₦180,000 (was ₦200,000) until 31 December 2026.",
+    "shareText": "Essential Wedding Package – ₦180,000 (was ₦200,000). One-day photo + film by DPlanner Photography, Ibadan.",
+    "features": [
+      "One-day photo + film",
+      "Ceremony + reception coverage",
+      "Couple + family portraits",
+      "Edited high-resolution images",
+      "Digital delivery (Google Drive)"
+    ],
+    "faqs": [
+      { "q": "How do I book the Essential package?", "a": "Message us on WhatsApp with your wedding date and venue. A 50% non-refundable deposit secures your date, and the balance is due before final delivery." },
+      { "q": "Can I add an album to Essential?", "a": "Yes. The Album Collection can be added to Essential for ₦180,000 (was ₦200,000) during the promo." },
+      { "q": "Does Essential include a highlight film?", "a": "Essential includes one-day photo and film coverage. The cinematic highlight film and social wedding reel come with the Classic package." },
+      { "q": "Do you cover weddings outside Ibadan?", "a": "Yes. We are based in Ibadan, regularly shoot in Ibadan and Lagos, and are available for travel nationwide on request. Travel outside the agreed location is quoted separately." },
+      { "q": "When do we receive our photos?", "todo": "TODO (Samuel): wedding delivery times." }
+    ]
+  },
+  {
+    "slug": "classic",
+    "anchor": "classic",
+    "name": "Classic",
+    "fullName": "Classic Wedding Package",
+    "price": 250000,
+    "was": 300000,
+    "popular": true,
+    "isAddon": false,
+    "tagline": "The complete DPlanner Photography wedding experience.",
+    "title": "Classic Wedding Package – ₦250,000 | Wedding Photographer in Ibadan",
+    "description": "Classic is the most popular wedding package from DPlanner Photography, Ibadan: preparation coverage, cinematic highlight film, 12 x 16 framed portrait and social reel. ₦250,000 (was ₦300,000).",
+    "shareText": "Classic Wedding Package (Most Popular) – ₦250,000 (was ₦300,000). Highlight film, framed portrait and social reel by DPlanner Photography, Ibadan.",
+    "includesFrom": "Essential",
+    "features": [
+      "Bride + groom preparation",
+      "Cinematic highlight film",
+      "12 x 16 framed portrait",
+      "Social wedding reel (Instagram/TikTok)"
+    ],
+    "faqs": [
+      { "q": "How do I book the Classic package?", "a": "Message us on WhatsApp with your wedding date and venue. A 50% non-refundable deposit secures your date, and the balance is due before final delivery." },
+      { "q": "What does Classic add to Essential?", "a": "Everything in Essential, plus bride and groom preparation coverage, a cinematic highlight film, a 12 x 16 framed portrait and a social wedding reel for Instagram and TikTok." },
+      { "q": "Is an album included in Classic?", "a": "No. The Album Collection is included in the Signature Album package. You can add it to Classic for ₦180,000 (was ₦200,000) during the promo." },
+      { "q": "Do you cover weddings outside Ibadan?", "a": "Yes. We are based in Ibadan, regularly shoot in Ibadan and Lagos, and are available for travel nationwide on request. Travel outside the agreed location is quoted separately." },
+      { "q": "When do we receive our photos and film?", "todo": "TODO (Samuel): wedding delivery times." }
+    ]
+  },
+  {
+    "slug": "signature",
+    "anchor": "signature",
+    "name": "Signature Album",
+    "fullName": "Signature Album Wedding Package",
+    "price": 450000,
+    "was": 550000,
+    "popular": false,
+    "isAddon": false,
+    "tagline": "Our fullest coverage, with the Album Collection included.",
+    "title": "Signature Album Wedding Package – ₦450,000 | Wedding Photographer in Ibadan",
+    "description": "Signature Album wedding package from DPlanner Photography, Ibadan: everything in Classic plus a pre-wedding studio session, 16 x 20 framed portrait and the full Album Collection. ₦450,000 (was ₦550,000).",
+    "shareText": "Signature Album Wedding Package – ₦450,000 (was ₦550,000). Album Collection included. DPlanner Photography, Ibadan.",
+    "includesFrom": "Classic",
+    "features": [
+      "Pre-wedding studio session",
+      "16 x 20 framed portrait",
+      "Album Collection included (12 x 24 photobook, briefcase, mini book & calendar)",
+      "Priority delivery"
+    ],
+    "faqs": [
+      { "q": "How do I book the Signature Album package?", "a": "Message us on WhatsApp with your wedding date and venue. A 50% non-refundable deposit secures your date, and the balance is due before final delivery." },
+      { "q": "What is in the Album Collection?", "a": "A 12 x 24 synthetic photobook with 25 designed pages, a presentation briefcase, a mini keepsake photobook and a custom anniversary calendar." },
+      { "q": "What does Signature add to Classic?", "a": "Everything in Classic, plus a pre-wedding studio session, a 16 x 20 framed portrait, the full Album Collection and priority delivery." },
+      { "q": "Do you cover weddings outside Ibadan?", "a": "Yes. We are based in Ibadan, regularly shoot in Ibadan and Lagos, and are available for travel nationwide on request. Travel outside the agreed location is quoted separately." },
+      { "q": "When do we receive our photos, film and album?", "todo": "TODO (Samuel): wedding and album delivery times." }
+    ]
+  },
+  {
+    "slug": "album-addon",
+    "anchor": "addon",
+    "name": "Album Collection Add-on",
+    "fullName": "Album Collection Add-on",
+    "price": 180000,
+    "was": 200000,
+    "popular": false,
+    "isAddon": true,
+    "tagline": "Included in Signature. Add it to Essential or Classic for ₦180,000.",
+    "title": "Wedding Album Collection Add-on – ₦180,000 | DPlanner Photography, Ibadan",
+    "description": "Add the Album Collection to an Essential or Classic wedding package from DPlanner Photography, Ibadan: 12 x 24 photobook, briefcase, mini book and calendar. ₦180,000 (was ₦200,000).",
+    "shareText": "Album Collection Add-on – ₦180,000 (was ₦200,000). Add it to Essential or Classic. DPlanner Photography, Ibadan.",
+    "features": [
+      "12 x 24 synthetic photobook (25 designed pages)",
+      "Presentation briefcase",
+      "Mini keepsake photobook",
+      "Custom anniversary calendar"
+    ],
+    "faqs": [
+      { "q": "Which packages can I add the Album Collection to?", "a": "Essential or Classic. It is already included in the Signature Album package." },
+      { "q": "How much is the Album Collection add-on?", "a": "₦180,000 (was ₦200,000) for bookings secured by 31 December 2026." },
+      { "q": "How do I add it to my booking?", "a": "Message us on WhatsApp and tell us which package you are booking. A 50% non-refundable deposit secures your date, and the balance is due before final delivery." },
+      { "q": "When is the album ready?", "todo": "TODO (Samuel): album delivery time." }
+    ]
+  }
+]
