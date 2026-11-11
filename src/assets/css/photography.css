@@ -13,6 +13,8 @@ img {
 .portfolio-editorial-grid > *,
 .story-collage-grid > *,
 .hero-triptych-grid > *,
+.hero-featured-showcase > *,
+.portfolio-bridge-card > *,
 .pricing-cards-grid > *,
 .about-pillars-grid > *,
 .reviews-columns-grid > *,
@@ -259,6 +261,85 @@ img {
   color: var(--text-muted);
 }
 
+/* ---------- Hero Featured Showcase (Real Imagery) ---------- */
+.hero-featured-showcase {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.hero-feature-card {
+  position: relative;
+  background: var(--bg-white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--border-subtle);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hero-feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.hero-feature-media {
+  position: relative;
+  aspect-ratio: 4/3.8;
+  max-height: 480px;
+  overflow: hidden;
+  background: var(--bg-ivory);
+}
+
+.hero-feature-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.hero-feature-card:hover .hero-feature-media img {
+  transform: scale(1.03);
+}
+
+.hero-feature-meta-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  background: var(--bg-white);
+  border-top: 1px solid var(--border-subtle);
+  gap: 12px;
+}
+
+.hero-feature-meta-bar strong {
+  display: block;
+  font-size: 0.96rem;
+  color: var(--text-dark);
+}
+
+.hero-feature-meta-bar span {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.hero-feature-link {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--wine-primary);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: var(--transition);
+}
+
+.hero-feature-link:hover {
+  color: var(--gold-warm);
+}
+
 /* ---------- 2. Credibility Strip ---------- */
 .credibility-strip {
   padding: 32px 0;
@@ -303,6 +384,101 @@ img {
 .portfolio-section {
   padding: 80px 0;
   background: var(--bg-page);
+}
+
+/* Portfolio Bridge (Featured Real Photo & Live Instagram Archive) */
+.portfolio-bridge-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  background: var(--bg-white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-card);
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .portfolio-bridge-card {
+    grid-template-columns: 1fr 1.25fr;
+  }
+}
+
+.bridge-visual {
+  position: relative;
+  background: var(--bg-ivory);
+  overflow: hidden;
+  min-height: 280px;
+}
+
+.bridge-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.bridge-content {
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bridge-content h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.5rem, 2.5vw, 1.85rem);
+  color: var(--text-dark);
+  margin: 12px 0 10px;
+  line-height: 1.25;
+}
+
+.bridge-content p {
+  color: var(--text-body);
+  font-size: 0.98rem;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.bridge-highlights-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+}
+
+.bridge-highlights-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.92rem;
+  color: var(--text-body);
+  margin-bottom: 8px;
+}
+
+.bridge-highlights-list i {
+  color: var(--wine-primary);
+  font-size: 0.85rem;
+}
+
+.bridge-actions-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+@media (max-width: 640px) {
+  .bridge-content {
+    padding: 24px 18px;
+  }
+  .bridge-actions-row {
+    flex-direction: column;
+  }
+  .bridge-actions-row .btn {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 .portfolio-tabs-bar {
