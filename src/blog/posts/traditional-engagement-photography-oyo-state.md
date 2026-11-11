@@ -38,7 +38,7 @@ Before entering the hall, the groom's family arrives bearing traditional gifts. 
 
 ### B. The Groom's Grand Entrance & The *Dobale* (Prostration)
 Accompanied by his groomsmen (*Ore Oko*), the groom enters the hall with vibrant drumming and dancing. When he reaches the bride's parents, he and his friends perform the reverent Yoruba gesture of humility and respect: the full prostration (*Dobale*) flat on the carpet.
-- **The Shot**: Low-angle, multi-camera coverage. One photographer captures the full prostration while a second photographer focuses tightly on the father and mother's expressions of approval, laughter, and prayerful blessing.
+- **The Shot**: Low-angle, multi-camera coverage. <!-- Crew size: exact numbers to be added here -->With a trained crew sized to your package, one angle captures the full prostration while another focuses tightly on the father and mother's expressions of approval, laughter, and prayerful blessing.
 
 ### C. The Proposal Letter & Acceptance Letter Reading
 A young female representative from the groom's family formally presents the official proposal letter (*Iwe Ife*). It is ceremoniously opened, inspected, and read aloud by a representative of the bride's family, followed by the presentation of the acceptance letter.
@@ -91,7 +91,7 @@ Couples booking our traditional engagement coverage receive:
 - **Cinematic Highlight Film**: A dynamic 3–5 minute film set to music, featuring audio of the parental prayers and Alaga songs, delivered within **1 week**.
 - **Complete Photo Gallery**: Delivered within **3–4 weeks** via secure online gallery with high-speed download access.
 - **Framed Heirloom Prints**: Included in all standard packages for immediate home display.
-- **Optional 12×24 Handcrafted Photobook**: Available as our **Signature Album Package (₦450,000)** or as an add-on (**₦180,000**) housed in a customized protective briefcase.
+- **Optional 12×24 Handcrafted Photobook**: Available with our **Signature Album Package (₦450,000)** or as the **Album Collection Add-on (₦180,000)** housed in a customized protective briefcase.
 
 ---
 

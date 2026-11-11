@@ -26,21 +26,21 @@ As the lead photographer at **DPlanner Photography**, based at our studio in Yem
 
 ---
 
-## 1. The 2026 Wedding Photography Price Landscape in Ibadan
+## 1. Typical Wedding Photography Price Ranges in Ibadan (2026 Guide)
 
-Wedding photography rates in Ibadan generally fall into three distinct tiers:
+Based on typical market ranges across Oyo State, wedding photography and film pricing generally falls into three broad tiers. These typical ranges serve as a general planning guide rather than exact quotes from individual businesses:
 
-### Tier 1: Entry-Level / Solo Freelancer (₦80,000 – ₦150,000)
-- **What is included**: Typically one solo photographer using entry-level gear. Coverage is usually limited to a few hours, delivering 150–250 lightly edited digital images on a flash drive or Google Drive link.
-- **The trade-offs**: A solo shooter cannot be in two places at once. While the photographer is capturing the bride's entrance, they cannot simultaneously capture the groom's emotional reaction or parents' expressions. Turnaround times can be erratic, and backup equipment is rarely guaranteed.
+### Tier 1: Entry-Level / Solo Freelancer (Typical range: ₦80,000 – ₦150,000)
+- **What is typically included**: Often a solo photographer using entry-level gear. Coverage is usually limited to a few hours, delivering digital images on a drive or cloud link.
+- **The considerations**: A single shooter cannot be in two places at once. While capturing the bride's entrance, they cannot simultaneously capture the groom's emotional reaction or parents' expressions. Turnaround times and backup equipment can also vary.
 
-### Tier 2: Established Professional Studio (₦180,000 – ₦350,000)
-- **What is included**: A multi-person team (two photographers and a dedicated cinematographer), professional lighting for evening receptions, color-graded high-resolution galleries, cinematic highlight films, and framed wall portraits.
+### Tier 2: Established Professional Studio (Typical range: ₦180,000 – ₦350,000)
+- **What is typically included**: Professional crew coverage sized to the celebration, dedicated cinema coverage for highlight films, professional lighting for evening receptions, color-graded high-resolution galleries, and framed wall portraits.
 - **Why it is the sweet spot**: This tier represents the best balance of artistic excellence, verified equipment redundancy, and reliable contractual delivery timelines.
 - **DPlanner Packages**: Our **Essential Package** (full-day photo coverage with 300+ edited pictures and framed print) is currently **₦180,000** (promotional rate, was ₦200,000). Our most popular **Classic Package** (full-day photography and cinematic highlight film) is **₦250,000** (was ₦300,000).
 
-### Tier 3: Luxury Heirloom Collections (₦450,000 – ₦1,200,000+)
-- **What is included**: Large multi-crew coverage (senior photographers, cinematographers, drone operator, lighting assistants), premium handcrafted flush-mount photobook albums presented in customized briefcases, pre-wedding engagement shoots, parent mini-albums, and expedited priority turnaround.
+### Tier 3: Luxury Heirloom Collections (Typical range: ₦450,000 – ₦1,200,000+)
+- **What is typically included**: Expanded crew coverage, premium handcrafted flush-mount photobook albums presented in customized briefcases, pre-wedding engagement shoots, parent mini-albums, and expedited priority turnaround.
 - **DPlanner Packages**: Our **Signature Album Package** is **₦450,000** (promotional rate, was ₦550,000) and includes full photo and film coverage, 600+ edited images, 3 large framed portraits, and our bespoke 12×24 handcrafted flush-mount album in a customized luxury briefcase.
 
 ---
@@ -51,10 +51,10 @@ To give you an exact, transparent benchmark, here is how our seasonal promotiona
 
 | Package | 2026 Promo Rate | Team & Coverage | Core Deliverables | Turnaround Time |
 | :--- | :--- | :--- | :--- | :--- |
-| **Essential** | **₦180,000** *(was ₦200,000)* | 1 Senior Photographer &bull; Full Day | 300+ high-res edited photos &bull; 1 Framed print &bull; Online gallery | **3–4 weeks** |
-| **Classic** *(Most Popular)* | **₦250,000** *(was ₦300,000)* | 2 Photographers + 1 Videographer &bull; Full Day | 450+ high-res edited photos &bull; HD Highlight film (3–5 min) &bull; Full ceremony speeches &bull; 2 Framed prints | Film: **1 week**<br>Photos: **3–4 weeks** |
-| **Signature Album** | **₦450,000** *(was ₦550,000)* | 2 Senior Photographers + 2 Videographers &bull; Full Day | 600+ high-res edited photos &bull; HD Highlight film &bull; 12×24 Handcrafted photobook in customized briefcase &bull; 3 Large framed prints | Film: **1 week**<br>Photos: **3–4 weeks** |
-| **Album Add-on** | **₦180,000** | Add to Essential or Classic | 12×24 Handcrafted flush-mount album in custom luxury briefcase | Delivered with final order |
+| **Essential** | **₦180,000** *(was ₦200,000)* | <!-- Crew size: exact numbers to be added here -->A trained crew sized to your package &bull; Full Day | 300+ high-res edited photos &bull; 1 Framed print &bull; Online gallery | **3–4 weeks** |
+| **Classic** *(Most Popular)* | **₦250,000** *(was ₦300,000)* | <!-- Crew size: exact numbers to be added here -->A trained crew sized to your package &bull; Full Day | 450+ high-res edited photos &bull; HD Highlight film (3–5 min) &bull; Full ceremony speeches &bull; 2 Framed prints | Film: **1 week**<br>Photos: **3–4 weeks** |
+| **Signature Album** | **₦450,000** *(was ₦550,000)* | <!-- Crew size: exact numbers to be added here -->A trained crew sized to your package &bull; Full Day | 600+ high-res edited photos &bull; HD Highlight film &bull; 12×24 Handcrafted photobook in customized briefcase &bull; 3 Large framed prints | Film: **1 week**<br>Photos: **3–4 weeks** |
+| **Album Collection Add-on** | **₦180,000** | Add to Essential or Classic | 12×24 Handcrafted flush-mount album in custom luxury briefcase | Delivered with final order |
 
 *Note: All 2026 promo rates require a 50% non-refundable deposit to secure your date on our calendar. The balance is due before final delivery.*
 
@@ -71,7 +71,8 @@ A wedding is a fast-paced, unrepeatable live event. At a traditional Yoruba wedd
 - Parents' candid emotional reactions and tearful prayers
 - Detail shots of traditional gifts (*Eru Iyawo*) and decorative decor
 
-Having at least two photographers ensures that one shooter documents the core ritual while the second shooter captures authentic, unscripted candid emotions.
+<!-- Crew size: exact numbers to be added here -->
+Having a trained crew sized to your package ensures that key moments are documented from complementary vantage points while capturing authentic, unscripted candid emotions across both families.
 
 ### B. Natural Skin Retouching vs. Batch Filtering
 Nigerian weddings feature intricate textures: woven Aso-Oke, velvet, heavy beadwork, and rich, diverse skin complexions. Low-cost photographers often apply generic, heavy Instagram-style presets that blow out skin tones or turn deep complexions greyish.
@@ -97,7 +98,7 @@ Before signing any contract or paying a deposit, **insist on having guaranteed d
 At DPlanner Photography, our written turnaround guarantees are:
 - **Cinematic Highlight Films**: Delivered within **1 week** after the wedding.
 - **Complete Edited Photo Galleries**: Delivered within **3–4 weeks** after the wedding.
-- **Studio Portrait Sessions**: Delivered within **24 hours** (+₦500 per picture for same-day express).
+- **Studio Portrait Sessions**: Delivered within **24 hours** (Same-day express delivery: +₦500 per picture).
 
 Because our studio has a dedicated editing workflow based at our physical studio in Yemetu, Ibadan, we never leave couples waiting for months.
 
@@ -114,7 +115,7 @@ When booking a package for an event outside Ibadan, travel and accommodation fee
 ## Summary: How to Budget Smartly
 
 For most couples having a traditional and white wedding in Ibadan, budgeting **₦250,000 to ₦450,000** for combined photo and cinema coverage gives you the ideal balance:
-1. Complete two-to-three-person professional crew.
+1. A trained crew sized to your package. <!-- Crew size: exact numbers to be added here -->
 2. High-definition highlight film ready to share with friends and family within 7 days.
 3. Complete high-resolution edited photo gallery within 3–4 weeks.
 4. An heirloom photobook and customized briefcase to pass down to your children.

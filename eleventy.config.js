@@ -208,11 +208,14 @@ module.exports = function (eleventyConfig) {
     }
   }));
 
-  // Blog posts collection (sorted newest first)
+  // Blog posts collection (sorted newest first, excluding drafts)
   eleventyConfig.addCollection("posts", (collectionApi) => {
-    return collectionApi.getFilteredByGlob("src/blog/posts/*.md").sort((a, b) => {
-      return (b.date || 0) - (a.date || 0);
-    });
+    return collectionApi
+      .getFilteredByGlob("src/blog/posts/*.md")
+      .filter((item) => !item.data.draft)
+      .sort((a, b) => {
+        return (b.date || 0) - (a.date || 0);
+      });
   });
 
   return {

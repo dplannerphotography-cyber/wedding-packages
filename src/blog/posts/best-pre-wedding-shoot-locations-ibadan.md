@@ -15,6 +15,7 @@ ctaBtnText: "Inquire on WhatsApp"
 ctaPackageLink: "/photography/#pricing"
 ctaPackageLabel: "View Studio & Concept Rates"
 ctaWaMsg: "Hello DPlanner Photography! I saw your pre-wedding locations guide and would like to discuss booking an engagement shoot."
+draft: true
 ---
 
 *Editor's Note: This article provides a comprehensive location scout outline for couples planning an outdoor pre-wedding session in Ibadan before their 2026 wedding celebration.*

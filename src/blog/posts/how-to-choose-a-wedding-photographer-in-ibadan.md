@@ -52,7 +52,7 @@ This is the single most important question you will ask. It is surprisingly comm
 At **DPlanner Photography**, we give every couple written delivery guarantees:
 - **Cinematic Highlight Films**: Delivered within **1 week** after the wedding.
 - **Complete Edited Photo Galleries**: Delivered within **3–4 weeks** after the wedding.
-- **Studio Portraits**: Delivered within **24 hours** (+₦500 per picture for same-day express).
+- **Studio Portraits**: Delivered within **24 hours** (Same-day express delivery: +₦500 per picture).
 
 ---
 
@@ -66,11 +66,11 @@ Inexperienced photographers frequently rely on global "light and airy" presets t
 
 ---
 
-## 4. "How many shooters will physically be on site on the wedding day?"
+## 4. "How is your crew structured on the wedding day?"
 
-A wedding is an unrepeatable live event with multiple locations. While the bride is having her Gele tied at a hotel in Bodija, the groom and his groomsmen may be dressing in Iyaganku. During the ceremony, one photographer must capture the bride walking down the aisle while another captures the groom's emotional reaction.
+A wedding is an unrepeatable live event with multiple locations. While the bride is having her Gele tied at a hotel in Bodija, the groom and his groomsmen may be dressing in Iyaganku. During the ceremony, one vantage point must capture the bride walking down the aisle while another captures the groom's emotional reaction.
 
-**Our recommendation**: For events with more than 150 guests, never hire a solo photographer. Our **Classic Package (₦250,000)** provides **two photographers and one dedicated videographer**, ensuring complete, multi-angle coverage without missing a moment.
+**Our approach**: Crew size varies by package to match the scale of your celebration. Rather than a solo shooter attempting to cover everything alone, DPlanner provides **a trained crew sized to your package** <!-- Crew size: exact numbers to be added here -->, ensuring complete, multi-angle coverage without missing a moment.
 
 ---
 
@@ -116,7 +116,7 @@ Not all photo albums are created equal. Many studios supply press-printed books 
 - What are the dimensions? (Our standard is a generous **12×24 inches**).
 - Does it include a protective storage case?
 
-At DPlanner, our **Signature Album Package (₦450,000)** and our standalone **Album Add-on (₦180,000)** include a handcrafted 12×24 flush-mount album housed in a **customized luxury briefcase** designed to protect your prints against moisture and dust.
+At DPlanner, our **Signature Album Package (₦450,000)** and our standalone **Album Collection Add-on (₦180,000)** include a handcrafted 12×24 flush-mount album housed in a **customized luxury briefcase** designed to protect your prints against moisture and dust.
 
 ---
 
@@ -148,7 +148,7 @@ Before confirming your booking, verify that your photographer has:
 1. Full client galleries to inspect.
 2. Written turnaround times (1 week for highlight film, 3–4 weeks for photos).
 3. Natural skin retouching.
-4. Dedicated multi-shooter crew.
+4. A trained crew sized to your package. <!-- Crew size: exact numbers to be added here -->
 5. A verified physical studio base.
 6. Proven experience with Ibadan wedding venues.
 7. High-definition cinema highlight films.

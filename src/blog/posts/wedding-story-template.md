@@ -15,6 +15,7 @@ ctaBtnText: "Explore Signature Package"
 ctaPackageLink: "/weddings/signature/"
 ctaPackageLabel: "View Signature Album Details"
 ctaWaMsg: "Hello DPlanner Photography! I saw your Wedding Story template and would like to discuss documenting our wedding."
+draft: true
 ---
 
 *Editor's Note: This template outlines the exact structure, narrative prompts, and photo placement standards used by DPlanner Photography to document and publish real couple features on the journal.*

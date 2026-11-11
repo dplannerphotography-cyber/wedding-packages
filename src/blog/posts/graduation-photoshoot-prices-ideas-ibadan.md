@@ -15,6 +15,7 @@ ctaBtnText: "Book on WhatsApp"
 ctaPackageLink: "/photography/#pricing"
 ctaPackageLabel: "View Studio Rates"
 ctaWaMsg: "Hello DPlanner Photography! I am graduating soon and would like to book a graduation photoshoot session."
+draft: true
 ---
 
 *Editor's Note: This article provides a comprehensive planning outline and transparent pricing guide for students and families celebrating convocation milestones across tertiary institutions in Ibadan.*
