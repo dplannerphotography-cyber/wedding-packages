@@ -1772,3 +1772,23 @@ img {
   outline: 2px solid var(--wine-primary);
   outline-offset: 3px;
 }
+
+
+/* ---------- Phase 1 additions ---------- */
+.review-todo {
+  border: 1px dashed var(--gold-dark);
+  background: var(--gold-soft);
+}
+
+.reviews-google-line {
+  margin: 24px 0 8px;
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.reviews-google-line a {
+  color: var(--wine-primary);
+  font-weight: 700;
+  margin-left: 6px;
+}

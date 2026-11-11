@@ -6,7 +6,7 @@
 const CONFIG = {
   whatsappNumber: "2348168204080", // <-- UPDATE YOUR WHATSAPP NUMBER HERE
   photographerName: "DPlanner Photography",
-  promoEndDate: "December 31, 2026 23:59:59 GMT+0100" // Nigeria (WAT)
+  promoEndDate: "2026-12-31T23:59:59+01:00" // 31 Dec 2026, 23:59 Africa/Lagos (WAT, UTC+1, no daylight saving)
 };
 
 // Initialize dynamic WhatsApp links
@@ -53,9 +53,12 @@ function setupWhatsAppLinks() {
     let message = "";
 
     if (packageName) {
-      message = `Hello ${CONFIG.photographerName}! I am interested in booking the *${packageName}* for our wedding (September - December 2026 Promo). Could you please check date availability and send more details?`;
+      const isAddon = /add-on/i.test(packageName);
+      message = isAddon
+        ? `Hello ${CONFIG.photographerName}! I'd like to add the *${packageName}* to my wedding package. I'll share my wedding date and venue here.`
+        : `Hello ${CONFIG.photographerName}! I'd like to book the *${packageName}* wedding package. I'll share my wedding date and venue here.`;
     } else {
-      message = `Hello ${CONFIG.photographerName}! I'm visiting your website and I'd love to check date availability and book our wedding photography & film package.`;
+      message = `Hello ${CONFIG.photographerName}! I'd like to check availability for our wedding. I'll share our date and venue here.`;
     }
 
     const encodedMessage = encodeURIComponent(message);
@@ -70,37 +73,43 @@ function setupWhatsAppLinks() {
  */
 function startCountdownTimer() {
   const targetDate = new Date(CONFIG.promoEndDate).getTime();
-  
-  const daysEl = document.getElementById("days");
-  const hoursEl = document.getElementById("hours");
-  const minutesEl = document.getElementById("minutes");
-  const secondsEl = document.getElementById("seconds");
 
-  if (!daysEl || !hoursEl || !minutesEl || !secondsEl) return;
+  const wrapper = document.getElementById("countdown");
+  const endedEl = document.getElementById("promo-ended");
+  const els = {
+    days: document.getElementById("days"),
+    hours: document.getElementById("hours"),
+    minutes: document.getElementById("minutes"),
+    seconds: document.getElementById("seconds")
+  };
+
+  if (!wrapper || !els.days || !els.hours || !els.minutes || !els.seconds || isNaN(targetDate)) return;
+
+  let timerId = null;
 
   function updateTimer() {
-    const now = new Date().getTime();
-    const distance = targetDate - now;
+    const distance = targetDate - Date.now();
 
-    if (distance < 0) {
-      daysEl.innerText = "00";
-      hoursEl.innerText = "00";
-      minutesEl.innerText = "00";
-      secondsEl.innerText = "00";
+    if (distance <= 0) {
+      wrapper.hidden = true;
+      if (endedEl) endedEl.hidden = false;
+      if (timerId) clearInterval(timerId);
       return;
     }
 
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    const values = {
+      days: Math.floor(distance / 86400000),
+      hours: Math.floor((distance % 86400000) / 3600000),
+      minutes: Math.floor((distance % 3600000) / 60000),
+      seconds: Math.floor((distance % 60000) / 1000)
+    };
 
-    daysEl.innerText = days.toString().padStart(2, "0");
-    hoursEl.innerText = hours.toString().padStart(2, "0");
-    minutesEl.innerText = minutes.toString().padStart(2, "0");
-    secondsEl.innerText = seconds.toString().padStart(2, "0");
+    Object.keys(values).forEach(key => {
+      els[key].textContent = String(values[key]).padStart(2, "0");
+    });
+    wrapper.hidden = false;
   }
 
   updateTimer();
-  setInterval(updateTimer, 1000);
+  timerId = setInterval(updateTimer, 1000);
 }

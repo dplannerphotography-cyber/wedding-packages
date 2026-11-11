@@ -1670,3 +1670,96 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
     font-size: 1.6rem;
   }
 }
+
+
+/* ---------- Phase 1 additions ---------- */
+.deposit-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 10px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.deposit-note i { color: var(--wine-primary); font-size: 0.72rem; }
+.pricing-card.featured .deposit-note,
+.deposit-note-light { color: #f7e6e9; }
+.pricing-card.featured .deposit-note i,
+.deposit-note-light i { color: var(--gold-light); }
+.deposit-note-light { margin-top: 16px; }
+
+.promo-ended {
+  font-weight: 700;
+  color: var(--wine-primary);
+  text-align: center;
+  margin: 0;
+}
+
+.addon-cell {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--wine-primary);
+  white-space: nowrap;
+}
+
+.terms-section { padding-top: 70px; }
+.terms-box { align-items: start; }
+
+.terms-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px 28px;
+}
+
+.terms-item h3 { font-size: 1.02rem; margin-bottom: 6px; }
+.terms-item p { font-size: 0.92rem; color: var(--text-body); line-height: 1.55; }
+
+.todo-note {
+  margin-top: 8px;
+  padding: 8px 10px;
+  border: 1px dashed var(--gold-warm);
+  border-radius: var(--radius-sm);
+  background: var(--gold-pale);
+  font-size: 0.8rem !important;
+  color: var(--text-dark) !important;
+}
+
+@media (max-width: 768px) {
+  .terms-grid { grid-template-columns: 1fr; }
+}
+
+/* Feature rows: keep icon + text as one wrapping line instead of separate flex columns */
+.features-list li,
+.addon-specs li {
+  display: block;
+  position: relative;
+  padding-left: 28px;
+}
+
+.features-list li i,
+.addon-specs li i {
+  position: absolute;
+  left: 0;
+  top: 4px;
+  margin-top: 0;
+}
+
+/* Add-on card must never be wider than the phone screen */
+.addon-grid > * { min-width: 0; }
+
+@media (max-width: 576px) {
+  .addon-card { padding: 34px 20px 24px; }
+  .addon-badge-pill { left: 20px; }
+  .addon-title { font-size: 1.6rem; }
+  .addon-pricing-box { padding: 24px 16px; }
+  .addon-pricing-box .btn { min-width: 0; white-space: normal; }
+  .terms-box { padding: 24px 20px; }
+}
+
+/* Long button labels wrap instead of stretching the card past the screen */
+.pricing-grid > * { min-width: 0; }
+.card-cta .btn { white-space: normal; text-align: center; }
