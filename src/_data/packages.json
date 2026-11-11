@@ -24,7 +24,7 @@
       { "q": "Can I add an album to Essential?", "a": "Yes. The Album Collection can be added to Essential for ₦180,000 (was ₦200,000) during the promo." },
       { "q": "Does Essential include a highlight film?", "a": "Essential includes one-day photo and film coverage. The cinematic highlight film and social wedding reel come with the Classic package." },
       { "q": "Do you cover weddings outside Ibadan?", "a": "Yes. We are based in Ibadan, regularly shoot in Ibadan and Lagos, and are available for travel nationwide on request. Travel outside the agreed location is quoted separately." },
-      { "q": "When do we receive our photos?", "todo": "TODO (Samuel): wedding delivery times." }
+      { "q": "When do we receive our photos?", "a": "Edited wedding photos are delivered within 3–4 weeks after the wedding via Google Drive." }
     ]
   },
   {
@@ -52,7 +52,7 @@
       { "q": "What does Classic add to Essential?", "a": "Everything in Essential, plus bride and groom preparation coverage, a cinematic highlight film, a 12 x 16 framed portrait and a social wedding reel for Instagram and TikTok." },
       { "q": "Is an album included in Classic?", "a": "No. The Album Collection is included in the Signature Album package. You can add it to Classic for ₦180,000 (was ₦200,000) during the promo." },
       { "q": "Do you cover weddings outside Ibadan?", "a": "Yes. We are based in Ibadan, regularly shoot in Ibadan and Lagos, and are available for travel nationwide on request. Travel outside the agreed location is quoted separately." },
-      { "q": "When do we receive our photos and film?", "todo": "TODO (Samuel): wedding delivery times." }
+      { "q": "When do we receive our photos and film?", "a": "Your highlight film is delivered within 1 week after the wedding. Edited wedding photos are delivered within 3–4 weeks after the wedding." }
     ]
   },
   {
@@ -80,7 +80,7 @@
       { "q": "What is in the Album Collection?", "a": "A 12 x 24 synthetic photobook with 25 designed pages, a presentation briefcase, a mini keepsake photobook and a custom anniversary calendar." },
       { "q": "What does Signature add to Classic?", "a": "Everything in Classic, plus a pre-wedding studio session, a 16 x 20 framed portrait, the full Album Collection and priority delivery." },
       { "q": "Do you cover weddings outside Ibadan?", "a": "Yes. We are based in Ibadan, regularly shoot in Ibadan and Lagos, and are available for travel nationwide on request. Travel outside the agreed location is quoted separately." },
-      { "q": "When do we receive our photos, film and album?", "todo": "TODO (Samuel): wedding and album delivery times." }
+      { "q": "When do we receive our photos, film and album?", "a": "Your highlight film is delivered within 1 week after the wedding. Edited wedding photos are delivered within 3–4 weeks after the wedding. The 12 x 24 photobook and presentation briefcase follow upon final layout approval (with priority delivery on Signature)." }
     ]
   },
   {
@@ -106,7 +106,7 @@
       { "q": "Which packages can I add the Album Collection to?", "a": "Essential or Classic. It is already included in the Signature Album package." },
       { "q": "How much is the Album Collection add-on?", "a": "₦180,000 (was ₦200,000) for bookings secured by 31 December 2026." },
       { "q": "How do I add it to my booking?", "a": "Message us on WhatsApp and tell us which package you are booking. A 50% non-refundable deposit secures your date, and the balance is due before final delivery." },
-      { "q": "When is the album ready?", "todo": "TODO (Samuel): album delivery time." }
+      { "q": "When is the album ready?", "a": "The 12 x 24 photobook and presentation briefcase are designed and delivered following your picture selection and layout approval." }
     ]
   }
 ]

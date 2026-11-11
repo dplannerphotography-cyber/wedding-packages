@@ -86,14 +86,12 @@ eleventyComputed:
         <h2>Questions</h2>
         <div class="faq-list">
           {%- for faq in pkg.faqs %}
+          {%- if faq.a %}
           <details class="faq-item">
             <summary>{{ faq.q }}</summary>
-            {%- if faq.a %}
             <p>{{ faq.a }}</p>
-            {%- else %}
-            <p class="todo-note">{{ faq.todo }}</p>
-            {%- endif %}
           </details>
+          {%- endif %}
           {%- endfor %}
         </div>
       </section>
