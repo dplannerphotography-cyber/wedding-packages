@@ -1,0 +1,128 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: packages
+  size: 1
+  alias: pkg
+  addAllPagesToCollections: true
+permalink: "/weddings/{{ pkg.slug }}/"
+eleventyComputed:
+  title: "{{ pkg.title }}"
+  description: "{{ pkg.description }}"
+  ogTitle: "{{ pkg.fullName }} – {{ pkg.price | naira }} | {{ site.name }}"
+  ogDescription: "{{ pkg.shareText }}"
+  ogImage: "/assets/og/{{ pkg.slug }}.png"
+---
+{%- if pkg.isAddon %}
+  {%- set bookMsg = "Hello DPlanner Photography! I'd like to add the Album Collection Add-on (" + (pkg.price | naira) + ") to my wedding package. I'll share my wedding date and venue here." %}
+  {%- set bookMsgPost = "Hello DPlanner Photography! I'd like to add the Album Collection Add-on to my wedding package. I'll share my wedding date and venue here." %}
+  {%- set bookLabel = "Add this to my package" %}
+{%- else %}
+  {%- set bookMsg = "Hello DPlanner Photography! I'd like to book the " + pkg.fullName + " (" + (pkg.price | naira) + "). I'll share my wedding date and venue here." %}
+  {%- set bookMsgPost = "Hello DPlanner Photography! I'd like to book the " + pkg.fullName + ". I'll share my wedding date and venue here." %}
+  {%- set bookLabel = "Book this package" %}
+{%- endif %}
+
+<article class="package-page">
+  <div class="container package-container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a> <span aria-hidden="true">/</span>
+      <a href="/weddings/">Weddings</a> <span aria-hidden="true">/</span>
+      <span aria-current="page">{{ pkg.name }}</span>
+    </nav>
+
+    <div class="package-main">
+      <header class="package-head">
+        {%- if pkg.popular %}
+        <span class="package-flag"><i class="fa-solid fa-star" aria-hidden="true"></i> Most Popular</span>
+        {%- endif %}
+        <span class="season-badge promo-only">{{ site.promo.label | upper }}</span>
+        <h1 class="page-title">{{ pkg.fullName }}</h1>
+        <p class="page-lead">{{ pkg.tagline }}</p>
+      </header>
+
+      <div class="package-buy">
+        {% include "partials/price.njk" %}
+        <p class="promo-deadline promo-only">Promo price for bookings secured by {{ site.promo.endsText }}.</p>
+
+        <a href="{{ bookMsg | wa }}" data-wa-post="{{ bookMsgPost | wa }}" target="_blank" rel="noopener noreferrer" class="btn btn-hero-book btn-lg btn-block">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> {{ bookLabel }}
+        </a>
+        <p class="deposit-note"><i class="fa-solid fa-lock" aria-hidden="true"></i> {{ site.deposit }}</p>
+
+        <button type="button" class="share-btn share-btn-wide" data-share-url="/weddings/{{ pkg.slug }}/" data-share-title="{{ pkg.fullName }} – {{ site.name }}" data-share-text="{{ pkg.shareText }}">
+          <i class="fa-solid fa-share-nodes" aria-hidden="true"></i> Share this package
+        </button>
+      </div>
+
+      <section class="package-block">
+        <h2>What's included</h2>
+        <ul class="features-list">
+          {%- if pkg.includesFrom %}
+          <li class="lead-feature"><i class="fa-solid fa-plus" aria-hidden="true"></i> <strong>Everything in <a href="/weddings/{{ pkg.includesFrom | lower }}/">{{ pkg.includesFrom }}</a></strong></li>
+          {%- endif %}
+          {%- for feature in pkg.features %}
+          <li><i class="fa-solid fa-check" aria-hidden="true"></i> {{ feature }}</li>
+          {%- endfor %}
+        </ul>
+        {%- if pkg.isAddon %}
+        <p class="package-note">Already booking <a href="/weddings/signature/">Signature Album</a>? The Album Collection is included, so you don't need this add-on.</p>
+        {%- elif pkg.slug != "signature" %}
+        <p class="package-note">Want an album? The <a href="/weddings/album-addon/">Album Collection</a> is included in Signature. Add it to {{ pkg.name }} for ₦180,000.</p>
+        {%- endif %}
+      </section>
+
+      <section class="package-block">
+        <h2>Deposit and payment</h2>
+        <ul class="plain-list">
+          <li>A 50% non-refundable deposit secures your date.</li>
+          <li>The balance is due before final delivery.</li>
+          <li>{{ site.locationLine }} Travel outside the agreed location is quoted separately.</li>
+        </ul>
+        <p><a href="/weddings/#terms">Read the full booking terms</a></p>
+      </section>
+
+      <section class="package-block">
+        <h2>Questions</h2>
+        <div class="faq-list">
+          {%- for faq in pkg.faqs %}
+          <details class="faq-item">
+            <summary>{{ faq.q }}</summary>
+            {%- if faq.a %}
+            <p>{{ faq.a }}</p>
+            {%- else %}
+            <p class="todo-note">{{ faq.todo }}</p>
+            {%- endif %}
+          </details>
+          {%- endfor %}
+        </div>
+      </section>
+
+      <section class="package-block package-others">
+        <h2>Other packages</h2>
+        <ul class="other-packages">
+          {%- for other in packages %}{% if other.slug != pkg.slug %}
+          <li>
+            <a href="/weddings/{{ other.slug }}/">
+              <strong>{{ other.name }}</strong>
+              <span class="promo-only">{{ other.price | naira }}</span>
+              <span class="post-promo">{{ other.was | naira }}</span>
+            </a>
+          </li>
+          {%- endif %}{% endfor %}
+        </ul>
+        <p><a href="/weddings/#comparison">Compare all packages side by side</a></p>
+      </section>
+    </div>
+  </div>
+</article>
+
+<script type="application/ld+json">
+{{ pkg | packageSchema(site) | jsonld | safe }}
+</script>
+<script type="application/ld+json">
+{{ pkg.faqs | faqSchema | jsonld | safe }}
+</script>
+<script type="application/ld+json">
+{{ [{ name: "Home", url: "/" }, { name: "Weddings", url: "/weddings/" }, { name: pkg.name, url: "/weddings/" + pkg.slug + "/" }] | breadcrumbSchema(site) | jsonld | safe }}
+</script>

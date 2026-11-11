@@ -1,0 +1,52 @@
+<footer class="footer">
+  <div class="container footer-content">
+    <div class="footer-brand-col">
+      <div class="brand-text">
+        <span class="brand-name">DPlanner</span>
+        <span class="brand-sub">PHOTOGRAPHY | IBADAN</span>
+      </div>
+      <p class="brand-bio">
+        Wedding, studio and event photography and film. {{ site.locationLine }}
+      </p>
+      <div class="footer-social-strip">
+        <a href="{{ site.social.instagram }}" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+        <a href="{{ site.social.tiktok }}" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
+        <a href="{{ site.social.facebook }}" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+        <a href="{{ site.social.x }}" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Weddings</h4>
+      <ul>
+        <li><a href="/weddings/">Compare packages</a></li>
+        {%- for pkg in packages %}
+        <li><a href="/weddings/{{ pkg.slug }}/">{{ pkg.name }}</a></li>
+        {%- endfor %}
+        <li><a href="/weddings/#terms">Booking terms</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i> {{ site.address.street }}, {{ site.address.city }}, {{ site.address.region }}</p>
+      <p><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> <a href="https://wa.me/{{ site.whatsapp }}" class="footer-plain-link">{{ site.phoneDisplay }}</a></p>
+      <p><i class="fa-regular fa-envelope" aria-hidden="true"></i> <a href="mailto:{{ site.email }}" class="footer-plain-link">{{ site.email }}</a></p>
+      <p><i class="fa-regular fa-clock" aria-hidden="true"></i> Mon–Sat from 9:00 AM; 2nd &amp; last Sunday from 3:00 PM</p>
+      <p><a href="/assets/dplanner-wedding-promo.pdf" download="DPlanner-Wedding-Promo-2026.pdf" class="footer-pdf-link promo-only"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i> Wedding promo brochure (PDF)</a></p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <p>&copy; 2026 {{ site.name }}. All rights reserved.</p>
+      <p class="hosted-tag">{{ site.social.handle }} on Instagram, TikTok, Facebook and X</p>
+    </div>
+  </div>
+</footer>
+
+<div class="floating-booking-container">
+  <a href="{{ "Hello DPlanner Photography! I'd like to check availability. I'll share my date and venue here." | wa }}" target="_blank" rel="noopener noreferrer" class="floating-whatsapp-only" aria-label="Chat with DPlanner Photography on WhatsApp">
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+  </a>
+</div>

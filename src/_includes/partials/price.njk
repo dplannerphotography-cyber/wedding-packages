@@ -1,0 +1,12 @@
+{# Price block for one package (expects `pkg`). Promo price until the promo ends, regular price after. #}
+<div class="pricing-block">
+  <div class="promo-only">
+    <div class="old-price">{{ pkg.was | naira }}</div>
+    <div class="new-price{% if pkg.popular and onCard %} gold-highlight{% endif %}">{{ pkg.price | naira }}</div>
+    <div class="savings-pill{% if pkg.popular %} highlight-pill{% endif %}"><i class="fa-solid fa-tag" aria-hidden="true"></i> SAVE {{ (pkg.was - pkg.price) | naira }}</div>
+  </div>
+  <div class="post-promo">
+    <div class="new-price{% if pkg.popular and onCard %} gold-highlight{% endif %}">{{ pkg.was | naira }}</div>
+    <div class="savings-pill">{{ site.promo.endedMessage }}</div>
+  </div>
+</div>

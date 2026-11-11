@@ -1,0 +1,67 @@
+{
+  "name": "DPlanner Photography",
+  "url": "https://dplanner.com.ng",
+  "leadPhotographer": "Samuel Damilare",
+  "whatsapp": "2348168204080",
+  "phoneDisplay": "+234 816 820 4080",
+  "phoneE164": "+2348168204080",
+  "email": "dplannerphotography@gmail.com",
+  "address": {
+    "street": "82 De ACE HALL, Yemetu",
+    "landmark": "besides Turaya Food Canteen",
+    "city": "Ibadan",
+    "region": "Oyo State",
+    "country": "NG",
+    "countryName": "Nigeria"
+  },
+  "locationLine": "Based in Ibadan, regularly shooting in Ibadan and Lagos, and available for travel nationwide on request.",
+  "areaServed": [
+    "Ibadan",
+    "Lagos"
+  ],
+  "hours": {
+    "weekdays": "Monday to Saturday, from 9:00 AM",
+    "sunday": "2nd and last Sunday of the month, from 3:00 PM",
+    "closingTodo": "TODO (Samuel): closing times"
+  },
+  "rating": {
+    "value": "4.9",
+    "count": "46"
+  },
+  "googleUrl": "https://www.google.com/maps/place/DPLANNER+PHOTOGRAPHY,+82+De+ACE+HALL,+besides+Turaya+Food+Canteen,+Yemetu,+Ibadan,+Oyo+State/",
+  "social": {
+    "handle": "@dplannerphotography",
+    "instagram": "https://instagram.com/dplannerphotography",
+    "tiktok": "https://tiktok.com/@dplannerphotography",
+    "facebook": "https://facebook.com/dplannerphotography",
+    "x": "https://x.com/dplannerphotography"
+  },
+  "deposit": "50% non-refundable deposit secures your date",
+  "depositLong": "A 50% non-refundable deposit secures your date. The balance is due before final delivery.",
+  "studioDelivery": "Studio photos delivered within 24 hours",
+  "promo": {
+    "label": "September – December 2026 promo",
+    "ends": "2026-12-31T23:59:59+01:00",
+    "endsText": "31 December 2026",
+    "endedMessage": "Promo ended – message us for 2027 rates."
+  },
+  "nav": [
+    {
+      "label": "Home",
+      "url": "/"
+    },
+    {
+      "label": "Weddings",
+      "url": "/weddings/"
+    },
+    {
+      "label": "Studio & Portraits",
+      "url": "/photography/"
+    },
+    {
+      "label": "Terms",
+      "url": "/weddings/#terms"
+    }
+  ],
+  "studioDeposit": "50% deposit secures your session"
+}

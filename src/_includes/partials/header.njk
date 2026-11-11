@@ -1,0 +1,25 @@
+<nav class="navbar" aria-label="Main">
+  <div class="container nav-container">
+    <a href="/" class="brand-logo" aria-label="{{ site.name }} home">
+      <div class="brand-text">
+        <span class="brand-name">DPlanner</span>
+        <span class="brand-sub">PHOTOGRAPHY | IBADAN</span>
+      </div>
+    </a>
+
+    <div class="nav-links" id="nav-links">
+      {%- for item in site.nav %}
+      <a href="{{ item.url }}"{% if item.url == page.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
+      {%- endfor %}
+    </div>
+
+    <div class="nav-cta">
+      <a href="{{ "Hello DPlanner Photography! I'd like to check availability. I'll share my date and venue here." | wa }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-nav-book">
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Book
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-controls="nav-links" aria-expanded="false">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+</nav>

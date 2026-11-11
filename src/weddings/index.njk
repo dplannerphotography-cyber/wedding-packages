@@ -1,0 +1,276 @@
+---
+layout: layouts/base.njk
+title: "Wedding Photography Packages in Ibadan | DPlanner Photography"
+description: "Compare wedding photography and film packages from DPlanner Photography, a wedding photographer in Ibadan. Essential ₦180,000, Classic ₦250,000, Signature Album ₦450,000 until 31 December 2026."
+ogImage: /assets/og/weddings.png
+permalink: /weddings/
+---
+{%- set bookAny = "Hello DPlanner Photography! I'd like to check availability for our wedding. I'll share our date and venue here." %}
+
+<header class="page-hero">
+  <div class="container">
+    <span class="season-badge promo-only">{{ site.promo.label | upper }}</span>
+    <h1 class="page-title">Wedding Photography &amp; Film Packages</h1>
+    <p class="page-lead">
+      One-day photo and film coverage for traditional and white weddings. {{ site.locationLine }}
+    </p>
+    <div class="urgency-box promo-only">
+      <div class="urgency-message">
+        <div>
+          <strong>Promo prices for bookings secured by {{ site.promo.endsText }}</strong>
+          <p>Dates are held first come, first served once the deposit is confirmed.</p>
+        </div>
+      </div>
+      {% include "partials/countdown.njk" %}
+    </div>
+    <p class="promo-ended-note post-promo">{{ site.promo.endedMessage }}</p>
+  </div>
+</header>
+
+<section class="packages-section" id="packages">
+  <div class="container">
+    <div class="pricing-grid">
+      {%- for pkg in packages %}{% if not pkg.isAddon %}
+      {%- set onCard = true %}
+      <article class="pricing-card{% if pkg.popular %} featured{% endif %}" id="{{ pkg.anchor }}">
+        {%- if pkg.popular %}
+        <div class="popular-ribbon"><i class="fa-solid fa-star" aria-hidden="true"></i> MOST POPULAR</div>
+        {%- endif %}
+        <div class="package-top-tag">
+          <h2 class="tag-title">{{ pkg.name | upper }}</h2>
+        </div>
+
+        {% include "partials/price.njk" %}
+
+        <p class="package-tagline">{{ pkg.tagline }}</p>
+        <hr class="card-divider">
+
+        <ul class="features-list">
+          {%- if pkg.includesFrom %}
+          <li class="lead-feature"><i class="fa-solid fa-plus" aria-hidden="true"></i> <strong>Everything in {{ pkg.includesFrom }}</strong></li>
+          {%- endif %}
+          {%- for feature in pkg.features %}
+          <li><i class="fa-solid fa-check" aria-hidden="true"></i> {{ feature }}</li>
+          {%- endfor %}
+        </ul>
+
+        <div class="card-cta">
+          <a href="{{ ("Hello DPlanner Photography! I'd like to book the " + pkg.fullName + " (" + (pkg.price | naira) + "). I'll share my wedding date and venue here.") | wa }}"
+             data-wa-post="{{ ("Hello DPlanner Photography! I'd like to book the " + pkg.fullName + ". I'll share my wedding date and venue here.") | wa }}"
+             target="_blank" rel="noopener noreferrer" class="btn {% if pkg.popular %}btn-card-featured{% else %}btn-card-primary{% endif %}">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Book {{ pkg.name }}
+          </a>
+          <p class="deposit-note"><i class="fa-solid fa-lock" aria-hidden="true"></i> {{ site.deposit }}</p>
+          <div class="card-links">
+            <a href="/weddings/{{ pkg.slug }}/">Full details</a>
+            <button type="button" class="share-btn" data-share-url="/weddings/{{ pkg.slug }}/" data-share-title="{{ pkg.fullName }} – {{ site.name }}" data-share-text="{{ pkg.shareText }}">
+              <i class="fa-solid fa-share-nodes" aria-hidden="true"></i> Share
+            </button>
+          </div>
+        </div>
+      </article>
+      {%- endif %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+{%- set addon = packages | last %}
+<section class="addon-section">
+  <div class="container">
+    <article class="addon-card" id="{{ addon.anchor }}">
+      <div class="addon-badge-pill">ALBUM COLLECTION ADD-ON</div>
+      <div class="addon-grid">
+        <div class="addon-details">
+          <h2 class="addon-title">{{ addon.name }}</h2>
+          <p class="addon-description"><strong>{{ addon.tagline }}</strong></p>
+          <ul class="addon-specs">
+            {%- for feature in addon.features %}
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> {{ feature }}</li>
+            {%- endfor %}
+          </ul>
+        </div>
+
+        <div class="addon-pricing-box">
+          <span class="addon-action-note">ADD TO ESSENTIAL OR CLASSIC</span>
+          <div class="promo-only">
+            <div class="addon-old-price">{{ addon.was | naira }}</div>
+            <div class="addon-new-price">{{ addon.price | naira }}</div>
+          </div>
+          <div class="post-promo">
+            <div class="addon-new-price">{{ addon.was | naira }}</div>
+          </div>
+          <a href="{{ ("Hello DPlanner Photography! I'd like to add the Album Collection Add-on (" + (addon.price | naira) + ") to my wedding package. I'll share my wedding date and venue here.") | wa }}"
+             data-wa-post="{{ "Hello DPlanner Photography! I'd like to add the Album Collection Add-on to my wedding package. I'll share my wedding date and venue here." | wa }}"
+             target="_blank" rel="noopener noreferrer" class="btn btn-hero-book btn-block">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Add the Album Collection
+          </a>
+          <p class="deposit-note"><i class="fa-solid fa-lock" aria-hidden="true"></i> {{ site.deposit }}</p>
+          <div class="card-links">
+            <a href="/weddings/{{ addon.slug }}/">Full details</a>
+            <button type="button" class="share-btn" data-share-url="/weddings/{{ addon.slug }}/" data-share-title="{{ addon.fullName }} – {{ site.name }}" data-share-text="{{ addon.shareText }}">
+              <i class="fa-solid fa-share-nodes" aria-hidden="true"></i> Share
+            </button>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="comparison-section" id="comparison">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Compare Packages</h2>
+    </div>
+
+    <div class="table-responsive">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th class="th-inclusions" scope="col">What you get</th>
+            <th class="th-package" scope="col"><a href="/weddings/essential/">Essential</a></th>
+            <th class="th-package th-featured" scope="col"><a href="/weddings/classic/">Classic</a></th>
+            <th class="th-package" scope="col"><a href="/weddings/signature/">Signature Album</a></th>
+          </tr>
+        </thead>
+        <tbody>
+          {%- set yes = '<i class="fa-solid fa-check check-icon" aria-hidden="true"></i><span class="sr-only">Included</span>' %}
+          {%- set no = '<span aria-hidden="true">&mdash;</span><span class="sr-only">Not included</span>' %}
+          {%- set rows = [
+            ["One-day photography + film", yes, yes, yes],
+            ["Ceremony + reception coverage", yes, yes, yes],
+            ["Couple, family + guest portraits", yes, yes, yes],
+            ["Edited high-resolution images", yes, yes, yes],
+            ["Bride + groom preparation", no, yes, yes],
+            ["Cinematic highlight film", no, yes, yes],
+            ["Framed portrait", no, "<strong>12 x 16</strong>", "<strong>16 x 20</strong>"],
+            ["Social wedding reel", no, yes, yes],
+            ["Pre-wedding studio session", no, no, yes],
+            ["Album Collection", '<a href="/weddings/album-addon/" class="addon-cell">Add for ₦180,000</a>', '<a href="/weddings/album-addon/" class="addon-cell">Add for ₦180,000</a>', "<strong>Included</strong>"]
+          ] %}
+          {%- for row in rows %}
+          <tr>
+            <th scope="row">{{ row[0] }}</th>
+            <td{% if row[1] == no %} class="dash-cell"{% endif %}>{{ row[1] | safe }}</td>
+            <td class="col-featured{% if row[2] == no %} dash-cell{% endif %}">{{ row[2] | safe }}</td>
+            <td{% if row[3] == no %} class="dash-cell"{% endif %}>{{ row[3] | safe }}</td>
+          </tr>
+          {%- endfor %}
+          <tr class="price-row">
+            <th scope="row">Price</th>
+            {%- for pkg in packages %}{% if not pkg.isAddon %}
+            <td{% if pkg.popular %} class="col-featured"{% endif %}>
+              <strong class="promo-only">{{ pkg.price | naira }}</strong>
+              <strong class="post-promo">{{ pkg.was | naira }}</strong>
+            </td>
+            {%- endif %}{% endfor %}
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="how-to-book-section" id="how-to-book">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">How to Book</h2>
+    </div>
+
+    <div class="path-grid">
+      <div class="path-card">
+        <div class="path-number">1</div>
+        <h3>Choose your package</h3>
+        <p>Pick Essential, Classic or Signature Album, then send us your wedding date and venue on WhatsApp.</p>
+      </div>
+      <div class="path-card">
+        <div class="path-number">2</div>
+        <h3>Secure the date</h3>
+        <p>Pay the 50% non-refundable deposit. Your date is held once payment is confirmed.</p>
+      </div>
+      <div class="path-card">
+        <div class="path-number">3</div>
+        <h3>Your wedding day</h3>
+        <p>We cover the agreed one-day schedule with everything in your package.</p>
+      </div>
+      <div class="path-card">
+        <div class="path-number">4</div>
+        <h3>Receive your photos and film</h3>
+        <p>Delivered digitally once the balance has been paid.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="terms-section" id="terms">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Booking Terms</h2>
+    </div>
+
+    <div class="terms-box">
+      <div class="deposit-callout">
+        <span class="deposit-tag">TO SECURE YOUR DATE</span>
+        <div class="deposit-stat">50%</div>
+        <div class="deposit-label">NON-REFUNDABLE DEPOSIT</div>
+      </div>
+
+      <div class="terms-content">
+        <div class="terms-grid">
+          <div class="terms-item">
+            <h3>Deposit</h3>
+            <p>A 50% non-refundable deposit secures your wedding date. Your date is only held once the deposit is paid and confirmed.</p>
+            <p>Studio sessions also need a 50% deposit to book.</p>
+          </div>
+          <div class="terms-item">
+            <h3>Balance</h3>
+            <p>The remaining balance is due before final delivery of your photos and films.</p>
+          </div>
+          <div class="terms-item">
+            <h3>Cancellation &amp; rescheduling</h3>
+            <p>The deposit is non-refundable if you cancel.</p>
+            <p class="todo-note">TODO (Samuel): rescheduling rules — how much notice, whether the deposit moves to the new date, any fee.</p>
+          </div>
+          <div class="terms-item">
+            <h3>Delivery</h3>
+            <p>Photos and films are delivered digitally through Google Drive or another agreed platform. Signature Album clients get priority delivery.</p>
+            <p class="todo-note">TODO (Samuel): wedding delivery times for photos, highlight film, frames and albums.</p>
+          </div>
+          <div class="terms-item">
+            <h3>Travel</h3>
+            <p>{{ site.locationLine }} Each package covers one wedding day at the agreed location; travel outside it is quoted separately.</p>
+            <p class="todo-note">TODO (Samuel): travel fees or how travel is charged.</p>
+          </div>
+          <div class="terms-item">
+            <h3>Promo &amp; extras</h3>
+            <p>Promo prices apply to bookings secured from 1 September to 31 December 2026, subject to availability. Extra event days, extra frames and other add-ons are quoted separately.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner-section">
+  <div class="container">
+    <div class="cta-banner">
+      <h2>Ready to Reserve Your Wedding Date?</h2>
+      <p>Message us on WhatsApp with your wedding date and venue, and we will confirm availability.</p>
+      <div class="cta-banner-buttons">
+        <a href="{{ bookAny | wa }}" target="_blank" rel="noopener noreferrer" class="btn btn-hero-book btn-lg">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Check My Date
+        </a>
+      </div>
+      <p class="deposit-note deposit-note-light"><i class="fa-solid fa-lock" aria-hidden="true"></i> {{ site.deposit }}</p>
+    </div>
+  </div>
+</section>
+
+<script type="application/ld+json">
+{{ [{ name: "Home", url: "/" }, { name: "Weddings", url: "/weddings/" }] | breadcrumbSchema(site) | jsonld | safe }}
+</script>
+{%- for pkg in packages %}
+<script type="application/ld+json">
+{{ pkg | packageSchema(site) | jsonld | safe }}
+</script>
+{%- endfor %}
