@@ -242,6 +242,34 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
   font-size: 1.05rem;
 }
 
+.btn-primary {
+  background: var(--wine-primary);
+  color: #ffffff !important;
+  border: 1px solid var(--wine-primary);
+  box-shadow: 0 4px 14px rgba(110, 22, 40, 0.25);
+}
+
+.btn-primary:hover,
+.btn-primary:focus-visible {
+  background: var(--wine-dark);
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(110, 22, 40, 0.35);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--wine-primary) !important;
+  border: 1px solid var(--wine-primary);
+}
+
+.btn-outline:hover,
+.btn-outline:focus-visible {
+  background: var(--wine-primary);
+  color: #ffffff !important;
+  transform: translateY(-2px);
+}
+
 .btn-outline-nav {
   background: transparent;
   color: var(--text-body);

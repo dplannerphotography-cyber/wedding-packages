@@ -7,9 +7,9 @@ date: 2026-11-11
 category: "Wedding Guide"
 author: "Samuel Damilare"
 ogImage: /assets/og/classic.png
-heroImage: /assets/img/flyer.png
-heroAlt: "DPlanner Photography documenting an emotional couple portrait in Ibadan"
-heroCaption: "Behind the lens with Samuel Damilare, lead photographer at DPlanner Photography, Yemetu, Ibadan."
+heroImage: /assets/portfolio/couples-01.webp
+heroAlt: "Studio portrait of an elegant couple in formal evening attire, DPlanner Photography Ibadan"
+heroCaption: "Formal couple portrait captured with controlled studio lighting in Ibadan by Samuel Damilare."
 ctaTitle: "Experience the DPlanner Classic Package"
 ctaText: "Full-day photo and cinematic highlight film coverage with guaranteed written delivery dates. The most popular choice for couples in Ibadan and Lagos."
 ctaBtnText: "Check Your Date on WhatsApp"

@@ -116,6 +116,7 @@
       if (!item) return;
 
       const img = item.querySelector('img');
+      const largeImg = item.getAttribute('data-large-img');
       const title = item.querySelector('h4')?.textContent || 'DPlanner Photography';
       const tag = item.querySelector('.folio-tag')?.textContent || 'Portfolio';
       const caption = item.getAttribute('data-caption') || item.querySelector('.folio-desc')?.textContent || '';
@@ -123,7 +124,7 @@
       const ctaText = item.getAttribute('data-cta-text') || 'Book on WhatsApp';
 
       if (lbImage && img) {
-        lbImage.src = img.src;
+        lbImage.src = largeImg || img.src;
         lbImage.alt = img.alt || title;
       }
       if (lbTitle) lbTitle.textContent = title;

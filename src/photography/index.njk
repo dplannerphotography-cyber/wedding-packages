@@ -88,16 +88,16 @@ pageFaqs:
     <div class="hero-featured-showcase">
       <article class="hero-feature-card">
         <div class="hero-feature-media">
-          <img src="/assets/img/flyer.png" alt="DPlanner Photography - Nigerian Traditional Wedding Couple Portrait in Ibadan" width="800" height="1000" fetchpriority="high" decoding="async">
-          <span class="triptych-badge-gold">Featured Work &bull; Traditional Wedding</span>
+          <img src="/assets/portfolio/studio-portrait-01.webp" alt="DPlanner Photography - Editorial studio portrait in elegant draped ivory dress at Yemetu studio, Ibadan" width="800" height="1000" fetchpriority="high" decoding="async">
+          <span class="triptych-badge-gold">Featured Work &bull; Studio Portraiture</span>
         </div>
         <div class="hero-feature-meta-bar">
           <div>
-            <strong>Traditional &amp; Church Wedding Coverage</strong>
-            <span>Shot in Ibadan &bull; Available across Nigeria &bull; By Samuel Damilare</span>
+            <strong>Editorial Studio Portraiture</strong>
+            <span>Yemetu Studio, Ibadan &bull; 24h Delivery &bull; By Samuel Damilare</span>
           </div>
-          <a href="/weddings/" class="hero-feature-link">
-            <span>2026 Wedding Packages From ₦180,000 &rarr;</span>
+          <a href="#portfolio" class="hero-feature-link">
+            <span>Explore Portfolio ({{ portfolio.length }} Works) &rarr;</span>
           </a>
         </div>
       </article>
@@ -157,45 +157,26 @@ pageFaqs:
       <span class="label-over">Live Archive</span>
       <h2 class="section-title">Portfolio &amp; Recent Work</h2>
       <p class="section-sub">
-        Explore our recent studio portraits, traditional weddings, and celebratory events directly on Instagram, or request sample galleries on WhatsApp.
+        Explore curated real client photographs across our studio portraiture, traditional weddings, family sessions, milestone birthdays, and children's celebrations.
       </p>
     </div>
 
-    <!-- Portfolio Bridge: Real Photography & Instagram Channel -->
-    <div class="portfolio-bridge-card">
-      <div class="bridge-visual">
-        <img src="/assets/img/flyer.png" alt="DPlanner Photography - Nigerian Traditional Wedding Couple, Ibadan" width="600" height="750" loading="lazy" decoding="async">
-      </div>
-      <div class="bridge-content">
-        <span class="label-over" style="margin-bottom:6px">{{ site.social.handle }}</span>
-        <h3>Explore Our Work on Instagram</h3>
-        <p>
-          We regularly share client portraits, behind-the-scenes studio sessions, and complete wedding stories on our official Instagram feed.
-        </p>
-        <ul class="bridge-highlights-list">
-          <li><i class="fa-solid fa-check" aria-hidden="true"></i> Studio portraits, birthdays &amp; creative concepts</li>
-          <li><i class="fa-solid fa-check" aria-hidden="true"></i> Traditional Yoruba, Igbo &amp; church weddings</li>
-          <li><i class="fa-solid fa-check" aria-hidden="true"></i> 24-hour turnaround client deliverables</li>
-        </ul>
-        <div class="bridge-actions-row">
-          <a href="{{ site.social.instagram }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-instagram" aria-hidden="true"></i> View on Instagram
-          </a>
-          <a href="{{ "Hello DPlanner Photography! I would like to see recent portfolio samples of your photography work." | wa }}" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Request Samples on WhatsApp
-          </a>
-        </div>
-      </div>
+    <!-- Category Filter Tabs -->
+    <div class="portfolio-tabs-bar" role="tablist" aria-label="Portfolio categories">
+      <button type="button" class="portfolio-tab-btn active" data-filter="all" role="tab" aria-selected="true">All Work</button>
+      <button type="button" class="portfolio-tab-btn" data-filter="weddings" role="tab" aria-selected="false">Weddings &amp; Traditional</button>
+      <button type="button" class="portfolio-tab-btn" data-filter="studio" role="tab" aria-selected="false">Studio Portraits</button>
+      <button type="button" class="portfolio-tab-btn" data-filter="couples" role="tab" aria-selected="false">Couples</button>
+      <button type="button" class="portfolio-tab-btn" data-filter="family" role="tab" aria-selected="false">Family</button>
+      <button type="button" class="portfolio-tab-btn" data-filter="children" role="tab" aria-selected="false">Children</button>
+      <button type="button" class="portfolio-tab-btn" data-filter="birthdays" role="tab" aria-selected="false">Birthdays &amp; Milestones</button>
+      <button type="button" class="portfolio-tab-btn" data-filter="corporate" role="tab" aria-selected="false">Corporate &amp; Events</button>
     </div>
 
-    {# 
-      ==========================================================================
-      PORTFOLIO SVG GALLERY & LIGHTBOX (PRESERVED CODE)
-      Hidden until Samuel adds real photos to src/assets/portfolio/
-      Specs: .jpg or .webp, 800x1000px, 4:5 vertical orientation
-      ==========================================================================
+    <!-- Editorial Portfolio Grid -->
+    <div class="portfolio-editorial-grid" id="portfolio-grid">
       {%- for item in portfolio %}
-      <article class="portfolio-folio-item" data-category="{{ item.category }}" data-caption="{{ item.caption }}" data-cta-link="{{ item.ctaLink }}" data-cta-text="{{ item.ctaText }}">
+      <article class="portfolio-folio-item" data-category="{{ item.category }}" data-caption="{{ item.caption }}" data-cta-link="{{ item.ctaLink }}" data-cta-text="{{ item.ctaText }}" data-large-img="{{ item.largeImage }}">
         <div class="folio-media-box folio-lightbox-trigger" tabindex="0" role="button" aria-label="View {{ item.title }} full screen">
           <img src="{{ item.image }}" alt="{{ item.alt }}" width="800" height="1000" loading="lazy" decoding="async">
           <span class="folio-tag">{{ item.tag }}</span>
@@ -217,10 +198,59 @@ pageFaqs:
         </div>
       </article>
       {%- endfor %}
-    #}
+    </div>
+
+    <!-- Instagram Channel Strip -->
+    <div class="portfolio-instagram-strip" style="text-align: center; margin-top: 50px; padding: 36px 24px; background: var(--bg-white); border-radius: var(--radius-md); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-card);">
+      <span class="label-over" style="margin-bottom: 8px;">{{ site.social.handle }}</span>
+      <h3 style="font-family: var(--font-heading); font-size: 1.55rem; color: var(--wine-primary); margin-bottom: 10px;">See More on Instagram</h3>
+      <p style="max-width: 620px; margin: 0 auto 22px; font-size: 0.96rem; color: var(--text-body); line-height: 1.6;">
+        We regularly share behind-the-scenes studio sessions, client stories, and newly edited wedding highlights directly on our official Instagram feed.
+      </p>
+      <div style="display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;">
+        <a href="{{ site.social.instagram }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-instagram" aria-hidden="true"></i> See more on Instagram
+        </a>
+        <a href="{{ "Hello DPlanner Photography! I would like to see recent portfolio samples of your photography work." | wa }}" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Request Samples on WhatsApp
+        </a>
+      </div>
+    </div>
 
   </div>
 </section>
+
+<!-- Portfolio Lightbox Modal -->
+<div id="portfolio-lightbox" class="portfolio-lightbox" hidden role="dialog" aria-modal="true" aria-label="Portfolio image preview">
+  <div class="lightbox-backdrop" tabindex="-1"></div>
+  <div class="lightbox-dialog">
+    <button type="button" class="lightbox-close-btn" aria-label="Close preview">
+      <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+    </button>
+    <div class="lightbox-media-panel">
+      <img src="" alt="" class="lightbox-image" width="1280" height="1600">
+      <button type="button" class="lightbox-nav-btn lightbox-prev-btn" aria-label="Previous image">
+        <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+      </button>
+      <button type="button" class="lightbox-nav-btn lightbox-next-btn" aria-label="Next image">
+        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div class="lightbox-info-panel">
+      <div class="lightbox-header-row">
+        <span class="lightbox-tag"></span>
+        <span class="lightbox-counter"></span>
+      </div>
+      <div>
+        <h3 class="lightbox-title"></h3>
+        <p class="lightbox-caption"></p>
+      </div>
+      <div class="lightbox-actions">
+        <a href="" class="btn btn-primary lightbox-cta-btn"></a>
+      </div>
+    </div>
+  </div>
+</div>
 
 {# 
   ==========================================================================
