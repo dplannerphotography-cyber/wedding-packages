@@ -16,7 +16,6 @@ ctaBtnText: "Inquire on WhatsApp"
 ctaPackageLink: "/photography/#pricing"
 ctaPackageLabel: "View Studio & Concept Rates"
 ctaWaMsg: "Hello DPlanner Photography! I read your pre-wedding locations guide and would like to discuss booking an engagement shoot."
-draft: true
 ---
 
 A pre-wedding shoot is far more than a checklist item for your wedding website or reception welcome banner. It is often the first time you and your partner stand together in front of a professional camera. 
@@ -90,10 +89,10 @@ While outdoor locations offer natural variety, weather in Nigeria can be unpredi
 
 This is why many couples choose our dedicated photography studio at **82 De ACE HALL, besides Turaya Food Canteen, Yemetu, Ibadan**.
 
-- **The Visual Aesthetic**: Clean, controlled studio strobe lighting tailored specifically for flattering skin tones. We offer diverse seamless backdrops (classic grey, clean white, rich burgundy, textured tones), professional props, and private changing spaces.
+- **The Visual Aesthetic & Facilities**: Fully air-conditioned comfort, private changing room with mirror, controlled studio strobe lighting, and classic seamless backdrops in white, grey, and black.
 - **The Advantages**:
   * **Complete Climate Control**: Air-conditioned studio comfort preserves your makeup, hair styling, and ironed clothing.
-  * **Absolute Privacy**: Dedicated dressing room with mirrors for outfit adjustments away from public onlookers.
+  * **Absolute Privacy**: Dedicated dressing room with mirror for outfit adjustments away from public onlookers.
   * **Predictable Results**: Consistent, magazine-grade strobe illumination regardless of outdoor weather or time of day.
   * **Swift Turnaround**: Studio portraits are edited and delivered within **24 hours** of picture selection, with **same-day express delivery available for +₦500 per picture**.
 - **Pricing**: Standard studio portraits start from **₦2,000 per edited picture**, while creative concept shoots with tailored lighting and art direction start from **₦3,000 per picture**.
@@ -105,7 +104,7 @@ This is why many couples choose our dedicated photography studio at **82 De ACE 
 You do not have to choose strictly between the studio and the outdoors. Many of our couples opt for a **split session**:
 
 1. **Part 1 (Studio)**: Start in our Yemetu studio for polished, formal editorial portraits—capturing flawless headshots and clean wardrobe looks under controlled strobes.
-2. **Part 2 (Golden Hour Outdoors)**: Transition to a nearby outdoor venue (such as Agodi Gardens, located just 7 minutes from Yemetu) for relaxed, romantic golden-hour candids as the sun sets.
+2. **Part 2 (Golden Hour Outdoors)**: Transition to a nearby outdoor venue (such as Agodi Gardens, located nearby in Ibadan) for relaxed, romantic golden-hour candids as the sun sets.
 
 ---
 
@@ -117,5 +116,3 @@ To ensure your shoot day runs smoothly without stress:
 - **Footwear**: Always pack a pair of comfortable slides or flat sandals for moving between outdoor spots, swapping into heels only when the camera is ready.
 - **Touch-Up Essentials**: Bring a compact powder, blotting sheets, lip gloss, and hairpins to manage humidity during outdoor sessions.
 - **Hydration**: Keep a cooler with bottled water and light snacks in your car to keep your energy high throughout the shoot.
-
-Planning your pre-wedding portraits in Ibadan? [Chat with Samuel Damilare on WhatsApp](https://wa.me/2348168204080?text=Hello%20DPlanner%20Photography!%20I%20saw%20your%20pre-wedding%20locations%20guide%20and%20would%20like%20to%20discuss%20booking%20an%20engagement%20shoot.) to discuss dates, venue logistics, and custom concept direction.

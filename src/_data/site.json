@@ -43,7 +43,7 @@
   "deposit": "50% non-refundable deposit secures your date",
   "depositLong": "A 50% non-refundable deposit secures your date. The balance is due before final delivery.",
   "studioDelivery": "Studio photos delivered within 24 hours",
-  "googleSiteVerification": "",
+  "googleSiteVerification": "GNhd6TdC0hGKcocZM1d3khWfFkQnAgLLOqgl-1Ayqdw",
   "bingSiteVerification": "014850FA57EFD70B1FC17D6E6E6C42C7",
   "promo": {
     "label": "September – December 2026 promo",
@@ -65,12 +65,16 @@
       "url": "/photography/"
     },
     {
+      "label": "Portfolio",
+      "url": "/photography/#portfolio"
+    },
+    {
       "label": "Journal",
       "url": "/blog/"
     },
     {
-      "label": "Terms",
-      "url": "/weddings/#terms"
+      "label": "Contact",
+      "url": "/#contact"
     }
   ],
   "studioDeposit": "50% deposit secures your session"

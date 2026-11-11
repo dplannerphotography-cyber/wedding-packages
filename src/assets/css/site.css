@@ -259,15 +259,40 @@ h1, h2, h3, h4, .brand-name, .hero-title, .path-number, .deposit-stat {
 
 .btn-outline {
   background: transparent;
-  color: var(--wine-primary) !important;
+  color: var(--wine-primary);
   border: 1px solid var(--wine-primary);
 }
 
 .btn-outline:hover,
 .btn-outline:focus-visible {
   background: var(--wine-primary);
-  color: #ffffff !important;
+  color: #ffffff;
   transform: translateY(-2px);
+}
+
+/* Secondary outline buttons on dark wine CTA cards/banners */
+.band-cta .btn-outline,
+.final-cta .btn-outline,
+.cta-banner .btn-outline,
+.post-cta-card .btn-outline {
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #ffffff !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.7) !important;
+}
+
+.band-cta .btn-outline:hover,
+.band-cta .btn-outline:focus-visible,
+.final-cta .btn-outline:hover,
+.final-cta .btn-outline:focus-visible,
+.cta-banner .btn-outline:hover,
+.cta-banner .btn-outline:focus-visible,
+.post-cta-card .btn-outline:hover,
+.post-cta-card .btn-outline:focus-visible {
+  background: #ffffff !important;
+  color: var(--wine-primary) !important;
+  border-color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
 }
 
 .btn-outline-nav {

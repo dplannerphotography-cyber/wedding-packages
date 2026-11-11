@@ -90,10 +90,9 @@ DPlanner Photography is based at **82 De ACE HALL, besides Turaya Food Canteen, 
 ## 6. "Are you experienced with Ibadan and Oyo State event venues?"
 
 Lighting conditions vary dramatically across Ibadan's premier wedding venues:
-- **Jogor Centre (Ring Road)**: Massive hall requiring powerful remote speedlights and bounce flashes.
-- **The Civic Centre (Idi-Ape)**: High ceilings that demand strategic optical setups.
-- **Manhattan Hall (Jericho)**: Sophisticated interior with dim ambient lighting that requires fast prime lenses.
-- **Felicia Hall / Jogor**: Specific acoustic and stage constraints.
+- **Jogor Centre**: Massive hall requiring powerful remote speedlights and bounce flashes.
+- **The Civic Centre**: High ceilings that demand strategic optical setups.
+- **Manhattan Hall**: Sophisticated interior with dim ambient lighting that requires fast prime lenses.
 
 A photographer who regularly shoots in Ibadan knows the traffic choke points around Mokola, Challenge, and Iwo Road, knows when to arrive for setup, and knows how to light each specific ballroom.
 

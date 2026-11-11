@@ -22,7 +22,7 @@ In Oyo State—the historic cultural heartland of the Yoruba people—a traditio
 
 Documenting an authentic Yoruba traditional engagement requires far more than technical camera skill; it requires **deep cultural fluency**. A photographer who does not understand the sacred sequence of rites risks standing on the wrong side of the hall when the groom prostrates, or missing the subtle tear shed by a mother during the unveiling of her daughter.
 
-At **DPlanner Photography**, based in Yemetu, Ibadan, we have documented dozens of traditional celebrations across Ibadan, Oyo town, Ogbomoso, and Lagos. In this guide, we walk you through the essential ritual milestones to expect, and explain how to prepare for timeless photography.
+At **DPlanner Photography**, based in Yemetu, Ibadan, we have covered many traditional engagements across Ibadan and Lagos. In this guide, we walk you through the essential ritual milestones to expect, and explain how to prepare for timeless photography.
 
 ---
 

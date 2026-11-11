@@ -7,6 +7,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/llms.txt": "llms.txt" });
   eleventyConfig.addPassthroughCopy({ "src/llms-full.txt": "llms-full.txt" });
   eleventyConfig.addPassthroughCopy({ "src/c4d372e5192842bb90f75a6104eb6a58.txt": "c4d372e5192842bb90f75a6104eb6a58.txt" });
+  eleventyConfig.addPassthroughCopy({ "src/google2288fffd4948a57b.html": "google2288fffd4948a57b.html" });
 
   // ₦180,000
   eleventyConfig.addFilter("naira", (n) => "₦" + Number(n).toLocaleString("en-NG"));

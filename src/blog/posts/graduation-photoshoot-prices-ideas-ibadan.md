@@ -11,12 +11,11 @@ heroImage: /assets/portfolio/studio-portrait-02.webp
 heroAlt: "Gentleman in emerald green corduroy suit jacket and black turtleneck looking confident, DPlanner Photography Ibadan"
 heroCaption: "A polished studio portrait by Samuel Damilare at DPlanner Photography in Yemetu, Ibadan."
 ctaTitle: "Book Your Convocation Session at DPlanner"
-ctaText: "Standard studio portraits are ₦2,000 per edited picture with 24h delivery. Same-day express delivery: +₦500 per picture. Private air-conditioned changing space in Yemetu, Ibadan."
+ctaText: "Standard studio portraits are ₦2,000 per edited picture with 24h delivery. Same-day express delivery: +₦500 per picture. Private air-conditioned changing space with mirror in Yemetu, Ibadan."
 ctaBtnText: "Book on WhatsApp"
 ctaPackageLink: "/photography/#pricing"
 ctaPackageLabel: "View Studio Rates"
 ctaWaMsg: "Hello DPlanner Photography! I am graduating soon and would like to book a graduation photoshoot session."
-draft: true
 ---
 
 Graduation is one of the definitive milestone achievements of your life. After years of demanding coursework, relentless exams, project defenses, and late nights in the library, your convocation ceremony marks both a triumphant conclusion and the threshold of your professional career.
@@ -25,15 +24,13 @@ In Ibadan—heralded as Nigeria's historic city of intellectual firsts—convoca
 
 Yet, after returning rented gowns and wrapping up convocation day receptions, your formal graduation portraits are what will endure on family mantels, in executive portfolios, and across your professional profiles for years to come.
 
-As the lead photographer at **DPlanner Photography**, located at our air-conditioned studio in Yemetu, Ibadan, I welcome dozens of graduating scholars and their families every academic season. Here is our complete, transparent guide to **graduation photoshoot prices, creative concepts, and studio planning** in Ibadan.
+As the lead photographer at **DPlanner Photography**, located at our air-conditioned studio in Yemetu, Ibadan, I welcome graduating scholars and their families every academic season. Here is our complete, transparent guide to **graduation photoshoot prices, creative concepts, and studio planning** in Ibadan.
 
 ---
 
 ## 1. Transparent Graduation Photoshoot Pricing in Ibadan
 
-One of the biggest pain points students encounter is unclear pricing. Many find themselves paying hidden studio entrance fees, unexpected surcharges for backdrop changes, or waiting weeks to receive digital copies.
-
-At DPlanner Photography, we operate with complete price transparency. We do not charge hidden sitting fees; you pay only for the finished, professionally retouched images you select.
+At DPlanner Photography, pricing is straightforward: you pay per finished, professionally retouched picture you select.
 
 <div class="table-responsive">
   <table class="package-table">
@@ -52,9 +49,9 @@ At DPlanner Photography, we operate with complete price transparency. We do not 
           <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.95em;">
             <li>Standard delivery within <strong>24 hours</strong> of image selection</li>
             <li>Controlled studio strobe illumination tailored for radiant skin tones</li>
-            <li>Choice of classic seamless backdrops (grey, white, rich wine, black)</li>
+            <li>Choice of classic seamless backdrops (white, grey, black)</li>
             <li>Professional blemish retouching preserving authentic skin texture</li>
-            <li>Private air-conditioned dressing room with mirrors</li>
+            <li>Private air-conditioned dressing room with mirror</li>
           </ul>
         </td>
       </tr>
@@ -85,8 +82,7 @@ At DPlanner Photography, we operate with complete price transparency. We do not 
   </table>
 </div>
 
-> [!NOTE]
-> **Booking Terms**: A 50% deposit secures your preferred studio date and time slot. Both scheduled appointments and walk-in sessions are welcome during studio operating hours.
+**Booking Terms**: A 50% deposit secures your preferred studio date and time slot. Sessions are booked by appointment during studio operating hours.
 
 ---
 
@@ -138,22 +134,11 @@ A stress-free studio experience starts with proper preparation. We recommend pac
 DPlanner Photography is conveniently situated in the heart of Ibadan, making it easily accessible from major university campuses across the city:
 
 - **Studio Address**: **82 De ACE HALL, besides Turaya Food Canteen, Yemetu, Ibadan, Oyo State**.
-- **Proximity**: Just a short 10–15 minute drive from the University of Ibadan (via the Agbowo / Bodija / Total Garden corridor) and central commercial hubs.
-- **Studio Facilities**: Private air-conditioned changing and dressing room with mirrors, dedicated clothing racks for your gowns and outfits, high-speed Wi-Fi, and comfortable waiting lounge.
+- **Proximity**: Located within 10–15 minutes of UI (via the Agbowo / Bodija / Total Garden corridor) and central commercial hubs.
+- **Studio Facilities**: Fully air-conditioned, private changing room with mirror, and seamless backdrops in white, grey, and black.
 - **Operating Hours**:
   * **Monday to Saturday**: Studio doors open from **9:00 AM**.
   * **2nd & Last Sunday of Each Month**: Open for afternoon appointments from **3:00 PM**.
   <!-- TODO (Samuel): confirm official daily evening closing time (e.g., 6:00 PM or 7:00 PM) to publish full operating hours table -->
 
 Ready to immortalise your academic triumph? Book your convocation portrait session early, especially during peak university convocation weeks when studio slots fill up rapidly.
-
-<div style="margin: 2.5rem 0; padding: 1.75rem; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); text-align: center;">
-  <h3 style="margin-top: 0; font-size: 1.35rem; color: var(--color-primary-dark);">Reserve Your Graduation Studio Session</h3>
-  <p style="color: var(--color-text-muted); max-width: 580px; margin: 0.5rem auto 1.5rem;">
-    Standard portraits at ₦2,000/picture with 24-hour delivery. Same-day express available for +₦500/picture. Private changing room in Yemetu, Ibadan.
-  </p>
-  <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-    <a href="https://wa.me/2348146337142?text=Hello%20DPlanner%20Photography!%20I%20am%20graduating%20soon%20and%20would%20like%20to%20book%20a%20graduation%20photoshoot%20session." class="btn btn-primary" target="_blank" rel="noopener">Book on WhatsApp</a>
-    <a href="/photography/#pricing" class="btn btn-secondary">Explore Studio Rates</a>
-  </div>
-</div>

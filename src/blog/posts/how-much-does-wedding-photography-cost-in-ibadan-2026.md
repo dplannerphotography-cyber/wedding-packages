@@ -56,20 +56,21 @@ To give you an exact, transparent benchmark, here is how our promotional package
         <th scope="col" style="min-width: 140px;">Package</th>
         <th scope="col" style="min-width: 130px;">2026 Promo Rate</th>
         <th scope="col">Inclusions (Official Package Features)</th>
-        <th scope="col" style="min-width: 130px;">Details</th>
       </tr>
     </thead>
     <tbody>
       {% for pkg in packages %}
       <tr>
         <td>
-          <strong>{{ pkg.name }}</strong>
+          <a href="/weddings/{{ pkg.slug }}/" style="font-weight: 700; color: var(--wine-primary); text-decoration: underline; font-size: 1.02rem;">
+            {{ pkg.name }} &rarr;
+          </a>
           {% if pkg.popular %}
-          <br><span style="display:inline-block; font-size:0.75rem; background:#6e1628; color:#fff; padding:2px 8px; border-radius:12px; margin-top:4px;">Most Popular</span>
+          <br><span style="display:inline-block; font-size:0.75rem; background:var(--wine-primary); color:#fff; padding:2px 8px; border-radius:12px; margin-top:4px;">Most Popular</span>
           {% endif %}
         </td>
         <td>
-          <strong style="color: #6e1628; font-size: 1.05rem;">{{ pkg.price | naira }}</strong>
+          <strong style="color: var(--wine-primary); font-size: 1.05rem;">{{ pkg.price | naira }}</strong>
           {% if pkg.was %}
           <br><small style="color: #777;"><s>was {{ pkg.was | naira }}</s></small>
           {% endif %}
@@ -85,11 +86,6 @@ To give you an exact, transparent benchmark, here is how our promotional package
             <li>{{ feature }}</li>
             {% endfor %}
           </ul>
-        </td>
-        <td>
-          <a href="/weddings/{{ pkg.slug }}/" style="font-weight: 600; color: #6e1628; text-decoration: underline;">
-            View {{ pkg.name }} &rarr;
-          </a>
         </td>
       </tr>
       {% endfor %}
@@ -124,9 +120,6 @@ At DPlanner, every delivered image undergoes individual color grading and natura
 A true wedding heirloom is not a flimsy photobook printed on magazine paper that wrinkles when exposed to humidity. 
 
 Our **12×24 flush-mount synthetic photobook (50 designed pages)** uses thick, lay-flat photographic paper mounted onto solid core boards. It is moisture-resistant, non-yellowing, and housed inside a leather presentation briefcase designed to last for generations. Producing this physical artifact requires meticulous hand-binding and specialized archival printing.
-
-> "A wedding photograph should feel as vivid twenty years from now as it did on the afternoon your vows were spoken."
-> <cite>— Samuel Damilare, Lead Photographer</cite>
 
 ---
 
